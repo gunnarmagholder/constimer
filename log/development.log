@@ -164,3 +164,24 @@ gmagholder, your account has been activated.  You may now start adding your plug
   [4;36;1mSQL (0.015530)[0m   [0;1mCOMMIT[0m
 Redirected to http://127.0.0.1:3000/
 Completed in 0.16789 (5 reqs/sec) | DB: 0.05172 (30%) | 302 Found [http://127.0.0.1/activate/5b4d54fd63de59afb6b29c0ca6ce2eeffa06e284]
+  [4;36;1mSQL (0.000249)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000129)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000496)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000261)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000276)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000165)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20081021193235)
+  [4;36;1mSQL (0.074264)[0m   [0;1mDROP TABLE `users`[0m
+  [4;35;1mSQL (0.036848)[0m   [0mDELETE FROM schema_migrations WHERE version = '20081021193235'[0m
+  [4;36;1mSQL (0.000349)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000124)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000202)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000226)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000184)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20081021193235)
+  [4;35;1mSQL (0.000273)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.001779)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `email` varchar(255), `crypted_password` varchar(40), `salt` varchar(40), `created_at` datetime, `updated_at` datetime, `remember_token` varchar(255), `remember_token_expires_at` datetime, `activation_code` varchar(40), `activated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000622)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20081021193235')[0m
+Migrating to CreateEntries (20081021211139)
+  [4;36;1mSQL (0.030789)[0m   [0;1mCREATE TABLE `entries` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `edate` date, `starttime` time, `endtime` time, `follow` int(11), `notes` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000548)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20081021211139')[0m

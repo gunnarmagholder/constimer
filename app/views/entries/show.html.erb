@@ -1,0 +1,33 @@
+<p>
+  <b>User:</b>
+  <%=h @entry.user %>
+</p>
+
+<p>
+  <b>Edate:</b>
+  <%=h @entry.edate %>
+</p>
+
+<p>
+  <b>Starttime:</b>
+  <%=h @entry.starttime %>
+</p>
+
+<p>
+  <b>Endtime:</b>
+  <%=h @entry.endtime %>
+</p>
+
+<p>
+  <b>Follow:</b>
+  <%=h @entry.follow %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%=h @entry.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_entry_path(@entry) %> |
+<%= link_to 'Back', entries_path %>

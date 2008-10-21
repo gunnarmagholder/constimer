@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user: 
+  edate: 2008-10-21
+  starttime: 2008-10-21 23:11:39
+  endtime: 2008-10-21 23:11:39
+  follow: 1
+  notes: MyString
+
+two:
+  user: 
+  edate: 2008-10-21
+  starttime: 2008-10-21 23:11:39
+  endtime: 2008-10-21 23:11:39
+  follow: 1
+  notes: MyString
