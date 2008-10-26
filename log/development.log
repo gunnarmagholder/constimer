@@ -185,3 +185,225 @@ Migrating to CreateUsers (20081021193235)
 Migrating to CreateEntries (20081021211139)
   [4;36;1mSQL (0.030789)[0m   [0;1mCREATE TABLE `entries` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `edate` date, `starttime` time, `endtime` time, `follow` int(11), `notes` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
   [4;35;1mSQL (0.000548)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20081021211139')[0m
+  [4;36;1mSQL (0.000200)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000089)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.021360)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000191)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000090)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000067)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.077896)[0m   [0;1mDROP DATABASE IF EXISTS `constime_test`[0m
+  [4;35;1mSQL (0.000411)[0m   [0mCREATE DATABASE `constime_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000096)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000069)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000267)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001653)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003747)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000314)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000286)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000589)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('0')[0m
+  [4;36;1mSQL (0.000283)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000096)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000453)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.028958)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000165)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000349)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.001811)[0m   [0;1mDROP DATABASE IF EXISTS `constime_test`[0m
+  [4;35;1mSQL (0.000312)[0m   [0mCREATE DATABASE `constime_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000100)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000089)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000280)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001280)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.010743)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000271)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000253)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000393)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('0')[0m
+  [4;36;1mSQL (0.000201)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000070)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.074446)[0m   [0;1mDROP DATABASE IF EXISTS `constime_development`[0m
+  [4;35;1mSQL (0.000173)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.000088)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000405)[0m   [0mCREATE DATABASE `constime_development` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_general_ci`[0m
+  [4;36;1mSQL (0.000122)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000066)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000402)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.013815)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.017927)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000285)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000332)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20081021193235)
+  [4;35;1mSQL (0.000542)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.001751)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `email` varchar(255), `crypted_password` varchar(40), `salt` varchar(40), `created_at` datetime, `updated_at` datetime, `remember_token` varchar(255), `remember_token_expires_at` datetime, `activation_code` varchar(40), `activated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000358)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20081021193235')[0m
+Migrating to CreateEntries (20081021211139)
+  [4;36;1mSQL (0.002818)[0m   [0;1mCREATE TABLE `entries` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user` int(11), `edate` date, `starttime` time, `endtime` time, `follow` int(11), `notes` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003391)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20081021211139')[0m
+  [4;36;1mSQL (0.000454)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000186)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000247)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001451)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.001841)[0m   [0;1mdescribe `entries`[0m
+  [4;35;1mSQL (0.000903)[0m   [0mSHOW KEYS FROM `entries`[0m
+  [4;36;1mSQL (0.001450)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.003098)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.000483)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000225)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000153)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (0.001537)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.000110)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000266)[0m   [0;1mSELECT `login` FROM `users` WHERE (LOWER(`users`.login) = 'admin') [0m
+  [4;35;1mSQL (0.000104)[0m   [0mSELECT `email` FROM `users` WHERE (`users`.email IS NULL) [0m
+  [4;36;1mSQL (0.000085)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.000253)[0m   [0mSELECT * FROM `users` [0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2008-10-23 22:55:41) [GET]
+  Session ID: 6ff4fe8726807f656ae65ea210641031
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;36;1mSQL (0.000209)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000070)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering users/new
+Completed in 0.00487 (205 reqs/sec) | Rendering: 0.00263 (54%) | DB: 0.00028 (5%) | 200 OK [http://127.0.0.1/signup]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2008-10-23 22:55:54) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYWE2Y2RjZTRhNTg4Mzg4MTMxYzNkNDY0Y2E0ZGRj
+YmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--fb12d9f9173aab04f96aae94984b008d28b79dbf
+  Parameters: {"user"=>{"password_confirmation"=>"x25a5250", "login"=>"admin", "password"=>"x25a5250", "email"=>"admin@constimer.com"}, "commit"=>"Sign up", "authenticity_token"=>"f6f3e9fa27f4c3b963cb162884d5d3e8202f1f9d", "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mUser Columns (0.001585)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.000106)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000269)[0m   [0;1mSELECT `login` FROM `users` WHERE (LOWER(`users`.login) = 'admin') [0m
+  [4;35;1mSQL (0.000105)[0m   [0mSELECT `email` FROM `users` WHERE (LOWER(`users`.email) = 'admin@constimer.com') [0m
+  [4;36;1mUser Create (0.000251)[0m   [0;1mINSERT INTO `users` (`salt`, `updated_at`, `activated_at`, `crypted_password`, `remember_token_expires_at`, `activation_code`, `remember_token`, `login`, `email`, `created_at`) VALUES('e7834b1138a44f2c8332e5b87b7a1357a97cd5d8', '2008-10-23 20:55:54', NULL, 'beee925c71af2f17157c4d38f8fba28b17ba2bab', NULL, '8c2a298b11e4e53d61496692bf9f56558c8425e7', NULL, 'admin', 'admin@constimer.com', '2008-10-23 20:55:54')[0m
+Sent mail to admin@constimer.com
+
+Date: Thu, 23 Oct 2008 22:55:55 +0200
+From: Admin
+To: admin@constimer.com
+Subject: [http://127.0.0.1:3000] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: admin
+  Password: x25a5250
+
+Visit this url to activate your account:
+
+  http://http://127.0.0.1:3000/activate/8c2a298b11e4e53d61496692bf9f56558c8425e7
+  [4;35;1mSQL (0.021477)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 0.12961 (7 reqs/sec) | DB: 0.02379 (18%) | 302 Found [http://127.0.0.1/users]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-10-23 22:56:20) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiVhYTZjZGNl
+NGE1ODgzODgxMzFjM2Q0NjRjYTRkZGNiYiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiG1RoYW5rcyBm
+b3Igc2lnbmluZyB1cCEGOgpAdXNlZHsGOwlG--8b0a3c4ccf1c82d8dc5ed9ecd92da6c56aedfea7
+  Parameters: {"action"=>"activate", "activation_code"=>"8c2a298b11e4e53d61496692bf9f56558c8425e7", "controller"=>"users"}
+  [4;36;1mUser Columns (0.001759)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000249)[0m   [0mSELECT * FROM `users` WHERE (`users`.`activation_code` = '8c2a298b11e4e53d61496692bf9f56558c8425e7') LIMIT 1[0m
+  [4;36;1mSQL (0.000082)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.000323)[0m   [0mUPDATE `users` SET `activated_at` = '2008-10-23 20:56:20', `activation_code` = NULL, `updated_at` = '2008-10-23 20:56:20' WHERE `id` = 1[0m
+Sent mail to admin@constimer.com
+
+Date: Thu, 23 Oct 2008 22:56:20 +0200
+From: Admin
+To: admin@constimer.com
+Subject: [http://127.0.0.1:3000] Your account has been activated!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+admin, your account has been activated.  You may now start adding your plugins:
+
+  http://http://127.0.0.1:3000/
+  [4;36;1mSQL (0.018375)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 0.12982 (7 reqs/sec) | DB: 0.02079 (16%) | 302 Found [http://127.0.0.1/activate/8c2a298b11e4e53d61496692bf9f56558c8425e7]
+  [4;36;1mUser Load (0.000286)[0m   [0;1mSELECT * FROM `users` [0m
+  [4;35;1mUser Load (0.000310)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.000299)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mUser Load (0.000297)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mEntry Columns (0.001359)[0m   [0;1mSHOW FIELDS FROM `entries`[0m
+  [4;35;1mSQL (0.000133)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000432)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000089)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000112)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000239)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000094)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000115)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000268)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mEntry Create (0.000195)[0m   [0mINSERT INTO `entries` (`user`, `endtime`, `updated_at`, `notes`, `follow`, `edate`, `starttime`, `created_at`) VALUES(1, NULL, '2008-10-23 21:28:48', NULL, NULL, '2008-10-23', '2008-10-23 23:28:43', '2008-10-23 21:28:48')[0m
+  [4;36;1mSQL (0.001406)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000112)[0m   [0mBEGIN[0m
+  [4;36;1mEntry Destroy (0.000200)[0m   [0;1m DELETE FROM `entries`
+ WHERE `id` = 1
+[0m
+  [4;35;1mSQL (0.000322)[0m   [0mCOMMIT[0m
+  [4;36;1mEntry Load (0.000249)[0m   [0;1mSELECT * FROM `entries` [0m
+  [4;36;1mSQL (0.000232)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000082)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000442)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000248)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000093)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000068)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.031796)[0m   [0;1mDROP DATABASE IF EXISTS `constime_test`[0m
+  [4;35;1mSQL (0.000334)[0m   [0mCREATE DATABASE `constime_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.000116)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000079)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000300)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.002087)[0m   [0mCREATE TABLE `entries` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user` int(11), `edate` date, `starttime` time, `endtime` time, `follow` int(11), `notes` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000617)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001894)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `email` varchar(255), `crypted_password` varchar(40), `salt` varchar(40), `created_at` datetime, `updated_at` datetime, `remember_token` varchar(255), `remember_token_expires_at` datetime, `activation_code` varchar(40), `activated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000254)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001386)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.019323)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000272)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000250)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.000402)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20081021211139')[0m
+  [4;36;1mSQL (0.000402)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20081021193235')[0m
+  [4;35;1mUser Load (0.065383)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mUser Load (0.000270)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mUser Load (0.000280)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 9999) LIMIT 1[0m
+  [4;36;1mSQL (0.000246)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000144)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.379363)[0m   [0;1mDROP DATABASE IF EXISTS `constime_development`[0m
+  [4;35;1mSQL (0.000098)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.000070)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.012269)[0m   [0mCREATE DATABASE `constime_development` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_general_ci`[0m
+  [4;36;1mSQL (0.000081)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000151)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000413)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.089301)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.021986)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000304)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000396)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20081021193235)
+  [4;35;1mSQL (0.000289)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.002727)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `email` varchar(255), `crypted_password` varchar(40), `salt` varchar(40), `created_at` datetime, `updated_at` datetime, `remember_token` varchar(255), `remember_token_expires_at` datetime, `activation_code` varchar(40), `activated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000660)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20081021193235')[0m
+Migrating to CreateEntries (20081021211139)
+  [4;36;1mSQL (0.001578)[0m   [0;1mCREATE TABLE `entries` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `edate` date, `starttime` time, `endtime` time, `entry_id` int(11), `notes` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000459)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20081021211139')[0m
+  [4;36;1mSQL (0.000319)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000217)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000259)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001492)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.001654)[0m   [0;1mdescribe `entries`[0m
+  [4;35;1mSQL (0.000255)[0m   [0mSHOW KEYS FROM `entries`[0m
+  [4;36;1mSQL (0.001298)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.001791)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.000225)[0m   [0;1mSHOW KEYS FROM `users`[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-26 22:26:14) [GET]
+  Session ID: a8943ffda4dc253c801a7fa10bf9fe31
+  Parameters: {"action"=>"index", "controller"=>"home", "index"=>"index"}
+  [4;36;1mSQL (0.061935)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.008618)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 0.06754 (14 reqs/sec) | Rendering: 0.06338 (93%) | DB: 0.07055 (104%) | 200 OK [http://127.0.0.1/]

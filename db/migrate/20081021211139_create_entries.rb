@@ -5,7 +5,6 @@ class CreateEntries < ActiveRecord::Migration
       t.date :edate
       t.time :starttime
       t.time :endtime
-      t.integer :follow
       t.string :notes
 
       t.timestamps

@@ -17,6 +17,8 @@ class User < ActiveRecord::Base
   # anything else you want your user to change should be added here.
   attr_accessible :login, :email, :password, :password_confirmation
 
+  has_many :entries
+
   # Activates the user in the database.
   def activate
     @activated = true
@@ -93,7 +95,6 @@ class User < ActiveRecord::Base
     end
     
     def make_activation_code
-
       self.activation_code = Digest::SHA1.hexdigest( Time.now.to_s.split(//).sort_by {rand}.join )
     end
     

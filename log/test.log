@@ -1,3 +1,3452 @@
   [4;36;1mSQL (0.000235)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.000086)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
   [4;36;1mSQL (0.000102)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000253)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000143)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000059)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000100)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000382)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000181)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000078)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000063)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000063)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000074)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000069)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000066)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000075)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000064)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000064)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000055)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000064)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000076)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000091)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000060)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000069)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000055)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000073)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000066)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000063)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000076)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000065)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000078)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000221)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000089)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000105)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#destroy (for 0.0.0.0 at 2008-10-23 22:06:18) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"entries"}
+Redirected to http://test.host/entries
+Completed in 0.00281 (356 reqs/sec) | DB: 0.00304 (108%) | 302 Found [http://test.host/entries/1]
+  [4;35;1mSQL (0.000112)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000069)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#destroy (for 0.0.0.0 at 2008-10-23 22:06:18) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"37", "controller"=>"entries"}
+Redirected to http://test.host/entries
+Completed in 0.00037 (2739 reqs/sec) | DB: 0.00018 (49%) | 302 Found [http://test.host/entries/37]
+  [4;35;1mSQL (0.000065)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000104)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:06:18) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Rendering entries/edit
+Completed in 0.00061 (1644 reqs/sec) | Rendering: 0.00015 (24%) | DB: 0.00017 (27%) | 200 OK [http://test.host/entries/1]
+  [4;35;1mSQL (0.000095)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000095)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:06:18) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Rendering entries/edit
+Completed in 0.00063 (1589 reqs/sec) | Rendering: 0.00018 (28%) | DB: 0.00019 (30%) | 200 OK [http://test.host/entries/1]
+  [4;35;1mSQL (0.000092)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000068)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:06:18) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Rendering entries/edit
+Completed in 0.00056 (1791 reqs/sec) | Rendering: 0.00013 (23%) | DB: 0.00016 (28%) | 200 OK [http://test.host/entries/37?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000080)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000095)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:06:18) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Redirected to http://test.host/entries/1006
+Completed in 0.00066 (1524 reqs/sec) | DB: 0.00017 (26%) | 302 Found [http://test.host/entries/1]
+  [4;35;1mSQL (0.000085)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000067)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:06:18) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Redirected to http://test.host/entries/1007
+Completed in 0.00052 (1931 reqs/sec) | DB: 0.00015 (29%) | 302 Found [http://test.host/entries/1]
+  [4;35;1mSQL (0.000099)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000339)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:06:18) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Rendering entries/edit
+Completed in 0.00066 (1506 reqs/sec) | Rendering: 0.00016 (24%) | DB: 0.00044 (65%) | 200 OK [http://test.host/entries/37?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000103)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000108)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 22:06:18) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{}}
+Rendering entries/new
+Completed in 0.00060 (1675 reqs/sec) | Rendering: 0.00014 (23%) | DB: 0.00021 (35%) | 200 OK [http://test.host/entries?]
+  [4;35;1mSQL (0.000101)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000069)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 22:06:18) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Rendering entries/new
+Completed in 0.00055 (1811 reqs/sec) | Rendering: 0.00013 (23%) | DB: 0.00017 (30%) | 200 OK [http://test.host/entries?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000080)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000245)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 22:06:18) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{}}
+Redirected to http://test.host/entries/1011
+Completed in 0.00057 (1766 reqs/sec) | DB: 0.00033 (57%) | 302 Found [http://test.host/entries?]
+  [4;35;1mSQL (0.000102)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000066)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 22:06:18) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Redirected to http://test.host/entries/1012
+Completed in 0.00055 (1808 reqs/sec) | DB: 0.00017 (30%) | 302 Found [http://test.host/entries?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000078)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000108)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#edit (for 0.0.0.0 at 2008-10-23 22:06:18) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"entries"}
+Rendering entries/edit
+Completed in 0.00043 (2347 reqs/sec) | Rendering: 0.00016 (38%) | DB: 0.00019 (43%) | 200 OK [http://test.host/entries/37/edit]
+  [4;35;1mSQL (0.000093)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000090)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#new (for 0.0.0.0 at 2008-10-23 22:06:18) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"entries"}
+Rendering entries/new
+Completed in 0.00059 (1709 reqs/sec) | Rendering: 0.00015 (26%) | DB: 0.00018 (31%) | 200 OK [http://test.host/entries/new]
+  [4;35;1mSQL (0.000120)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000114)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#show (for 0.0.0.0 at 2008-10-23 22:06:18) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"entries"}
+Completed in 0.00055 (1827 reqs/sec) | Rendering: 0.00009 (16%) | DB: 0.00023 (42%) | 200 OK [http://test.host/entries/37]
+  [4;35;1mSQL (0.000089)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000092)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#show (for 0.0.0.0 at 2008-10-23 22:06:18) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"entries"}
+Rendering entries/show
+Completed in 0.00052 (1933 reqs/sec) | Rendering: 0.00014 (26%) | DB: 0.00018 (34%) | 200 OK [http://test.host/entries/37]
+  [4;35;1mSQL (0.000070)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000119)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#index (for 0.0.0.0 at 2008-10-23 22:06:18) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"entries"}
+Completed in 0.00051 (1952 reqs/sec) | Rendering: 0.00008 (15%) | DB: 0.00019 (36%) | 200 OK [http://test.host/entries]
+  [4;35;1mSQL (0.000084)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000084)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#index (for 0.0.0.0 at 2008-10-23 22:06:18) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"entries"}
+Rendering entries/index
+Completed in 0.00051 (1957 reqs/sec) | Rendering: 0.00013 (26%) | DB: 0.00017 (32%) | 200 OK [http://test.host/entries]
+  [4;35;1mSQL (0.000092)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000121)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001878)[0m   [0mSHOW FIELDS FROM `entries`[0m
+Rendering /entries/new.html.erb
+  [4;36;1mSQL (0.000134)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000113)[0m   [0mBEGIN[0m
+Rendering /entries/edit.html.erb
+  [4;36;1mSQL (0.000127)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000102)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000053)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000075)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000059)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000066)[0m   [0mBEGIN[0m
+  [4;36;1mEntry Create (0.000279)[0m   [0;1mINSERT INTO `entries` (`endtime`, `updated_at`, `notes`, `follow`, `user_id`, `edate`, `starttime`, `created_at`) VALUES(NULL, '2008-10-23 20:06:18', NULL, NULL, NULL, NULL, NULL, '2008-10-23 20:06:18')[0m
+  [4;35;1mSQL (0.000362)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000205)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000082)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000099)[0m   [0;1mBEGIN[0m
+Rendering /entries/index.html.erb
+  [4;35;1mSQL (0.000124)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000094)[0m   [0;1mBEGIN[0m
+Rendering /entries/show.html.erb
+  [4;35;1mSQL (0.000093)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000241)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000080)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000062)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000517)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000121)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000075)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000318)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000135)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000510)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000102)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000082)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000089)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000236)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000146)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000122)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000090)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000096)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000060)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000072)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000068)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000077)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000066)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000074)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000059)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000063)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000054)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000067)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000060)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000111)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#destroy (for 0.0.0.0 at 2008-10-23 22:11:44) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"entries"}
+Redirected to http://test.host/entries
+Completed in 0.00257 (389 reqs/sec) | DB: 0.00385 (150%) | 302 Found [http://test.host/entries/1]
+  [4;35;1mSQL (0.001708)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000105)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#destroy (for 0.0.0.0 at 2008-10-23 22:11:44) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"37", "controller"=>"entries"}
+Redirected to http://test.host/entries
+Completed in 0.00038 (2603 reqs/sec) | DB: 0.00181 (472%) | 302 Found [http://test.host/entries/37]
+  [4;35;1mSQL (0.000088)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000166)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:11:44) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Rendering entries/edit
+Completed in 0.00066 (1513 reqs/sec) | Rendering: 0.00015 (23%) | DB: 0.00025 (38%) | 200 OK [http://test.host/entries/1]
+  [4;35;1mSQL (0.000127)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000063)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:11:44) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Rendering entries/edit
+Completed in 0.00059 (1683 reqs/sec) | Rendering: 0.00014 (23%) | DB: 0.00019 (31%) | 200 OK [http://test.host/entries/1]
+  [4;35;1mSQL (0.000102)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000064)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:11:44) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Rendering entries/edit
+Completed in 0.00060 (1655 reqs/sec) | Rendering: 0.00013 (22%) | DB: 0.00017 (27%) | 200 OK [http://test.host/entries/37?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000095)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000090)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:11:44) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Redirected to http://test.host/entries/1006
+Completed in 0.00071 (1412 reqs/sec) | DB: 0.00019 (26%) | 302 Found [http://test.host/entries/1]
+  [4;35;1mSQL (0.000090)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000078)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:11:44) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Redirected to http://test.host/entries/1007
+Completed in 0.00054 (1835 reqs/sec) | DB: 0.00017 (30%) | 302 Found [http://test.host/entries/1]
+  [4;35;1mSQL (0.000078)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000064)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:11:44) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Rendering entries/edit
+Completed in 0.00060 (1677 reqs/sec) | Rendering: 0.00016 (27%) | DB: 0.00014 (23%) | 200 OK [http://test.host/entries/37?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000117)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000108)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 22:11:45) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{}}
+Rendering entries/new
+Completed in 0.00060 (1661 reqs/sec) | Rendering: 0.00015 (24%) | DB: 0.00022 (37%) | 200 OK [http://test.host/entries?]
+  [4;35;1mSQL (0.000105)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000122)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 22:11:45) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Rendering entries/new
+Completed in 0.00055 (1804 reqs/sec) | Rendering: 0.00013 (23%) | DB: 0.00023 (40%) | 200 OK [http://test.host/entries?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000081)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000117)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 22:11:45) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{}}
+Redirected to http://test.host/entries/1011
+Completed in 0.00057 (1763 reqs/sec) | DB: 0.00020 (34%) | 302 Found [http://test.host/entries?]
+  [4;35;1mSQL (0.000086)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000071)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 22:11:45) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Redirected to http://test.host/entries/1012
+Completed in 0.00054 (1862 reqs/sec) | DB: 0.00016 (29%) | 302 Found [http://test.host/entries?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000083)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000089)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#edit (for 0.0.0.0 at 2008-10-23 22:11:45) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"entries"}
+Rendering entries/edit
+Completed in 0.00062 (1618 reqs/sec) | Rendering: 0.00018 (28%) | DB: 0.00017 (27%) | 200 OK [http://test.host/entries/37/edit]
+  [4;35;1mSQL (0.000097)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000113)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#new (for 0.0.0.0 at 2008-10-23 22:11:45) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"entries"}
+Rendering entries/new
+Completed in 0.00055 (1827 reqs/sec) | Rendering: 0.00014 (25%) | DB: 0.00021 (38%) | 200 OK [http://test.host/entries/new]
+  [4;35;1mSQL (0.000101)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000102)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#show (for 0.0.0.0 at 2008-10-23 22:11:45) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"entries"}
+Completed in 0.00055 (1828 reqs/sec) | Rendering: 0.00009 (16%) | DB: 0.00020 (37%) | 200 OK [http://test.host/entries/37]
+  [4;35;1mSQL (0.000115)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000101)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#show (for 0.0.0.0 at 2008-10-23 22:11:45) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"entries"}
+Rendering entries/show
+Completed in 0.00060 (1669 reqs/sec) | Rendering: 0.00020 (33%) | DB: 0.00022 (36%) | 200 OK [http://test.host/entries/37]
+  [4;35;1mSQL (0.000185)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000095)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#index (for 0.0.0.0 at 2008-10-23 22:11:45) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"entries"}
+Completed in 0.00053 (1883 reqs/sec) | Rendering: 0.00008 (15%) | DB: 0.00028 (52%) | 200 OK [http://test.host/entries]
+  [4;35;1mSQL (0.000084)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000098)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#index (for 0.0.0.0 at 2008-10-23 22:11:45) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"entries"}
+Rendering entries/index
+Completed in 0.00053 (1897 reqs/sec) | Rendering: 0.00014 (26%) | DB: 0.00018 (34%) | 200 OK [http://test.host/entries]
+  [4;35;1mSQL (0.000085)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000111)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001476)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.000084)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000179)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000060)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000118)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000178)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000207)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000066)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000108)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000069)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000223)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000092)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000072)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.029047)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.000095)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000064)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000061)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000060)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000052)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000059)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000060)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000242)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000070)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000051)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001663)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.000167)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000068)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000078)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000065)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000054)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000071)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000057)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000206)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000075)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000082)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.000000)[0m   [0mMysql::Error: Table 'constime_test.entries' doesn't exist: SHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.000069)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000080)[0m   [0mBEGIN[0m
+  [4;36;1mEntry Columns (0.000000)[0m   [0;1mMysql::Error: Table 'constime_test.entries' doesn't exist: SHOW FIELDS FROM `entries`[0m
+  [4;35;1mSQL (0.000065)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000075)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.000000)[0m   [0mMysql::Error: Table 'constime_test.entries' doesn't exist: SHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.000067)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000191)[0m   [0mBEGIN[0m
+  [4;36;1mEntry Columns (0.000000)[0m   [0;1mMysql::Error: Table 'constime_test.entries' doesn't exist: SHOW FIELDS FROM `entries`[0m
+  [4;35;1mSQL (0.000066)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000225)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000090)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000098)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.000000)[0m   [0mMysql::Error: Table 'constime_test.entries' doesn't exist: SHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.000063)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000177)[0m   [0mBEGIN[0m
+  [4;36;1mEntry Columns (0.000000)[0m   [0;1mMysql::Error: Table 'constime_test.entries' doesn't exist: SHOW FIELDS FROM `entries`[0m
+  [4;35;1mSQL (0.000080)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000074)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.000000)[0m   [0mMysql::Error: Table 'constime_test.entries' doesn't exist: SHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.000091)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000072)[0m   [0mBEGIN[0m
+  [4;36;1mEntry Columns (0.000000)[0m   [0;1mMysql::Error: Table 'constime_test.entries' doesn't exist: SHOW FIELDS FROM `entries`[0m
+  [4;35;1mSQL (0.000070)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000200)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000069)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.001485)[0m   [0;1mDROP DATABASE IF EXISTS `constime_test`[0m
+  [4;35;1mSQL (0.000125)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.000073)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000403)[0m   [0mCREATE DATABASE `constime_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_general_ci`[0m
+  [4;36;1mSQL (0.000079)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000065)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000395)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.036223)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003762)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000281)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000457)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20081021193235)
+  [4;35;1mSQL (0.000321)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.001931)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `email` varchar(255), `crypted_password` varchar(40), `salt` varchar(40), `created_at` datetime, `updated_at` datetime, `remember_token` varchar(255), `remember_token_expires_at` datetime, `activation_code` varchar(40), `activated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000454)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20081021193235')[0m
+Migrating to CreateEntries (20081021211139)
+  [4;36;1mSQL (0.001682)[0m   [0;1mCREATE TABLE `entries` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `edate` date, `starttime` time, `endtime` time, `follow` int(11), `notes` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000410)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20081021211139')[0m
+  [4;36;1mSQL (0.000311)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000172)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000236)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001398)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.001397)[0m   [0;1mdescribe `entries`[0m
+  [4;35;1mSQL (0.000218)[0m   [0mSHOW KEYS FROM `entries`[0m
+  [4;36;1mSQL (0.001458)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.001815)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.000215)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000221)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000069)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000052)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.002696)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.000093)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000064)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000051)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000065)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000072)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000062)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000061)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000235)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000070)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000051)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.002559)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.000087)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000064)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000052)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000062)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000050)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000060)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000054)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000230)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000070)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000055)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000106)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000083)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000060)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000062)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000055)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000063)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000076)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000065)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000053)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000064)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000055)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000063)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000072)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000094)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000067)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000094)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000059)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000067)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000054)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000071)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000055)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000065)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000053)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000062)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000052)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000085)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#destroy (for 0.0.0.0 at 2008-10-23 22:24:48) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"entries"}
+Redirected to http://test.host/entries
+Completed in 0.00254 (394 reqs/sec) | DB: 0.00211 (83%) | 302 Found [http://test.host/entries/1]
+  [4;35;1mSQL (0.000093)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000091)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#destroy (for 0.0.0.0 at 2008-10-23 22:24:48) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"37", "controller"=>"entries"}
+Redirected to http://test.host/entries
+Completed in 0.00041 (2462 reqs/sec) | DB: 0.00018 (45%) | 302 Found [http://test.host/entries/37]
+  [4;35;1mSQL (0.000232)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000129)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:24:48) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Rendering entries/edit
+Completed in 0.00062 (1607 reqs/sec) | Rendering: 0.00015 (24%) | DB: 0.00036 (58%) | 200 OK [http://test.host/entries/1]
+  [4;35;1mSQL (0.000128)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000068)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:24:48) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Rendering entries/edit
+Completed in 0.00061 (1647 reqs/sec) | Rendering: 0.00014 (23%) | DB: 0.00020 (32%) | 200 OK [http://test.host/entries/1]
+  [4;35;1mSQL (0.000089)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000077)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:24:48) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Rendering entries/edit
+Completed in 0.00059 (1709 reqs/sec) | Rendering: 0.00014 (24%) | DB: 0.00017 (28%) | 200 OK [http://test.host/entries/37?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000101)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000093)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:24:48) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Redirected to http://test.host/entries/1006
+Completed in 0.00074 (1358 reqs/sec) | DB: 0.00019 (26%) | 302 Found [http://test.host/entries/1]
+  [4;35;1mSQL (0.000107)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000100)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:24:48) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Redirected to http://test.host/entries/1007
+Completed in 0.00064 (1565 reqs/sec) | DB: 0.00021 (32%) | 302 Found [http://test.host/entries/1]
+  [4;35;1mSQL (0.000123)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000071)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:24:48) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Rendering entries/edit
+Completed in 0.00060 (1667 reqs/sec) | Rendering: 0.00015 (24%) | DB: 0.00019 (32%) | 200 OK [http://test.host/entries/37?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000085)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000109)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 22:24:48) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{}}
+Rendering entries/new
+Completed in 0.00059 (1681 reqs/sec) | Rendering: 0.00014 (23%) | DB: 0.00019 (32%) | 200 OK [http://test.host/entries?]
+  [4;35;1mSQL (0.000088)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000066)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 22:24:48) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Rendering entries/new
+Completed in 0.00055 (1811 reqs/sec) | Rendering: 0.00013 (23%) | DB: 0.00015 (27%) | 200 OK [http://test.host/entries?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000083)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000088)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 22:24:48) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{}}
+Redirected to http://test.host/entries/1011
+Completed in 0.00060 (1663 reqs/sec) | DB: 0.00017 (28%) | 302 Found [http://test.host/entries?]
+  [4;35;1mSQL (0.000085)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000071)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 22:24:48) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Redirected to http://test.host/entries/1012
+Completed in 0.00068 (1470 reqs/sec) | DB: 0.00016 (22%) | 302 Found [http://test.host/entries?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000116)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000107)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#edit (for 0.0.0.0 at 2008-10-23 22:24:48) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"entries"}
+Rendering entries/edit
+Completed in 0.00049 (2037 reqs/sec) | Rendering: 0.00025 (51%) | DB: 0.00022 (45%) | 200 OK [http://test.host/entries/37/edit]
+  [4;35;1mSQL (0.000107)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000102)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#new (for 0.0.0.0 at 2008-10-23 22:24:48) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"entries"}
+Rendering entries/new
+Completed in 0.00057 (1741 reqs/sec) | Rendering: 0.00014 (24%) | DB: 0.00021 (36%) | 200 OK [http://test.host/entries/new]
+  [4;35;1mSQL (0.000086)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000168)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#show (for 0.0.0.0 at 2008-10-23 22:24:48) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"entries"}
+Completed in 0.00054 (1842 reqs/sec) | Rendering: 0.00009 (16%) | DB: 0.00025 (46%) | 200 OK [http://test.host/entries/37]
+  [4;35;1mSQL (0.000086)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000112)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#show (for 0.0.0.0 at 2008-10-23 22:24:48) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"entries"}
+Rendering entries/show
+Completed in 0.00059 (1689 reqs/sec) | Rendering: 0.00016 (26%) | DB: 0.00020 (33%) | 200 OK [http://test.host/entries/37]
+  [4;35;1mSQL (0.000100)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000161)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#index (for 0.0.0.0 at 2008-10-23 22:24:48) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"entries"}
+Completed in 0.00053 (1901 reqs/sec) | Rendering: 0.00008 (15%) | DB: 0.00026 (49%) | 200 OK [http://test.host/entries]
+  [4;35;1mSQL (0.000127)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000115)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#index (for 0.0.0.0 at 2008-10-23 22:24:48) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"entries"}
+Rendering entries/index
+Completed in 0.00060 (1657 reqs/sec) | Rendering: 0.00015 (24%) | DB: 0.00024 (40%) | 200 OK [http://test.host/entries]
+  [4;35;1mSQL (0.000123)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000096)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.002638)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.000072)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000095)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000075)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000178)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000087)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000067)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000054)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000130)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000155)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000199)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000068)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000052)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001396)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.000070)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000062)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000053)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000075)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000059)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000076)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000320)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000197)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000070)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000051)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.002524)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.000071)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000082)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.001912)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000358)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000063)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000071)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000059)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000228)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000072)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000051)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.002562)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.000072)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000073)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000074)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000064)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000062)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000060)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000095)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000201)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000068)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000053)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.002550)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.000072)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000079)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000103)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000088)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000064)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000101)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000073)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000207)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000068)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000052)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001820)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.000072)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000075)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000066)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000075)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000058)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000184)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000092)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000245)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000083)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000066)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001565)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.000735)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000412)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000451)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000115)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000075)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.002104)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000127)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000198)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000070)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.003382)[0m   [0;1mDROP DATABASE IF EXISTS `constime_test`[0m
+  [4;35;1mSQL (0.000091)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.000069)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000356)[0m   [0mCREATE DATABASE `constime_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_general_ci`[0m
+  [4;36;1mSQL (0.000078)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000065)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000453)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001649)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.050169)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000294)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000329)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20081021193235)
+  [4;35;1mSQL (0.000397)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.001845)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `email` varchar(255), `crypted_password` varchar(40), `salt` varchar(40), `created_at` datetime, `updated_at` datetime, `remember_token` varchar(255), `remember_token_expires_at` datetime, `activation_code` varchar(40), `activated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000382)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20081021193235')[0m
+Migrating to CreateEntries (20081021211139)
+  [4;36;1mSQL (0.001546)[0m   [0;1mCREATE TABLE `entries` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user` int(11), `edate` date, `starttime` time, `endtime` time, `follow` int(11), `notes` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000429)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20081021211139')[0m
+  [4;36;1mSQL (0.000353)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000141)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000223)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001719)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.001301)[0m   [0;1mdescribe `entries`[0m
+  [4;35;1mSQL (0.000219)[0m   [0mSHOW KEYS FROM `entries`[0m
+  [4;36;1mSQL (0.001457)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.001599)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.000210)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.000200)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000086)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000057)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.002492)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.000077)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000194)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000061)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000073)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000063)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000088)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000086)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000200)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000069)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000051)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000083)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000073)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000086)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000111)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000065)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000071)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000065)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000066)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000055)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000068)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000056)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000071)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000059)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000092)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000085)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000067)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000058)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000068)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000079)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000096)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000083)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000090)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000071)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000091)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000081)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000096)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#destroy (for 0.0.0.0 at 2008-10-23 22:33:40) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"entries"}
+Redirected to http://test.host/entries
+Completed in 0.00262 (381 reqs/sec) | DB: 0.00231 (87%) | 302 Found [http://test.host/entries/1]
+  [4;35;1mSQL (0.000107)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000227)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#destroy (for 0.0.0.0 at 2008-10-23 22:33:40) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"37", "controller"=>"entries"}
+Redirected to http://test.host/entries
+Completed in 0.00037 (2695 reqs/sec) | DB: 0.00033 (90%) | 302 Found [http://test.host/entries/37]
+  [4;35;1mSQL (0.000084)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000783)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:33:40) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Rendering entries/edit
+Completed in 0.00066 (1519 reqs/sec) | Rendering: 0.00015 (22%) | DB: 0.00087 (131%) | 200 OK [http://test.host/entries/1]
+  [4;35;1mSQL (0.000111)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000108)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:33:40) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Rendering entries/edit
+Completed in 0.00059 (1698 reqs/sec) | Rendering: 0.00014 (23%) | DB: 0.00022 (37%) | 200 OK [http://test.host/entries/1]
+  [4;35;1mSQL (0.000095)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000078)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:33:40) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Rendering entries/edit
+Completed in 0.00056 (1789 reqs/sec) | Rendering: 0.00013 (23%) | DB: 0.00017 (30%) | 200 OK [http://test.host/entries/37?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000069)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000112)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:33:40) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Redirected to http://test.host/entries/1006
+Completed in 0.00067 (1497 reqs/sec) | DB: 0.00018 (27%) | 302 Found [http://test.host/entries/1]
+  [4;35;1mSQL (0.000070)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:33:40) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Redirected to http://test.host/entries/1007
+Completed in 0.00054 (1861 reqs/sec) | DB: 0.00015 (27%) | 302 Found [http://test.host/entries/1]
+  [4;35;1mSQL (0.000082)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000104)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:33:40) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Rendering entries/edit
+Completed in 0.00059 (1698 reqs/sec) | Rendering: 0.00014 (23%) | DB: 0.00019 (31%) | 200 OK [http://test.host/entries/37?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000083)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000087)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 22:33:40) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{}}
+Rendering entries/new
+Completed in 0.00056 (1779 reqs/sec) | Rendering: 0.00013 (23%) | DB: 0.00017 (30%) | 200 OK [http://test.host/entries?]
+  [4;35;1mSQL (0.000084)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000080)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 22:33:40) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Rendering entries/new
+Completed in 0.00055 (1818 reqs/sec) | Rendering: 0.00013 (23%) | DB: 0.00016 (29%) | 200 OK [http://test.host/entries?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000074)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000106)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 22:33:40) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{}}
+Redirected to http://test.host/entries/1011
+Completed in 0.00058 (1736 reqs/sec) | DB: 0.00018 (31%) | 302 Found [http://test.host/entries?]
+  [4;35;1mSQL (0.000087)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000075)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 22:33:40) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Redirected to http://test.host/entries/1012
+Completed in 0.00056 (1789 reqs/sec) | DB: 0.00016 (29%) | 302 Found [http://test.host/entries?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000080)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000124)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#edit (for 0.0.0.0 at 2008-10-23 22:33:40) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"entries"}
+Rendering entries/edit
+Completed in 0.00055 (1811 reqs/sec) | Rendering: 0.00019 (34%) | DB: 0.00020 (36%) | 200 OK [http://test.host/entries/37/edit]
+  [4;35;1mSQL (0.000095)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000101)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#new (for 0.0.0.0 at 2008-10-23 22:33:40) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"entries"}
+Rendering entries/new
+Completed in 0.00052 (1931 reqs/sec) | Rendering: 0.00013 (25%) | DB: 0.00020 (37%) | 200 OK [http://test.host/entries/new]
+  [4;35;1mSQL (0.000077)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000087)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#show (for 0.0.0.0 at 2008-10-23 22:33:40) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"entries"}
+Completed in 0.00050 (1991 reqs/sec) | Rendering: 0.00008 (15%) | DB: 0.00016 (32%) | 200 OK [http://test.host/entries/37]
+  [4;35;1mSQL (0.000079)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000088)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#show (for 0.0.0.0 at 2008-10-23 22:33:41) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"entries"}
+Rendering entries/show
+Completed in 0.00051 (1965 reqs/sec) | Rendering: 0.00013 (25%) | DB: 0.00017 (32%) | 200 OK [http://test.host/entries/37]
+  [4;35;1mSQL (0.000063)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000100)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#index (for 0.0.0.0 at 2008-10-23 22:33:41) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"entries"}
+Completed in 0.00049 (2020 reqs/sec) | Rendering: 0.00008 (15%) | DB: 0.00016 (32%) | 200 OK [http://test.host/entries]
+  [4;35;1mSQL (0.000107)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000110)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#index (for 0.0.0.0 at 2008-10-23 22:33:41) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"entries"}
+Rendering entries/index
+Completed in 0.00056 (1786 reqs/sec) | Rendering: 0.00014 (24%) | DB: 0.00022 (38%) | 200 OK [http://test.host/entries]
+  [4;35;1mSQL (0.000085)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000095)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.002527)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.000074)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000083)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000059)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000074)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000058)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000062)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000088)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000099)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000055)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000201)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000074)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000052)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001456)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.000093)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000072)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000074)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000083)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000086)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000088)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000075)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000213)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000069)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000052)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.002669)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.000077)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000074)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000066)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000062)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000087)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000114)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000092)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000201)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000070)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000051)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000090)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000073)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000075)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000065)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000056)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000062)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000053)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000061)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000061)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000061)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000068)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000075)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000064)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000086)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000073)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000078)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000081)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000505)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000094)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000071)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000059)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000062)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000057)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000061)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000054)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000104)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#destroy (for 0.0.0.0 at 2008-10-23 22:35:10) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"entries"}
+Redirected to http://test.host/entries
+Completed in 0.00269 (371 reqs/sec) | DB: 0.00257 (95%) | 302 Found [http://test.host/entries/1]
+  [4;35;1mSQL (0.000100)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000125)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#destroy (for 0.0.0.0 at 2008-10-23 22:35:10) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"37", "controller"=>"entries"}
+Redirected to http://test.host/entries
+Completed in 0.00039 (2577 reqs/sec) | DB: 0.00023 (58%) | 302 Found [http://test.host/entries/37]
+  [4;35;1mSQL (0.000097)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000115)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:35:10) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Rendering entries/edit
+Completed in 0.00064 (1555 reqs/sec) | Rendering: 0.00015 (22%) | DB: 0.00021 (32%) | 200 OK [http://test.host/entries/1]
+  [4;35;1mSQL (0.000094)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000079)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:35:10) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Rendering entries/edit
+Completed in 0.00058 (1730 reqs/sec) | Rendering: 0.00015 (25%) | DB: 0.00017 (29%) | 200 OK [http://test.host/entries/1]
+  [4;35;1mSQL (0.000083)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000136)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:35:10) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Rendering entries/edit
+Completed in 0.00057 (1757 reqs/sec) | Rendering: 0.00013 (23%) | DB: 0.00022 (38%) | 200 OK [http://test.host/entries/37?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000076)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000101)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:35:10) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Redirected to http://test.host/entries/1006
+Completed in 0.00071 (1418 reqs/sec) | DB: 0.00018 (25%) | 302 Found [http://test.host/entries/1]
+  [4;35;1mSQL (0.000087)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000071)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:35:10) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Redirected to http://test.host/entries/1007
+Completed in 0.00054 (1851 reqs/sec) | DB: 0.00016 (29%) | 302 Found [http://test.host/entries/1]
+  [4;35;1mSQL (0.000101)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000080)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:35:10) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Rendering entries/edit
+Completed in 0.00057 (1757 reqs/sec) | Rendering: 0.00014 (24%) | DB: 0.00018 (31%) | 200 OK [http://test.host/entries/37?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000067)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000115)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 22:35:10) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{}}
+Rendering entries/new
+Completed in 0.00061 (1642 reqs/sec) | Rendering: 0.00015 (25%) | DB: 0.00018 (29%) | 200 OK [http://test.host/entries?]
+  [4;35;1mSQL (0.000110)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000075)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 22:35:10) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Rendering entries/new
+Completed in 0.00062 (1610 reqs/sec) | Rendering: 0.00015 (24%) | DB: 0.00019 (29%) | 200 OK [http://test.host/entries?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000117)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000104)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 22:35:10) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{}}
+Redirected to http://test.host/entries/1011
+Completed in 0.00062 (1613 reqs/sec) | DB: 0.00022 (35%) | 302 Found [http://test.host/entries?]
+  [4;35;1mSQL (0.000084)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000071)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 22:35:10) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Redirected to http://test.host/entries/1012
+Completed in 0.00053 (1883 reqs/sec) | DB: 0.00015 (29%) | 302 Found [http://test.host/entries?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000527)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000107)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#edit (for 0.0.0.0 at 2008-10-23 22:35:10) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"entries"}
+Rendering entries/edit
+Completed in 0.00039 (2557 reqs/sec) | Rendering: 0.00016 (41%) | DB: 0.00063 (162%) | 200 OK [http://test.host/entries/37/edit]
+  [4;35;1mSQL (0.000083)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000095)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#new (for 0.0.0.0 at 2008-10-23 22:35:10) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"entries"}
+Rendering entries/new
+Completed in 0.00057 (1748 reqs/sec) | Rendering: 0.00014 (24%) | DB: 0.00018 (31%) | 200 OK [http://test.host/entries/new]
+  [4;35;1mSQL (0.000080)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000083)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#show (for 0.0.0.0 at 2008-10-23 22:35:10) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"entries"}
+Completed in 0.00051 (1960 reqs/sec) | Rendering: 0.00008 (16%) | DB: 0.00016 (31%) | 200 OK [http://test.host/entries/37]
+  [4;35;1mSQL (0.000087)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000106)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#show (for 0.0.0.0 at 2008-10-23 22:35:10) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"entries"}
+Rendering entries/show
+Completed in 0.00053 (1886 reqs/sec) | Rendering: 0.00014 (25%) | DB: 0.00019 (36%) | 200 OK [http://test.host/entries/37]
+  [4;35;1mSQL (0.000083)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000101)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#index (for 0.0.0.0 at 2008-10-23 22:35:10) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"entries"}
+Completed in 0.00053 (1894 reqs/sec) | Rendering: 0.00008 (15%) | DB: 0.00018 (34%) | 200 OK [http://test.host/entries]
+  [4;35;1mSQL (0.000094)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000095)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#index (for 0.0.0.0 at 2008-10-23 22:35:10) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"entries"}
+Rendering entries/index
+Completed in 0.00056 (1775 reqs/sec) | Rendering: 0.00014 (25%) | DB: 0.00019 (33%) | 200 OK [http://test.host/entries]
+  [4;35;1mSQL (0.000130)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000100)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.002664)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.000084)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000124)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000064)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000079)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000114)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000065)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000117)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000070)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000199)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000070)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000052)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001431)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.000072)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000079)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000087)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000069)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000070)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000064)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000056)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000198)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000070)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000064)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000088)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000062)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000076)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000074)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000059)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000062)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000053)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000196)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000081)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000059)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000068)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000066)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000089)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000076)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000063)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000054)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000062)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000054)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000082)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000084)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000059)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000068)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000106)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000063)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000087)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#destroy (for 0.0.0.0 at 2008-10-23 22:37:20) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"entries"}
+Redirected to http://test.host/entries
+Completed in 0.00253 (395 reqs/sec) | DB: 0.00230 (90%) | 302 Found [http://test.host/entries/1]
+  [4;35;1mSQL (0.000118)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000069)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#destroy (for 0.0.0.0 at 2008-10-23 22:37:20) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"37", "controller"=>"entries"}
+Redirected to http://test.host/entries
+Completed in 0.00040 (2507 reqs/sec) | DB: 0.00019 (46%) | 302 Found [http://test.host/entries/37]
+  [4;35;1mSQL (0.000079)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000183)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:37:20) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Rendering entries/edit
+Completed in 0.00060 (1675 reqs/sec) | Rendering: 0.00014 (23%) | DB: 0.00026 (43%) | 200 OK [http://test.host/entries/1]
+  [4;35;1mSQL (0.000087)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000068)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:37:20) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Rendering entries/edit
+Completed in 0.00055 (1811 reqs/sec) | Rendering: 0.00013 (23%) | DB: 0.00015 (28%) | 200 OK [http://test.host/entries/1]
+  [4;35;1mSQL (0.000073)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000062)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:37:20) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Rendering entries/edit
+Completed in 0.00062 (1615 reqs/sec) | Rendering: 0.00013 (21%) | DB: 0.00013 (21%) | 200 OK [http://test.host/entries/37?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000086)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000101)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:37:20) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Redirected to http://test.host/entries/1006
+Completed in 0.00072 (1387 reqs/sec) | DB: 0.00019 (25%) | 302 Found [http://test.host/entries/1]
+  [4;35;1mSQL (0.000120)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000111)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:37:20) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Redirected to http://test.host/entries/1007
+Completed in 0.00057 (1751 reqs/sec) | DB: 0.00023 (40%) | 302 Found [http://test.host/entries/1]
+  [4;35;1mSQL (0.000086)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000075)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:37:20) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Rendering entries/edit
+Completed in 0.00056 (1782 reqs/sec) | Rendering: 0.00014 (24%) | DB: 0.00016 (28%) | 200 OK [http://test.host/entries/37?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000087)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000095)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 22:37:20) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{}}
+Rendering entries/new
+Completed in 0.00060 (1653 reqs/sec) | Rendering: 0.00014 (23%) | DB: 0.00018 (30%) | 200 OK [http://test.host/entries?]
+  [4;35;1mSQL (0.000100)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000066)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 22:37:20) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Rendering entries/new
+Completed in 0.00054 (1862 reqs/sec) | Rendering: 0.00013 (23%) | DB: 0.00017 (30%) | 200 OK [http://test.host/entries?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000081)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000098)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 22:37:20) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{}}
+Redirected to http://test.host/entries/1011
+Completed in 0.00070 (1424 reqs/sec) | DB: 0.00018 (25%) | 302 Found [http://test.host/entries?]
+  [4;35;1mSQL (0.000097)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000064)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 22:37:20) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Redirected to http://test.host/entries/1012
+Completed in 0.00053 (1900 reqs/sec) | DB: 0.00016 (30%) | 302 Found [http://test.host/entries?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000070)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000094)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#edit (for 0.0.0.0 at 2008-10-23 22:37:20) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"entries"}
+Rendering entries/edit
+Completed in 0.00041 (2451 reqs/sec) | Rendering: 0.00016 (39%) | DB: 0.00016 (40%) | 200 OK [http://test.host/entries/37/edit]
+  [4;35;1mSQL (0.000089)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000084)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#new (for 0.0.0.0 at 2008-10-23 22:37:20) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"entries"}
+Rendering entries/new
+Completed in 0.00051 (1952 reqs/sec) | Rendering: 0.00013 (25%) | DB: 0.00017 (33%) | 200 OK [http://test.host/entries/new]
+  [4;35;1mSQL (0.000072)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000108)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#show (for 0.0.0.0 at 2008-10-23 22:37:20) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"entries"}
+Completed in 0.00052 (1933 reqs/sec) | Rendering: 0.00008 (16%) | DB: 0.00018 (34%) | 200 OK [http://test.host/entries/37]
+  [4;35;1mSQL (0.000096)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000106)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#show (for 0.0.0.0 at 2008-10-23 22:37:20) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"entries"}
+Rendering entries/show
+Completed in 0.00067 (1501 reqs/sec) | Rendering: 0.00017 (25%) | DB: 0.00020 (30%) | 200 OK [http://test.host/entries/37]
+  [4;35;1mSQL (0.000096)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000098)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#index (for 0.0.0.0 at 2008-10-23 22:37:20) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"entries"}
+Completed in 0.00049 (2045 reqs/sec) | Rendering: 0.00008 (16%) | DB: 0.00019 (39%) | 200 OK [http://test.host/entries]
+  [4;35;1mSQL (0.000076)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000084)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#index (for 0.0.0.0 at 2008-10-23 22:37:20) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"entries"}
+Rendering entries/index
+Completed in 0.00055 (1828 reqs/sec) | Rendering: 0.00014 (24%) | DB: 0.00016 (29%) | 200 OK [http://test.host/entries]
+  [4;35;1mSQL (0.000081)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000086)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001484)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.000080)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000084)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000086)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000066)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000069)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000065)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000065)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000131)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000073)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000202)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000069)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000053)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.002660)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.000093)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000075)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000079)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000071)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000447)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000340)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000072)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000201)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000070)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000058)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001895)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.000094)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000077)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000073)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000104)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000065)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000071)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000108)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000219)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000078)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000055)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.048495)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.003137)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000193)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 99999) LIMIT 1[0m
+  [4;36;1mSQL (0.000136)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000069)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000206)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000087)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000064)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000201)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000083)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000061)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000182)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000081)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000248)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000305)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000084)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001473)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.001469)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000186)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 99999) LIMIT 1[0m
+  [4;36;1mSQL (0.000129)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000073)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000175)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000195)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000075)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000206)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000077)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000065)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000158)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000073)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000569)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000083)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000064)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.003124)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.001339)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000224)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 99999) LIMIT 1[0m
+  [4;36;1mSQL (0.000111)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000073)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000192)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000070)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000064)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000132)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000064)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000063)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000143)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000102)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.001733)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000106)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000067)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.003485)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.001500)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000182)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 99999) LIMIT 1[0m
+  [4;36;1mSQL (0.000106)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000073)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000170)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000097)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000074)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000251)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000170)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000073)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000071)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000210)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000070)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000052)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000085)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000069)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000064)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000080)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000063)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000056)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000071)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000072)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000074)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000065)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000075)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000059)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000104)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000113)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000074)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000075)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000074)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000059)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000064)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000106)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000066)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000056)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000081)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000077)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000216)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#destroy (for 0.0.0.0 at 2008-10-23 22:59:21) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"entries"}
+Redirected to http://test.host/entries
+Completed in 0.00262 (381 reqs/sec) | DB: 0.00240 (91%) | 302 Found [http://test.host/entries/1]
+  [4;35;1mSQL (0.000110)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000403)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#destroy (for 0.0.0.0 at 2008-10-23 22:59:21) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"37", "controller"=>"entries"}
+Redirected to http://test.host/entries
+Completed in 0.00041 (2449 reqs/sec) | DB: 0.00051 (125%) | 302 Found [http://test.host/entries/37]
+  [4;35;1mSQL (0.000122)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000098)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:59:21) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Rendering entries/edit
+Completed in 0.00063 (1594 reqs/sec) | Rendering: 0.00014 (22%) | DB: 0.00022 (35%) | 200 OK [http://test.host/entries/1]
+  [4;35;1mSQL (0.000258)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000153)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:59:21) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Rendering entries/edit
+Completed in 0.00059 (1706 reqs/sec) | Rendering: 0.00014 (23%) | DB: 0.00041 (70%) | 200 OK [http://test.host/entries/1]
+  [4;35;1mSQL (0.000084)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000070)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:59:21) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Rendering entries/edit
+Completed in 0.00058 (1738 reqs/sec) | Rendering: 0.00013 (22%) | DB: 0.00015 (26%) | 200 OK [http://test.host/entries/37?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000079)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000109)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:59:21) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Redirected to http://test.host/entries/1006
+Completed in 0.00068 (1459 reqs/sec) | DB: 0.00019 (27%) | 302 Found [http://test.host/entries/1]
+  [4;35;1mSQL (0.000109)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000318)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:59:21) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Redirected to http://test.host/entries/1007
+Completed in 0.00059 (1689 reqs/sec) | DB: 0.00043 (72%) | 302 Found [http://test.host/entries/1]
+  [4;35;1mSQL (0.000095)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000066)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 22:59:21) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Rendering entries/edit
+Completed in 0.00062 (1620 reqs/sec) | Rendering: 0.00014 (23%) | DB: 0.00016 (26%) | 200 OK [http://test.host/entries/37?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000092)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000112)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 22:59:21) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{}}
+Rendering entries/new
+Completed in 0.00066 (1510 reqs/sec) | Rendering: 0.00017 (26%) | DB: 0.00020 (30%) | 200 OK [http://test.host/entries?]
+  [4;35;1mSQL (0.000100)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000072)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 22:59:21) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Rendering entries/new
+Completed in 0.00069 (1438 reqs/sec) | Rendering: 0.00023 (33%) | DB: 0.00017 (24%) | 200 OK [http://test.host/entries?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000113)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000088)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 22:59:21) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{}}
+Redirected to http://test.host/entries/1011
+Completed in 0.00057 (1769 reqs/sec) | DB: 0.00020 (35%) | 302 Found [http://test.host/entries?]
+  [4;35;1mSQL (0.000092)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000078)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 22:59:21) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Redirected to http://test.host/entries/1012
+Completed in 0.00053 (1893 reqs/sec) | DB: 0.00017 (32%) | 302 Found [http://test.host/entries?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000077)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000111)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#edit (for 0.0.0.0 at 2008-10-23 22:59:21) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"entries"}
+Rendering entries/edit
+Completed in 0.00050 (1987 reqs/sec) | Rendering: 0.00022 (44%) | DB: 0.00019 (37%) | 200 OK [http://test.host/entries/37/edit]
+  [4;35;1mSQL (0.000090)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000099)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#new (for 0.0.0.0 at 2008-10-23 22:59:21) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"entries"}
+Rendering entries/new
+Completed in 0.00052 (1931 reqs/sec) | Rendering: 0.00013 (25%) | DB: 0.00019 (36%) | 200 OK [http://test.host/entries/new]
+  [4;35;1mSQL (0.000075)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000130)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#show (for 0.0.0.0 at 2008-10-23 22:59:21) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"entries"}
+Completed in 0.00053 (1875 reqs/sec) | Rendering: 0.00009 (16%) | DB: 0.00021 (38%) | 200 OK [http://test.host/entries/37]
+  [4;35;1mSQL (0.000093)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000087)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#show (for 0.0.0.0 at 2008-10-23 22:59:21) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"entries"}
+Rendering entries/show
+Completed in 0.00062 (1602 reqs/sec) | Rendering: 0.00015 (24%) | DB: 0.00018 (28%) | 200 OK [http://test.host/entries/37]
+  [4;35;1mSQL (0.000107)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000106)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#index (for 0.0.0.0 at 2008-10-23 22:59:21) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"entries"}
+Completed in 0.00054 (1851 reqs/sec) | Rendering: 0.00008 (15%) | DB: 0.00021 (39%) | 200 OK [http://test.host/entries]
+  [4;35;1mSQL (0.000096)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000088)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#index (for 0.0.0.0 at 2008-10-23 22:59:21) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"entries"}
+Rendering entries/index
+Completed in 0.00052 (1930 reqs/sec) | Rendering: 0.00014 (26%) | DB: 0.00018 (35%) | 200 OK [http://test.host/entries]
+  [4;35;1mSQL (0.000076)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000118)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001454)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.001425)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000258)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 99999) LIMIT 1[0m
+  [4;36;1mSQL (0.000090)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000069)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000170)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000113)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000069)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000253)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000081)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000058)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000073)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000116)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000064)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000198)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000069)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000080)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001375)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.001453)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000173)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000103)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000074)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.002510)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 99999) LIMIT 1[0m
+  [4;35;1mSQL (0.000108)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000067)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000182)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000083)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000066)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000158)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000088)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000064)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000063)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000229)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000082)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000062)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.002808)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.001679)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000231)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000206)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000319)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000358)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 99999) LIMIT 1[0m
+  [4;35;1mSQL (0.000134)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000382)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000209)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000087)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000065)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000161)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000087)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000315)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000066)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000205)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000070)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000052)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001320)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.001249)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000197)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000095)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000080)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000364)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 99999) LIMIT 1[0m
+  [4;35;1mSQL (0.000076)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000075)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000148)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000069)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000089)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000146)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000066)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000063)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000064)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000221)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000080)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000074)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001515)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.001371)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000190)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000108)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000801)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000243)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 99999) LIMIT 1[0m
+  [4;35;1mSQL (0.000113)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000063)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000207)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000097)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000372)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000217)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000074)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000061)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000076)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000240)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000152)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001810)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.001478)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000209)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000106)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000064)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000168)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 99999) LIMIT 1[0m
+  [4;35;1mSQL (0.000088)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000158)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000070)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000063)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000140)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000068)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000073)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000068)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000201)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000070)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000070)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001388)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.001494)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000215)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000095)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000073)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.003435)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 99999) LIMIT 1[0m
+  [4;35;1mSQL (0.000121)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000072)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000199)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000069)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000057)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000138)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000088)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000067)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000063)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000233)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000081)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000063)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.002587)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.009754)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000855)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000160)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000066)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000165)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 99999) LIMIT 1[0m
+  [4;35;1mSQL (0.000098)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000063)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000165)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000086)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000062)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000145)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000083)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000104)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000069)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000197)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000070)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000052)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.002513)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.001569)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000218)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000107)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000876)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000301)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 99999) LIMIT 1[0m
+  [4;35;1mSQL (0.000086)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000096)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000165)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000071)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000065)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000178)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000091)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000067)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000056)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000238)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000072)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000053)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001556)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.001523)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000190)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000096)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000073)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000232)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 99999) LIMIT 1[0m
+  [4;35;1mSQL (0.000130)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000088)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000185)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000071)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000063)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000203)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000107)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000143)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000061)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000250)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000081)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000586)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.003644)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.001301)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000223)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000105)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000065)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000185)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 99999) LIMIT 1[0m
+  [4;35;1mSQL (0.000235)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000137)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000203)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000078)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000074)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000153)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000069)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000087)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000063)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000200)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000068)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000054)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001420)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.001446)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000180)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000116)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000072)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000267)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 99999) LIMIT 1[0m
+  [4;35;1mSQL (0.000108)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000074)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000174)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000073)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000063)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000146)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000070)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000090)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000061)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000299)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000086)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000064)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001691)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.001840)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000204)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000123)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000075)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000177)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 99999) LIMIT 1[0m
+  [4;35;1mSQL (0.000096)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000061)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000153)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000098)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000077)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000213)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000079)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000075)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000071)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000199)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000070)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000051)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.002454)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.001289)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000207)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000577)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000080)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000354)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 99999) LIMIT 1[0m
+  [4;35;1mSQL (0.000084)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000063)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000144)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000077)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000069)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000190)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000089)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000084)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000072)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000241)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000084)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000065)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001429)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.001917)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000877)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000204)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000427)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000320)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 99999) LIMIT 1[0m
+  [4;35;1mSQL (0.000135)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000164)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000402)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000201)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000184)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000261)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000102)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000127)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000090)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000199)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000092)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000067)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001459)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.001282)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000184)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000094)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000073)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000238)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 99999) LIMIT 1[0m
+  [4;35;1mSQL (0.000094)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000260)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000259)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000145)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000104)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000184)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000071)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000073)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000060)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000230)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000084)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000078)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001393)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.001477)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000254)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000108)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000071)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000217)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 99999) LIMIT 1[0m
+  [4;35;1mSQL (0.000079)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000066)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000137)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000079)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000065)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000149)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000088)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000068)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000069)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000197)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000070)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000052)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001425)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.001497)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000175)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000109)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000075)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000241)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 99999) LIMIT 1[0m
+  [4;35;1mSQL (0.000101)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000068)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000273)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000382)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000219)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000224)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000316)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000072)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000058)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000260)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000083)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000065)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.002205)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.001725)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000247)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000554)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000068)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000247)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 99999) LIMIT 1[0m
+  [4;35;1mSQL (0.000073)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000065)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000177)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000074)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000062)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000155)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000075)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000131)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000073)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000202)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000068)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000051)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000079)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000074)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000071)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000075)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000069)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000064)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000130)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000066)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000066)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000062)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000054)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000062)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000052)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000084)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000056)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000075)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000069)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000063)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000059)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000062)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000075)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000066)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000054)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000063)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000064)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000086)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#destroy (for 0.0.0.0 at 2008-10-23 23:31:01) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"entries"}
+Redirected to http://test.host/entries
+Completed in 0.00251 (399 reqs/sec) | DB: 0.00212 (84%) | 302 Found [http://test.host/entries/1]
+  [4;35;1mSQL (0.000094)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000068)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#destroy (for 0.0.0.0 at 2008-10-23 23:31:01) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"37", "controller"=>"entries"}
+Redirected to http://test.host/entries
+Completed in 0.00036 (2763 reqs/sec) | DB: 0.00016 (44%) | 302 Found [http://test.host/entries/37]
+  [4;35;1mSQL (0.000083)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000176)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 23:31:01) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Rendering entries/edit
+Completed in 0.00060 (1663 reqs/sec) | Rendering: 0.00014 (23%) | DB: 0.00026 (43%) | 200 OK [http://test.host/entries/1]
+  [4;35;1mSQL (0.000096)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000086)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 23:31:01) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Rendering entries/edit
+Completed in 0.00056 (1779 reqs/sec) | Rendering: 0.00013 (23%) | DB: 0.00018 (32%) | 200 OK [http://test.host/entries/1]
+  [4;35;1mSQL (0.000068)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000065)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 23:31:01) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Rendering entries/edit
+Completed in 0.00063 (1576 reqs/sec) | Rendering: 0.00017 (26%) | DB: 0.00013 (20%) | 200 OK [http://test.host/entries/37?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000093)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000089)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 23:31:01) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Redirected to http://test.host/entries/1006
+Completed in 0.00075 (1337 reqs/sec) | DB: 0.00018 (24%) | 302 Found [http://test.host/entries/1]
+  [4;35;1mSQL (0.000088)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000082)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 23:31:01) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Redirected to http://test.host/entries/1007
+Completed in 0.00055 (1808 reqs/sec) | DB: 0.00017 (30%) | 302 Found [http://test.host/entries/1]
+  [4;35;1mSQL (0.000098)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000068)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 23:31:01) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Rendering entries/edit
+Completed in 0.00057 (1744 reqs/sec) | Rendering: 0.00014 (23%) | DB: 0.00017 (28%) | 200 OK [http://test.host/entries/37?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000081)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000093)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 23:31:01) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{}}
+Rendering entries/new
+Completed in 0.00062 (1615 reqs/sec) | Rendering: 0.00013 (21%) | DB: 0.00017 (28%) | 200 OK [http://test.host/entries?]
+  [4;35;1mSQL (0.000102)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000065)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 23:31:01) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Rendering entries/new
+Completed in 0.00054 (1859 reqs/sec) | Rendering: 0.00013 (23%) | DB: 0.00017 (31%) | 200 OK [http://test.host/entries?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000077)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000106)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 23:31:01) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{}}
+Redirected to http://test.host/entries/1011
+Completed in 0.00058 (1730 reqs/sec) | DB: 0.00018 (31%) | 302 Found [http://test.host/entries?]
+  [4;35;1mSQL (0.000082)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000091)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 23:31:01) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Redirected to http://test.host/entries/1012
+Completed in 0.00052 (1926 reqs/sec) | DB: 0.00017 (33%) | 302 Found [http://test.host/entries?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000076)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000100)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#edit (for 0.0.0.0 at 2008-10-23 23:31:01) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"entries"}
+Rendering entries/edit
+Completed in 0.00038 (2618 reqs/sec) | Rendering: 0.00016 (41%) | DB: 0.00018 (46%) | 200 OK [http://test.host/entries/37/edit]
+  [4;35;1mSQL (0.000075)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000106)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#new (for 0.0.0.0 at 2008-10-23 23:31:01) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"entries"}
+Rendering entries/new
+Completed in 0.00056 (1786 reqs/sec) | Rendering: 0.00014 (24%) | DB: 0.00018 (32%) | 200 OK [http://test.host/entries/new]
+  [4;35;1mSQL (0.000105)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000081)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#show (for 0.0.0.0 at 2008-10-23 23:31:01) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"entries"}
+Completed in 0.00051 (1949 reqs/sec) | Rendering: 0.00009 (16%) | DB: 0.00019 (36%) | 200 OK [http://test.host/entries/37]
+  [4;35;1mSQL (0.000080)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000081)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#show (for 0.0.0.0 at 2008-10-23 23:31:01) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"entries"}
+Rendering entries/show
+Completed in 0.00050 (2000 reqs/sec) | Rendering: 0.00013 (25%) | DB: 0.00016 (32%) | 200 OK [http://test.host/entries/37]
+  [4;35;1mSQL (0.000075)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000133)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#index (for 0.0.0.0 at 2008-10-23 23:31:01) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"entries"}
+Completed in 0.00050 (1984 reqs/sec) | Rendering: 0.00008 (16%) | DB: 0.00021 (41%) | 200 OK [http://test.host/entries]
+  [4;35;1mSQL (0.000107)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000118)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#index (for 0.0.0.0 at 2008-10-23 23:31:01) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"entries"}
+Rendering entries/index
+Completed in 0.00052 (1930 reqs/sec) | Rendering: 0.00013 (25%) | DB: 0.00023 (43%) | 200 OK [http://test.host/entries]
+  [4;35;1mSQL (0.000105)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000092)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.002706)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.001677)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000182)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000626)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.002715)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000218)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 99999) LIMIT 1[0m
+  [4;35;1mSQL (0.000088)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000092)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000147)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000068)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000084)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000146)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000077)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000084)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000076)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000100)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000088)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000238)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000084)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000065)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.002585)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.001529)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000756)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000097)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000073)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000172)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 99999) LIMIT 1[0m
+  [4;35;1mSQL (0.000168)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000274)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000782)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000117)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000067)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000183)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000090)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000065)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000057)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000202)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000069)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000052)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001433)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.001479)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000179)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000130)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.001627)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000237)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 99999) LIMIT 1[0m
+  [4;35;1mSQL (0.000091)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000160)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000075)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000065)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000136)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000076)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000065)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000072)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000229)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000079)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000063)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000097)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000579)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000236)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000109)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.001599)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000319)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000068)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000244)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000076)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000255)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000068)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000274)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000066)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000104)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000077)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000520)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000074)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.002055)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000255)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000346)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000152)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000416)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000319)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000281)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000071)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.001033)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#destroy (for 0.0.0.0 at 2008-10-23 23:32:09) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"entries"}
+Redirected to http://test.host/entries
+Completed in 0.00266 (376 reqs/sec) | DB: 0.01006 (379%) | 302 Found [http://test.host/entries/1]
+  [4;35;1mSQL (0.003391)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.002823)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#destroy (for 0.0.0.0 at 2008-10-23 23:32:09) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"37", "controller"=>"entries"}
+Redirected to http://test.host/entries
+Completed in 0.00041 (2464 reqs/sec) | DB: 0.00621 (1531%) | 302 Found [http://test.host/entries/37]
+  [4;35;1mSQL (0.000131)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000305)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 23:32:09) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Rendering entries/edit
+Completed in 0.00061 (1639 reqs/sec) | Rendering: 0.00014 (23%) | DB: 0.00044 (71%) | 200 OK [http://test.host/entries/1]
+  [4;35;1mSQL (0.000104)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000091)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 23:32:09) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Rendering entries/edit
+Completed in 0.00061 (1633 reqs/sec) | Rendering: 0.00014 (23%) | DB: 0.00020 (31%) | 200 OK [http://test.host/entries/1]
+  [4;35;1mSQL (0.000083)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000065)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 23:32:09) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Rendering entries/edit
+Completed in 0.00060 (1669 reqs/sec) | Rendering: 0.00015 (24%) | DB: 0.00015 (24%) | 200 OK [http://test.host/entries/37?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000116)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000105)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 23:32:09) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Redirected to http://test.host/entries/1006
+Completed in 0.00070 (1420 reqs/sec) | DB: 0.00022 (31%) | 302 Found [http://test.host/entries/1]
+  [4;35;1mSQL (0.000101)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000374)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 23:32:09) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Redirected to http://test.host/entries/1007
+Completed in 0.00056 (1776 reqs/sec) | DB: 0.00047 (84%) | 302 Found [http://test.host/entries/1]
+  [4;35;1mSQL (0.000090)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000207)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-23 23:32:09) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Rendering entries/edit
+Completed in 0.00067 (1501 reqs/sec) | Rendering: 0.00015 (22%) | DB: 0.00030 (44%) | 200 OK [http://test.host/entries/37?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000097)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000114)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 23:32:09) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{}}
+Rendering entries/new
+Completed in 0.00127 (786 reqs/sec) | Rendering: 0.00038 (30%) | DB: 0.00021 (16%) | 200 OK [http://test.host/entries?]
+  [4;35;1mSQL (0.000305)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000136)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 23:32:09) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Rendering entries/new
+Completed in 0.00063 (1579 reqs/sec) | Rendering: 0.00015 (23%) | DB: 0.00044 (69%) | 200 OK [http://test.host/entries?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000097)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000095)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 23:32:09) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{}}
+Redirected to http://test.host/entries/1011
+Completed in 0.00056 (1773 reqs/sec) | DB: 0.00019 (34%) | 302 Found [http://test.host/entries?]
+  [4;35;1mSQL (0.000086)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000090)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-23 23:32:09) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Redirected to http://test.host/entries/1012
+Completed in 0.00061 (1628 reqs/sec) | DB: 0.00018 (28%) | 302 Found [http://test.host/entries?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000103)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000923)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#edit (for 0.0.0.0 at 2008-10-23 23:32:09) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"entries"}
+Rendering entries/edit
+Completed in 0.00040 (2511 reqs/sec) | Rendering: 0.00016 (41%) | DB: 0.00103 (257%) | 200 OK [http://test.host/entries/37/edit]
+  [4;35;1mSQL (0.000121)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000112)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#new (for 0.0.0.0 at 2008-10-23 23:32:09) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"entries"}
+Rendering entries/new
+Completed in 0.00054 (1858 reqs/sec) | Rendering: 0.00014 (25%) | DB: 0.00023 (43%) | 200 OK [http://test.host/entries/new]
+  [4;35;1mSQL (0.000090)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000279)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#show (for 0.0.0.0 at 2008-10-23 23:32:09) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"entries"}
+Completed in 0.00056 (1779 reqs/sec) | Rendering: 0.00009 (16%) | DB: 0.00037 (65%) | 200 OK [http://test.host/entries/37]
+  [4;35;1mSQL (0.000192)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000091)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#show (for 0.0.0.0 at 2008-10-23 23:32:09) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"entries"}
+Rendering entries/show
+Completed in 0.00059 (1691 reqs/sec) | Rendering: 0.00015 (26%) | DB: 0.00028 (47%) | 200 OK [http://test.host/entries/37]
+  [4;35;1mSQL (0.000119)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000142)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#index (for 0.0.0.0 at 2008-10-23 23:32:09) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"entries"}
+Completed in 0.00053 (1879 reqs/sec) | Rendering: 0.00008 (15%) | DB: 0.00026 (49%) | 200 OK [http://test.host/entries]
+  [4;35;1mSQL (0.000116)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000121)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#index (for 0.0.0.0 at 2008-10-23 23:32:09) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"entries"}
+Rendering entries/index
+Completed in 0.00064 (1552 reqs/sec) | Rendering: 0.00015 (22%) | DB: 0.00024 (36%) | 200 OK [http://test.host/entries]
+  [4;35;1mSQL (0.000099)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000094)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001526)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.001475)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000238)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000105)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000406)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000263)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 99999) LIMIT 1[0m
+  [4;35;1mSQL (0.000102)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000080)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000215)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000074)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000066)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000152)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000067)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000063)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000080)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000112)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000071)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000221)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000162)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000056)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001880)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.001496)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000188)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000113)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000116)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000271)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000097)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000075)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000170)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 99999) LIMIT 1[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000063)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000128)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000065)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000062)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000167)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000069)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000122)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000054)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000210)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000159)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000055)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001496)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.001699)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000200)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000098)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000091)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000845)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000096)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000087)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000165)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 99999) LIMIT 1[0m
+  [4;36;1mSQL (0.000083)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000065)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000141)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000066)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000065)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000135)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000112)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000102)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000072)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000200)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000069)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000051)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.002542)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.001303)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000202)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000105)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000328)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000248)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000088)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000169)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 99999) LIMIT 1[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000067)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000157)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000068)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000063)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000135)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000067)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000075)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000067)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000201)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000067)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000052)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.059189)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.001319)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000194)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000082)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000078)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000199)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000093)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000066)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000160)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 99999) LIMIT 1[0m
+  [4;36;1mSQL (0.000100)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000067)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000287)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000089)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000065)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000184)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000073)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000064)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000069)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000199)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000066)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000052)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.002638)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.001433)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000263)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000513)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000263)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000615)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000112)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000078)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000206)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 99999) LIMIT 1[0m
+  [4;36;1mSQL (0.000079)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000064)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000153)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000091)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000064)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000139)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000075)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000066)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000055)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000201)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000069)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000052)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001417)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.001457)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000209)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000099)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000090)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000268)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000090)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000155)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000180)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 99999) LIMIT 1[0m
+  [4;36;1mSQL (0.000091)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000066)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000139)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000067)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000067)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000154)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000074)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000066)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000054)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000229)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000073)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000053)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001479)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.001421)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000205)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000142)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000246)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000451)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000090)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000107)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000156)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 99999) LIMIT 1[0m
+  [4;36;1mSQL (0.000089)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000064)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000156)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000089)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000067)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000150)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000085)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000078)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000073)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000235)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000078)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000054)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001405)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Columns (0.002408)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000733)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000131)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000091)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000428)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000129)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000069)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000270)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 99999) LIMIT 1[0m
+  [4;36;1mSQL (0.000108)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000068)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000366)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.000105)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000066)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000209)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000110)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000177)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000096)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000211)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000181)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000056)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.014831)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.000091)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000078)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000069)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000064)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000090)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000078)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000059)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000076)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000064)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000061)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000060)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000210)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000070)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000054)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000102)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000074)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000071)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000069)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000063)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000062)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000053)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000061)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000083)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000061)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000062)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000061)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000053)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000097)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000056)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000095)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000065)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000062)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000055)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000061)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000080)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000061)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000060)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000060)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000053)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000091)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#destroy (for 0.0.0.0 at 2008-10-24 20:25:53) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"entries"}
+Redirected to http://test.host/entries
+Completed in 0.00254 (393 reqs/sec) | DB: 0.00210 (82%) | 302 Found [http://test.host/entries/1]
+  [4;35;1mSQL (0.000097)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000088)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#destroy (for 0.0.0.0 at 2008-10-24 20:25:53) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"37", "controller"=>"entries"}
+Redirected to http://test.host/entries
+Completed in 0.00036 (2755 reqs/sec) | DB: 0.00019 (51%) | 302 Found [http://test.host/entries/37]
+  [4;35;1mSQL (0.000075)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000239)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-24 20:25:53) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Rendering entries/edit
+Completed in 0.00060 (1653 reqs/sec) | Rendering: 0.00014 (23%) | DB: 0.00031 (51%) | 200 OK [http://test.host/entries/1]
+  [4;35;1mSQL (0.000088)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000088)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-24 20:25:53) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Rendering entries/edit
+Completed in 0.00056 (1785 reqs/sec) | Rendering: 0.00013 (22%) | DB: 0.00018 (31%) | 200 OK [http://test.host/entries/1]
+  [4;35;1mSQL (0.000074)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000063)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-24 20:25:53) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Rendering entries/edit
+Completed in 0.00058 (1729 reqs/sec) | Rendering: 0.00014 (24%) | DB: 0.00014 (23%) | 200 OK [http://test.host/entries/37?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000080)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000141)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-24 20:25:53) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Redirected to http://test.host/entries/1006
+Completed in 0.00068 (1475 reqs/sec) | DB: 0.00022 (32%) | 302 Found [http://test.host/entries/1]
+  [4;35;1mSQL (0.000085)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000088)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-24 20:25:53) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Redirected to http://test.host/entries/1007
+Completed in 0.00056 (1772 reqs/sec) | DB: 0.00017 (30%) | 302 Found [http://test.host/entries/1]
+  [4;35;1mSQL (0.000082)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000066)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-24 20:25:53) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Rendering entries/edit
+Completed in 0.00058 (1730 reqs/sec) | Rendering: 0.00014 (23%) | DB: 0.00015 (25%) | 200 OK [http://test.host/entries/37?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000090)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000089)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-24 20:25:53) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{}}
+Rendering entries/new
+Completed in 0.00058 (1736 reqs/sec) | Rendering: 0.00014 (23%) | DB: 0.00018 (31%) | 200 OK [http://test.host/entries?]
+  [4;35;1mSQL (0.000090)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000079)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-24 20:25:53) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Rendering entries/new
+Completed in 0.00054 (1837 reqs/sec) | Rendering: 0.00013 (23%) | DB: 0.00017 (31%) | 200 OK [http://test.host/entries?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000078)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000127)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-24 20:25:53) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{}}
+Redirected to http://test.host/entries/1011
+Completed in 0.00056 (1795 reqs/sec) | DB: 0.00021 (36%) | 302 Found [http://test.host/entries?]
+  [4;35;1mSQL (0.000095)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000085)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-24 20:25:53) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Redirected to http://test.host/entries/1012
+Completed in 0.00053 (1897 reqs/sec) | DB: 0.00018 (34%) | 302 Found [http://test.host/entries?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000078)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000102)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#edit (for 0.0.0.0 at 2008-10-24 20:25:53) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"entries"}
+Rendering entries/edit
+Completed in 0.00040 (2481 reqs/sec) | Rendering: 0.00016 (39%) | DB: 0.00018 (44%) | 200 OK [http://test.host/entries/37/edit]
+  [4;35;1mSQL (0.000079)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000099)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#new (for 0.0.0.0 at 2008-10-24 20:25:53) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"entries"}
+Rendering entries/new
+Completed in 0.00052 (1919 reqs/sec) | Rendering: 0.00013 (25%) | DB: 0.00018 (34%) | 200 OK [http://test.host/entries/new]
+  [4;35;1mSQL (0.000074)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000082)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#show (for 0.0.0.0 at 2008-10-24 20:25:53) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"entries"}
+Completed in 0.00051 (1957 reqs/sec) | Rendering: 0.00008 (16%) | DB: 0.00016 (30%) | 200 OK [http://test.host/entries/37]
+  [4;35;1mSQL (0.000079)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000105)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#show (for 0.0.0.0 at 2008-10-24 20:25:53) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"entries"}
+Rendering entries/show
+Completed in 0.00052 (1938 reqs/sec) | Rendering: 0.00013 (25%) | DB: 0.00018 (35%) | 200 OK [http://test.host/entries/37]
+  [4;35;1mSQL (0.000067)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000111)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#index (for 0.0.0.0 at 2008-10-24 20:25:53) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"entries"}
+Completed in 0.00050 (1992 reqs/sec) | Rendering: 0.00008 (15%) | DB: 0.00018 (35%) | 200 OK [http://test.host/entries]
+  [4;35;1mSQL (0.000081)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000084)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#index (for 0.0.0.0 at 2008-10-24 20:25:53) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"entries"}
+Rendering entries/index
+Completed in 0.00066 (1514 reqs/sec) | Rendering: 0.00018 (26%) | DB: 0.00016 (24%) | 200 OK [http://test.host/entries]
+  [4;35;1mSQL (0.000102)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000093)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001532)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.000080)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000084)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000060)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000068)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000079)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000077)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000057)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000064)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000054)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000063)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000065)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000101)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000055)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000240)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000083)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000055)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.002533)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.000082)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000118)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000067)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000065)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000069)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000090)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000058)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000411)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000080)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000200)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000071)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000202)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000069)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000052)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001395)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Load (0.009438)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mUser Columns (0.001538)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.022803)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` IS NULL) LIMIT 1[0m
+  [4;35;1mSQL (0.000123)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000079)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000188)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mUser Load (0.000125)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` IS NULL) LIMIT 1[0m
+  [4;35;1mSQL (0.000075)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000067)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000119)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000068)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000067)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000117)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mUser Load (0.000105)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` IS NULL) LIMIT 1[0m
+  [4;36;1mSQL (0.000080)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000065)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000116)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mUser Load (0.000099)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` IS NULL) LIMIT 1[0m
+  [4;36;1mSQL (0.000065)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000071)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000143)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000075)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000203)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000069)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000052)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.002547)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Load (0.000163)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000128)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000075)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000182)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000099)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000088)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000170)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000095)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000081)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000212)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000084)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000077)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000133)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000070)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000065)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000109)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000079)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000203)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000069)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000052)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001388)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Load (0.000277)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000135)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000075)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000171)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000086)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000085)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000126)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000087)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000086)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000132)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000095)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000064)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000124)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000083)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000187)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000149)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000072)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000201)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000069)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000054)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.002533)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Load (0.000159)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000240)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000088)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000239)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000132)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000068)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000213)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000084)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000077)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000162)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000074)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000063)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000114)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000075)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000079)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000120)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000090)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000243)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000085)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000064)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.002201)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Load (0.000216)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000132)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000079)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000190)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.003160)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000092)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000200)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000095)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000066)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000135)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000067)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000063)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000123)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000077)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000073)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000125)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000071)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000205)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000069)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000051)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001342)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Load (0.000162)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000151)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000891)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000273)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000107)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000088)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000146)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000076)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000127)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000075)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000229)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000132)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000069)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000153)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000072)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000240)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000190)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000109)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001592)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Load (0.000166)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000127)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000077)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000175)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000106)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000186)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000242)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000128)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000079)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000141)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000071)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000065)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000117)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000066)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000077)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000126)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000068)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000206)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000069)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000052)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.002512)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Load (0.000191)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000136)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000083)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000213)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000634)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000072)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000172)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000087)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000064)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000167)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000091)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000063)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000123)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000075)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000062)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000136)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000079)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000207)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000070)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000054)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.002612)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Load (0.000162)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000149)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000664)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000183)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000220)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000078)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000164)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000074)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000072)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000190)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000081)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000078)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000122)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000077)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000063)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000118)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000064)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000251)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000119)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000071)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.002711)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Load (0.000173)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000130)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000077)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000160)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000149)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000072)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000262)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000099)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000089)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000143)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000100)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000185)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000151)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000118)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000345)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000329)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000211)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000069)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000084)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.002654)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Load (0.000193)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000144)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000206)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000173)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000266)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000078)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000164)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000094)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000065)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000133)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000079)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000062)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000116)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000080)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000064)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000120)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000078)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000222)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000081)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000055)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.046581)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Load (0.000185)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000130)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000178)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000092)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000328)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000163)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000113)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000081)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000146)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000080)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000085)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000131)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000066)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000083)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000116)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000066)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000203)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000069)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000051)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.002609)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Load (0.000161)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000115)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000077)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000176)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000306)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000364)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000176)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000142)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000252)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000338)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000098)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000068)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000140)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000093)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000073)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000142)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000068)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000215)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000070)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000052)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.002681)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Load (0.000168)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000148)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000088)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000161)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000188)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000217)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000168)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000089)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000066)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000132)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000082)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000077)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000127)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000076)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000066)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000122)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000077)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000208)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000070)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000054)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.002705)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Load (0.000173)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000122)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000073)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000190)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000362)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000199)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000503)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000106)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000077)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000144)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000086)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000079)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000121)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000075)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000234)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000218)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000071)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000083)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000074)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000074)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000102)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000103)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000064)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000073)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000063)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000054)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000062)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000065)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000063)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000054)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000124)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000070)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000067)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000066)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000065)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000055)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000064)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000066)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000063)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000083)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000288)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000083)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000104)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#destroy (for 0.0.0.0 at 2008-10-24 20:39:07) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"entries"}
+Redirected to http://test.host/entries
+Completed in 0.00254 (393 reqs/sec) | DB: 0.00266 (104%) | 302 Found [http://test.host/entries/1]
+  [4;35;1mSQL (0.000093)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000066)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#destroy (for 0.0.0.0 at 2008-10-24 20:39:07) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"37", "controller"=>"entries"}
+Redirected to http://test.host/entries
+Completed in 0.00036 (2792 reqs/sec) | DB: 0.00016 (44%) | 302 Found [http://test.host/entries/37]
+  [4;35;1mSQL (0.000070)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000126)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-24 20:39:07) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Rendering entries/edit
+Completed in 0.00063 (1592 reqs/sec) | Rendering: 0.00015 (23%) | DB: 0.00020 (31%) | 200 OK [http://test.host/entries/1]
+  [4;35;1mSQL (0.000105)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000077)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-24 20:39:07) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Rendering entries/edit
+Completed in 0.00059 (1703 reqs/sec) | Rendering: 0.00013 (22%) | DB: 0.00018 (30%) | 200 OK [http://test.host/entries/1]
+  [4;35;1mSQL (0.000086)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000065)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-24 20:39:07) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Rendering entries/edit
+Completed in 0.00056 (1782 reqs/sec) | Rendering: 0.00013 (23%) | DB: 0.00015 (26%) | 200 OK [http://test.host/entries/37?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000080)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000132)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-24 20:39:07) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Redirected to http://test.host/entries/1006
+Completed in 0.00068 (1478 reqs/sec) | DB: 0.00021 (31%) | 302 Found [http://test.host/entries/1]
+  [4;35;1mSQL (0.000076)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000069)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-24 20:39:07) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"entries"}
+Redirected to http://test.host/entries/1007
+Completed in 0.00054 (1855 reqs/sec) | DB: 0.00014 (26%) | 302 Found [http://test.host/entries/1]
+  [4;35;1mSQL (0.000147)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000081)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#update (for 0.0.0.0 at 2008-10-24 20:39:07) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Rendering entries/edit
+Completed in 0.00067 (1501 reqs/sec) | Rendering: 0.00014 (21%) | DB: 0.00023 (34%) | 200 OK [http://test.host/entries/37?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000084)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000093)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-24 20:39:07) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{}}
+Rendering entries/new
+Completed in 0.00057 (1766 reqs/sec) | Rendering: 0.00014 (24%) | DB: 0.00018 (31%) | 200 OK [http://test.host/entries?]
+  [4;35;1mSQL (0.000082)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000081)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-24 20:39:07) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Rendering entries/new
+Completed in 0.00055 (1818 reqs/sec) | Rendering: 0.00013 (23%) | DB: 0.00016 (29%) | 200 OK [http://test.host/entries?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000090)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000129)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-24 20:39:07) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{}}
+Redirected to http://test.host/entries/1011
+Completed in 0.00058 (1723 reqs/sec) | DB: 0.00022 (37%) | 302 Found [http://test.host/entries?]
+  [4;35;1mSQL (0.000096)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000065)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#create (for 0.0.0.0 at 2008-10-24 20:39:07) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"entries", "entry"=>{"these"=>"params"}}
+Redirected to http://test.host/entries/1012
+Completed in 0.00056 (1801 reqs/sec) | DB: 0.00016 (29%) | 302 Found [http://test.host/entries?entry%5Bthese%5D=params]
+  [4;35;1mSQL (0.000099)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000097)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#edit (for 0.0.0.0 at 2008-10-24 20:39:07) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"entries"}
+Rendering entries/edit
+Completed in 0.00038 (2631 reqs/sec) | Rendering: 0.00016 (42%) | DB: 0.00020 (51%) | 200 OK [http://test.host/entries/37/edit]
+  [4;35;1mSQL (0.000068)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000115)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#new (for 0.0.0.0 at 2008-10-24 20:39:07) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"entries"}
+Rendering entries/new
+Completed in 0.00053 (1894 reqs/sec) | Rendering: 0.00014 (25%) | DB: 0.00018 (34%) | 200 OK [http://test.host/entries/new]
+  [4;35;1mSQL (0.000078)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000087)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#show (for 0.0.0.0 at 2008-10-24 20:39:07) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"entries"}
+Completed in 0.00051 (1976 reqs/sec) | Rendering: 0.00008 (16%) | DB: 0.00016 (32%) | 200 OK [http://test.host/entries/37]
+  [4;35;1mSQL (0.000121)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000108)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#show (for 0.0.0.0 at 2008-10-24 20:39:07) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"entries"}
+Rendering entries/show
+Completed in 0.00059 (1683 reqs/sec) | Rendering: 0.00015 (26%) | DB: 0.00023 (38%) | 200 OK [http://test.host/entries/37]
+  [4;35;1mSQL (0.000103)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000107)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#index (for 0.0.0.0 at 2008-10-24 20:39:07) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"entries"}
+Completed in 0.00051 (1976 reqs/sec) | Rendering: 0.00008 (16%) | DB: 0.00021 (41%) | 200 OK [http://test.host/entries]
+  [4;35;1mSQL (0.000083)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000083)[0m   [0;1mBEGIN[0m
+
+
+Processing EntriesController#index (for 0.0.0.0 at 2008-10-24 20:39:07) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"entries"}
+Rendering entries/index
+Completed in 0.00055 (1818 reqs/sec) | Rendering: 0.00016 (29%) | DB: 0.00017 (30%) | 200 OK [http://test.host/entries]
+  [4;35;1mSQL (0.000110)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000116)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001591)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Load (0.000178)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000116)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000063)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000150)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000082)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000063)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000117)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000083)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000205)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000130)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000097)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000110)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000134)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000067)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000108)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000056)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000210)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000071)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000059)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Columns (0.001421)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mUser Load (0.000169)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000114)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000073)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000151)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000083)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000076)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000157)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000125)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000064)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000126)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.000068)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000062)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000125)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.000079)[0m   [0mROLLBACK[0m
