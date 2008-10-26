@@ -1,0 +1,8 @@
+
+<% if not logged_in? %>
+  <p>Welcome to constimer. </p>
+  <p>You can <a href="/signup">signup here.</a></p>
+<% else %>
+  <p>Welcome <%= current_user.login %>.</p>
+  <p>Please find your entries and projects on the right navigation bar.</p>
+<% end %>

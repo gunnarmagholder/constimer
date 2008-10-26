@@ -407,3 +407,340 @@ Processing HomeController#index (for 127.0.0.1 at 2008-10-26 22:26:14) [GET]
 Rendering template within layouts/application
 Rendering home/index
 Completed in 0.06754 (14 reqs/sec) | Rendering: 0.06338 (93%) | DB: 0.07055 (104%) | 200 OK [http://127.0.0.1/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-26 22:32:13) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMmZlMzgyNTdlZGFiZmIxMWJjY2NmYzcxZjZhYjJj
+YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62498d41f4fd82047a4850a8db07424a99067a32
+  Parameters: {"action"=>"index", "controller"=>"home", "index"=>"index"}
+  [4;36;1mSQL (0.000341)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000087)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 0.02867 (34 reqs/sec) | Rendering: 0.02237 (78%) | DB: 0.00043 (1%) | 200 OK [http://127.0.0.1/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2008-10-26 22:32:17) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMmZlMzgyNTdlZGFiZmIxMWJjY2NmYzcxZjZhYjJj
+YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62498d41f4fd82047a4850a8db07424a99067a32
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 0.01113 (89 reqs/sec) | Rendering: 0.00873 (78%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/signup]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2008-10-26 22:32:32) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMmZlMzgyNTdlZGFiZmIxMWJjY2NmYzcxZjZhYjJj
+YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62498d41f4fd82047a4850a8db07424a99067a32
+  Parameters: {"user"=>{"password_confirmation"=>"x25a5250", "login"=>"gmagholder", "password"=>"x25a5250", "email"=>"gmagholder@mac.com"}, "commit"=>"Sign up", "authenticity_token"=>"71479ec1890f014ed446cce53b438290a7e04d9d", "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mUser Columns (0.304239)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.043334)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.124844)[0m   [0;1mSELECT `login` FROM `users` WHERE (LOWER(`users`.login) = 'gmagholder') [0m
+  [4;35;1mSQL (0.000279)[0m   [0mSELECT `email` FROM `users` WHERE (LOWER(`users`.email) = 'gmagholder@mac.com') [0m
+  [4;36;1mUser Create (0.179390)[0m   [0;1mINSERT INTO `users` (`salt`, `updated_at`, `activated_at`, `crypted_password`, `remember_token_expires_at`, `activation_code`, `remember_token`, `login`, `email`, `created_at`) VALUES('463ae9cdc866deaf336e206d61069b33891a01cc', '2008-10-26 21:32:33', NULL, '76cd0a0588caaf8046e0857b8db74d90bd31df6b', NULL, '39772ebe4c68c34e607dc56151edbd8af8fbda4a', NULL, 'gmagholder', 'gmagholder@mac.com', '2008-10-26 21:32:33')[0m
+Sent mail to gmagholder@mac.com
+
+Date: Sun, 26 Oct 2008 22:32:34 +0100
+From: Admin
+To: gmagholder@mac.com
+Subject: [http://127.0.0.1:3000] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: gmagholder
+  Password: x25a5250
+
+Visit this url to activate your account:
+
+  http://http://127.0.0.1:3000/activate/39772ebe4c68c34e607dc56151edbd8af8fbda4a
+  [4;35;1mSQL (0.018973)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 1.22798 (0 reqs/sec) | DB: 0.67106 (54%) | 302 Found [http://127.0.0.1/users]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-26 22:32:34) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiUyZmUzODI1
+N2VkYWJmYjExYmNjY2ZjNzFmNmFiMmNhNyIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiG1RoYW5rcyBm
+b3Igc2lnbmluZyB1cCEGOgpAdXNlZHsGOwlG--338f923d61f4078fb712edb0d80bcd3b7764f065
+  Parameters: {"action"=>"index", "controller"=>"home", "index"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (0.007280)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.048038)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.06555 (15 reqs/sec) | Rendering: 0.00732 (11%) | DB: 0.05532 (84%) | 200 OK [http://127.0.0.1/]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-10-26 22:32:49) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiUyZmUzODI1
+N2VkYWJmYjExYmNjY2ZjNzFmNmFiMmNhNyIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiG1RoYW5rcyBm
+b3Igc2lnbmluZyB1cCEGOgpAdXNlZHsGOwlU--3fe15eb9f6a00c4cb38004e53c5382fe7d530f3a
+  Parameters: {"action"=>"activate", "activation_code"=>"39772ebe4c68c34e607dc56151edbd8af8fbda4a", "controller"=>"users"}
+  [4;36;1mUser Columns (0.024606)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.003786)[0m   [0mSELECT * FROM `users` WHERE (`users`.`activation_code` = '39772ebe4c68c34e607dc56151edbd8af8fbda4a') LIMIT 1[0m
+  [4;36;1mSQL (0.009222)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.028175)[0m   [0mUPDATE `users` SET `activated_at` = '2008-10-26 21:32:49', `activation_code` = NULL, `updated_at` = '2008-10-26 21:32:49' WHERE `id` = 1[0m
+Sent mail to gmagholder@mac.com
+
+Date: Sun, 26 Oct 2008 22:32:49 +0100
+From: Admin
+To: gmagholder@mac.com
+Subject: [http://127.0.0.1:3000] Your account has been activated!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+gmagholder, your account has been activated.  You may now start adding your plugins:
+
+  http://http://127.0.0.1:3000/
+  [4;36;1mSQL (0.020975)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 0.31144 (3 reqs/sec) | DB: 0.08676 (27%) | 302 Found [http://127.0.0.1/activate/39772ebe4c68c34e607dc56151edbd8af8fbda4a]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-26 22:32:49) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiUyZmUzODI1
+N2VkYWJmYjExYmNjY2ZjNzFmNmFiMmNhNyIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiFVNpZ251cCBj
+b21wbGV0ZSEGOgpAdXNlZHsGOwlG--43191b4b25b89c430b651d9bc7bbbb56327121b9
+  Parameters: {"action"=>"index", "controller"=>"home", "index"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (0.009313)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.004313)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.01900 (52 reqs/sec) | Rendering: 0.00311 (16%) | DB: 0.01363 (71%) | 200 OK [http://127.0.0.1/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2008-10-26 22:32:54) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiUyZmUzODI1
+N2VkYWJmYjExYmNjY2ZjNzFmNmFiMmNhNyIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiFVNpZ251cCBj
+b21wbGV0ZSEGOgpAdXNlZHsGOwlU--905e1428682c1625ebc280fe14647e33d353df7d
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+  [4;35;1mUser Columns (0.011487)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001442)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.010132)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.005422)[0m   [0;1mCOMMIT[0m
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Redirected to http://127.0.0.1:3000/
+Completed in 0.05115 (19 reqs/sec) | DB: 0.02848 (55%) | 302 Found [http://127.0.0.1/logout]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-26 22:32:55) [GET]
+  Session ID: BAh7BzoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiHllvdSBoYXZlIGJlZW4gbG9n
+Z2VkIG91dC4GOgpAdXNlZHsGOwdG--5f6d6ec1d6916ca97562665a735945c10a8f4b1d
+  Parameters: {"action"=>"index", "controller"=>"home", "index"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 0.00403 (248 reqs/sec) | Rendering: 0.00178 (44%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-10-26 22:33:01) [POST]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMY3NyZl9pZCIlMzliZjU0ZDZmMWY3YmEyY2Mx
+MzRiZjQ3YzcwMzRkZDQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs
+YXNoOjpGbGFzaEhhc2h7BjoLbm90aWNlIh5Zb3UgaGF2ZSBiZWVuIGxvZ2dl
+ZCBvdXQuBjoKQHVzZWR7BjsIVA==--4a30a5787cf7b1b4b363f3a1017d795ee7e109c6
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"1bff97a4d2f62f21b94d5c735f667a10476bb8f5", "action"=>"create", "controller"=>"sessions", "password"=>"x25a5250", "login"=>"gmagholder"}
+  [4;35;1mUser Load (0.032211)[0m   [0mSELECT * FROM `users` WHERE (login = 'gmagholder' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mUser Columns (0.001532)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 0.03918 (25 reqs/sec) | DB: 0.03374 (86%) | 302 Found [http://127.0.0.1/session]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-26 22:33:01) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiUzOWJmNTRk
+NmYxZjdiYTJjYzEzNGJmNDdjNzAzNGRkNCIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiG0xvZ2dlZCBp
+biBzdWNjZXNzZnVsbHkGOgpAdXNlZHsGOwlG--32c379a63731299bd2f2ef875dbf100de9c4f6e1
+  Parameters: {"action"=>"index", "controller"=>"home", "index"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (0.031242)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.024887)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.06495 (15 reqs/sec) | Rendering: 0.00645 (9%) | DB: 0.05613 (86%) | 200 OK [http://127.0.0.1/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-26 22:34:32) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiUzOWJmNTRk
+NmYxZjdiYTJjYzEzNGJmNDdjNzAzNGRkNCIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiG0xvZ2dlZCBp
+biBzdWNjZXNzZnVsbHkGOgpAdXNlZHsGOwlU--732d904d6da7d5980bc08419598eeb82b0c5852b
+  Parameters: {"action"=>"index", "controller"=>"home", "index"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (0.017969)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.019058)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.04982 (20 reqs/sec) | Rendering: 0.01046 (21%) | DB: 0.03703 (74%) | 200 OK [http://127.0.0.1/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-26 22:34:50) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiUzOWJmNTRk
+NmYxZjdiYTJjYzEzNGJmNDdjNzAzNGRkNCIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--8669462ca9968bf0d03dc288496991892c425b34
+  Parameters: {"action"=>"index", "controller"=>"home", "index"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (0.015839)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.018620)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.04624 (21 reqs/sec) | Rendering: 0.00641 (13%) | DB: 0.03446 (74%) | 200 OK [http://127.0.0.1/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-26 22:35:26) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiUzOWJmNTRk
+NmYxZjdiYTJjYzEzNGJmNDdjNzAzNGRkNCIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--8669462ca9968bf0d03dc288496991892c425b34
+  Parameters: {"action"=>"index", "controller"=>"home", "index"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (0.003634)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.004308)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.02409 (41 reqs/sec) | Rendering: 0.01313 (54%) | DB: 0.00794 (32%) | 200 OK [http://127.0.0.1/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-26 22:35:27) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiUzOWJmNTRk
+NmYxZjdiYTJjYzEzNGJmNDdjNzAzNGRkNCIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--8669462ca9968bf0d03dc288496991892c425b34
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/about" with {:method=>:get}):
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.1/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.1/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.1/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.1/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.1/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-26 22:35:52) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiUzOWJmNTRk
+NmYxZjdiYTJjYzEzNGJmNDdjNzAzNGRkNCIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--8669462ca9968bf0d03dc288496991892c425b34
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/about" with {:method=>:get}):
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.1/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.1/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.1/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.1/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.1/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-26 22:35:55) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiUzOWJmNTRk
+NmYxZjdiYTJjYzEzNGJmNDdjNzAzNGRkNCIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--8669462ca9968bf0d03dc288496991892c425b34
+  Parameters: {"action"=>"index", "controller"=>"home", "index"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (0.011107)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.010774)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03920 (25 reqs/sec) | Rendering: 0.01440 (36%) | DB: 0.02188 (55%) | 200 OK [http://127.0.0.1/]
+
+
+Processing HomeController#about (for 127.0.0.1 at 2008-10-26 22:35:56) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiUzOWJmNTRk
+NmYxZjdiYTJjYzEzNGJmNDdjNzAzNGRkNCIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--8669462ca9968bf0d03dc288496991892c425b34
+  Parameters: {"action"=>"about", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/about
+  [4;35;1mUser Columns (0.001788)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000347)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.01284 (77 reqs/sec) | Rendering: 0.00831 (64%) | DB: 0.00213 (16%) | 200 OK [http://127.0.0.1/home/about]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-10-26 22:36:56) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiUzOWJmNTRk
+NmYxZjdiYTJjYzEzNGJmNDdjNzAzNGRkNCIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--8669462ca9968bf0d03dc288496991892c425b34
+  Parameters: {"action"=>"index", "controller"=>"home", "index"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (0.010133)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000343)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.17213 (5 reqs/sec) | Rendering: 0.15945 (92%) | DB: 0.01048 (6%) | 200 OK [http://127.0.0.1/]

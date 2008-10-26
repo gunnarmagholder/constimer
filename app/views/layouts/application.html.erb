@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- DW6 -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<%= stylesheet_link_tag 'constimer'%>
+</head>
+<!-- The structure of this file is exactly the same as 2col_leftNav.html;
+     the only difference between the two is the stylesheet they use -->
+<body> 
+<div id="masthead"> 
+  <h1 id="siteName">Site Name</h1> 
+ 
+</div> 
+<!-- end masthead --> 
+<div id="content"> 
+   <% if flash[:error] %>  
+    <div id="errors" >
+      <%= flash[:error] %>
+    </div>
+  <% end %>    
+  <div class="main"> 
+  	<br />
+    <p>
+      <%= yield %>
+    </p> 
+  </div> 
+</div> 
+<!--end content --> 
+<div id="navBar"> 
+  <div id="login"> 
+    <% if logged_in? %>
+     <%= link_to "Logout", :controller => 'sessions', :action => 'destroy' %>
+    <% else%>     
+  	 <% form_tag session_path do -%>
+     <label for="login">Login</label>
+     <%= text_field_tag 'login' %>
+     <label for="password">Password</label>
+     <%= password_field_tag 'password' %>
+     <%= submit_tag 'Log in' %>
+     <% end -%>
+    <% end%>
+  </div> 
+  <div id="sectionLinks"> 
+    <h3>Navigation</h3> 
+    <ul> 
+      <li><a href="#">My Profile</a></li> 
+      <li><a href="#">My Projects</a></li> 
+      <li><a href="#">My Entries</a></li> 
+      <li><a href="#">My Reports</a></li> 
+    </ul> 
+  </div> 
+</div> 
+<!--end navBar div --> 
+<div id="siteInfo">  <a href="home/about">About Us</a> | <a href="#">Site
+  Map</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact Us</a> | &copy;2003
+  Company Name
+</div> 
+<br /> 
+</body>
+</html>
