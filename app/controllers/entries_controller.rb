@@ -25,7 +25,8 @@ class EntriesController < ApplicationController
   # GET /entries/new.xml
   def new
     @entry = Entry.new
-
+      
+      @entry.edate = Date.today
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @entry }
@@ -41,11 +42,11 @@ class EntriesController < ApplicationController
   # POST /entries.xml
   def create
     @entry = Entry.new(params[:entry])
-
+    @entry.user = current_user
     respond_to do |format|
       if @entry.save
         flash[:notice] = 'Entry was successfully created.'
-        format.html { redirect_to(@entry) }
+        format.html { redirect_to entries_path }
         format.xml  { render :xml => @entry, :status => :created, :location => @entry }
       else
         format.html { render :action => "new" }

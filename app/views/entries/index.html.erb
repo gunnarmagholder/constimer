@@ -2,21 +2,17 @@
 
 <table>
   <tr>
-    <th>User</th>
-    <th>Edate</th>
+    <th>Date</th>
     <th>Starttime</th>
     <th>Endtime</th>
-    <th>Follow</th>
     <th>Notes</th>
   </tr>
 
 <% for entry in @entries %>
   <tr>
-    <td><%=h entry.user %></td>
-    <td><%=h entry.edate %></td>
-    <td><%=h entry.starttime %></td>
-    <td><%=h entry.endtime %></td>
-    <td><%=h entry.follow %></td>
+    <td><%=h entry.edate.strftime("%m/%d/%Y") if entry.edate %></td>
+    <td><%=h entry.starttime.strftime("%H:%M") if entry.starttime %></td>
+    <td><%=h entry.endtime.strftime("%H:%M") if entry.endtime %></td>
     <td><%=h entry.notes %></td>
     <td><%= link_to 'Show', entry %></td>
     <td><%= link_to 'Edit', edit_entry_path(entry) %></td>

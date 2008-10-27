@@ -3,30 +3,22 @@
 <% form_for(@entry) do |f| %>
   <%= f.error_messages %>
 
-  <p>
-    <%= f.label :user %><br />
-    <%= f.text_field :user %>
-  </p>
-  <p>
-    <%= f.label :edate %><br />
-    <%= f.date_select :edate %>
-  </p>
-  <p>
-    <%= f.label :starttime %><br />
-    <%= f.datetime_select :starttime %>
-  </p>
-  <p>
-    <%= f.label :endtime %><br />
-    <%= f.datetime_select :endtime %>
-  </p>
-  <p>
-    <%= f.label :follow %><br />
-    <%= f.text_field :follow %>
-  </p>
-  <p>
-    <%= f.label :notes %><br />
-    <%= f.text_field :notes %>
-  </p>
+
+  <%= f.hidden_field :edate %>
+  <table>
+    <tr>
+    	<th width='10%'><%= f.label :starttime %></th>
+    	<th><%= f.label :endtime %></th>
+    	<th><%= f.label :notes %></th>
+    </tr>
+    
+    <tr>
+    	<td width='10%'> <%= f.text_field :starttime %></td>
+    	<td> <%= f.text_field :endtime %></td>
+    	<td><%= f.text_field :notes %></td>
+    </tr>	
+  </table>
+
   <p>
     <%= f.submit "Create" %>
   </p>
