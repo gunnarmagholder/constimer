@@ -1,7 +1,7 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  user: 
+  user: 1
   edate: 2008-10-21
   starttime: 2008-10-21 23:11:39
   endtime: 2008-10-21 23:11:39
@@ -9,7 +9,7 @@ one:
   notes: MyString
 
 two:
-  user: 
+  user: 1
   edate: 2008-10-21
   starttime: 2008-10-21 23:11:39
   endtime: 2008-10-21 23:11:39

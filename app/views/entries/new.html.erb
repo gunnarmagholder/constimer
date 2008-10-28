@@ -7,16 +7,19 @@
   <%= f.hidden_field :edate %>
   <table>
     <tr>
-    	<th width='10%'><%= f.label :starttime %></th>
+	    <th><%= f.label :edate, "Date" %> </th>
+    	<th><%= f.label :starttime %></th>
     	<th><%= f.label :endtime %></th>
     	<th><%= f.label :notes %></th>
     </tr>
     
     <tr>
-    	<td width='10%'> <%= f.text_field :starttime %></td>
-    	<td> <%= f.text_field :endtime %></td>
+	    <td><%= f.text_field :edate, :size => 10 %> </td>
+    	<td> <%= f.text_field :starttime, :size => 10 %></td>
+    	<td> <%= f.text_field :endtime, :size => 10 %></td>
     	<td><%= f.text_field :notes %></td>
-    </tr>	
+    </tr>
+	
   </table>
 
   <p>

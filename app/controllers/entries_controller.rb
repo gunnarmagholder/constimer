@@ -25,8 +25,8 @@ class EntriesController < ApplicationController
   # GET /entries/new.xml
   def new
     @entry = Entry.new
-      
-      @entry.edate = Date.today
+    @entry = Date.today  
+    @entry.edate = Date.today
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @entry }
@@ -59,7 +59,7 @@ class EntriesController < ApplicationController
   # PUT /entries/1.xml
   def update
     @entry = Entry.find(params[:id])
-
+    @entry.user = current_user
     respond_to do |format|
       if @entry.update_attributes(params[:entry])
         flash[:notice] = 'Entry was successfully updated.'

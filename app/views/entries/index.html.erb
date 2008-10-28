@@ -1,4 +1,37 @@
-<h1>Listing entries</h1>
+<script type="text/javascript">
+function fillCurrTime(){
+	var now = new Date();
+	document.forms[0].entry_edate.value = (parseInt(now.getMonth())+1) + "/" + (parseInt(now.getDate())+1) + "/" + (parseInt(now.getYear())+1900);
+	document.forms[0].entry_starttime.value = parseInt(now.getHours()) + ":" + parseInt(now.getMinutes());
+	document.forms[0].entry_notes.focus();
+}
+</script>
+<h3>Add an Entry</h3>
+
+<% form_for :entry, :url => entries_path, :name => 'fo'  do |f| -%>
+
+<table>
+  <tr>
+	<th>&nbsp;</th>
+	<th><%= f.label :edate, "Date" %> </th>
+  	<th><%= f.label :starttime %></th>
+  	<th><%= f.label :endtime %></th>
+  	<th><%= f.label :notes %></th>
+  </tr>
+  <tr>
+	<td><input type="button" VALUE="Start" onClick="fillCurrTime()" name="btnStart" ></td>
+	<td><%= f.text_field :edate, :size => 10 %> </td>
+  	<td> <%= f.text_field :starttime, :size => 10 %></td>
+  	<td> <%= f.text_field :endtime, :size => 10 %></td>
+  	<td><%= f.text_field :notes %></td>
+  </tr>
+</table>
+
+<p><%= submit_tag "Add Entry" %></p>
+<% end -%>
+<%= set_focus_to_id 'entry_edate' %>
+<br />
+<h3>Listing entries</h3>
 
 <table>
   <tr>
@@ -8,19 +41,6 @@
     <th>Notes</th>
   </tr>
 
-<% for entry in @entries %>
-  <tr>
-    <td><%=h entry.edate.strftime("%m/%d/%Y") if entry.edate %></td>
-    <td><%=h entry.starttime.strftime("%H:%M") if entry.starttime %></td>
-    <td><%=h entry.endtime.strftime("%H:%M") if entry.endtime %></td>
-    <td><%=h entry.notes %></td>
-    <td><%= link_to 'Show', entry %></td>
-    <td><%= link_to 'Edit', edit_entry_path(entry) %></td>
-    <td><%= link_to 'Destroy', entry, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
+<%= render :partial => 'list' %>
+
 </table>
-
-<br />
-
-<%= link_to 'New entry', new_entry_path %>
