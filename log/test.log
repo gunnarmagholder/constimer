@@ -4424,3 +4424,7 @@ Completed in 0.00074 (1353 reqs/sec) | Rendering: 0.00026 (34%) | DB: 0.00534 (7
   [4;35;1mUser Load (0.000599)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
   [4;36;1mProject Columns (0.000000)[0m   [0;1mMysql::Error: Table 'constime_test.projects' doesn't exist: SHOW FIELDS FROM `projects`[0m
   [4;35;1mSQL (0.000108)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000394)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000091)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.007472)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000159)[0m   [0mROLLBACK[0m
