@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user: 1
+  name: MyString
+  custname: MyString
+  budget: 1.5
+  duedate: 2008-10-28 18:13:18
+
+two:
+  user: 1
+  name: MyString
+  custname: MyString
+  budget: 1.5
+  duedate: 2008-10-28 18:13:18

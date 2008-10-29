@@ -1,0 +1,25 @@
+
+
+<p>
+  <b>Name:</b>
+  <%=h @project.name %>
+</p>
+
+<p>
+  <b>Custname:</b>
+  <%=h @project.custname %>
+</p>
+
+<p>
+  <b>Budget:</b>
+  <%=h @project.budget %>
+</p>
+
+<p>
+  <b>Duedate:</b>
+  <%=h @project.duedate %>
+</p>
+
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>

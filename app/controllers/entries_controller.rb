@@ -1,9 +1,10 @@
 class EntriesController < ApplicationController
   # GET /entries
   # GET /entries.xml
+  
   def index
-    @entries = Entry.find(:all)
-
+    @entries = Entry.find(:all, :conditions => ['user_id = ?', current_user.id ])
+    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @entries }

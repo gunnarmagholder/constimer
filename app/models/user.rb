@@ -18,6 +18,7 @@ class User < ActiveRecord::Base
   attr_accessible :login, :email, :password, :password_confirmation
 
   has_many :entries
+  has_many :projects
 
   # Activates the user in the database.
   def activate

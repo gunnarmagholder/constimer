@@ -5,7 +5,6 @@ def valid_entry_attributes
     :user => User.find(:first),
     :edate => '05/08/2008',
     :starttime => '10:00',
-    :follow => 1,
     :notes => "value for notes"
     }
 end
