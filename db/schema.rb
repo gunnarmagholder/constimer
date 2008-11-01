@@ -13,10 +13,10 @@ ActiveRecord::Schema.define(:version => 20081028171318) do
 
   create_table "entries", :force => true do |t|
     t.integer  "user_id"
+    t.integer  "project_id"
     t.date     "edate"
     t.time     "starttime"
     t.time     "endtime"
-    t.integer  "entry_id"
     t.string   "notes"
     t.datetime "created_at"
     t.datetime "updated_at"

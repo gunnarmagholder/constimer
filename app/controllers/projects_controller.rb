@@ -2,10 +2,11 @@ class ProjectsController < ApplicationController
   # GET /projects
   # GET /projects.xml
   def index
-    @projects = Project.find(:all, :conditions => ['user_id = ?', current_user.id ])
+    @projects = Project.find(:all, :conditions => ['user_id = ? and name LIKE ? ', current_user.id, "%#{params[:search]}%" ])
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @projects }
+      format.js
     end
   end
 

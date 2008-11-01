@@ -2,6 +2,7 @@ class CreateEntries < ActiveRecord::Migration
   def self.up
     create_table :entries do |t|
       t.references :user
+      t.references :project
       t.date :edate
       t.time :starttime
       t.time :endtime
