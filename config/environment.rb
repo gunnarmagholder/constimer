@@ -4,9 +4,9 @@ ENV['RAILS_ENV'] ||= ActiveEnv
 
 RAILS_GEM_VERSION = '2.1.2' unless defined? RAILS_GEM_VERSION
 HOST = case ActiveEnv
-  when 'development' then 'http://127.0.0.1:3000'
-  when 'test'        then 'http://127.0.0.1'
-  when 'production'  then 'http://www.constimer.com'
+  when 'development' then '127.0.0.1:3000'
+  when 'test'        then '127.0.0.1'
+  when 'production'  then 'www.constimer.com'
 end 
 
 require File.join(File.dirname(__FILE__), 'boot')
