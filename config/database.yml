@@ -37,6 +37,6 @@ production:
   adapter: mysql
   encoding: utf8
   database: constime_production
-  username: constimer
-  password: pPktWu5IKJ
-  socket: /var/lib/mysql/mysql.sock
+  username: deploy
+  password: 02w0Dsy5KRzbnO5eeIle
+  socket: /var/run/mysqld/mysqld.sock

@@ -5,7 +5,7 @@ set :repository,  "git@github.com:gunnarmagholder/constimer.git"
 # If you aren't deploying to /u/apps/#{application} on the target
 # servers (which is the default), you can specify the actual location
 # via the :deploy_to variable:
-# set :deploy_to, "/var/www/#{application}"
+set :deploy_to, "/var/www/#{application}"
 
 set :scm, :git 
 set :domain, "v30136.1blu.de"
@@ -13,17 +13,9 @@ role :app, domain
 role :web, domain
 role :db,  domain, :primary => true
 
-# Startup for mongrel, FCGI etc
-set :runner, user 
-
-set :mongrel_servers, 2
-set :mongrel_port, 8000
-set :rails_env, "production"
 
 default_run_options[:pty] = true
-set :deploy_to, "/srv/www/vhosts/road-timer.com/httpdocs"
 set :user, "deploy"
-set :scm, :git
 set :ssh_options, { :forward_agent => true }
 set :use_sudo, false
 
