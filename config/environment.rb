@@ -6,7 +6,7 @@ RAILS_GEM_VERSION = '2.1.2' unless defined? RAILS_GEM_VERSION
 HOST = case ActiveEnv
   when 'development' then '127.0.0.1:3000'
   when 'test'        then '127.0.0.1'
-  when 'production'  then 'www.constimer.com'
+  when 'production'  then 'www.road-timer.com'
 end 
 
 require File.join(File.dirname(__FILE__), 'boot')
@@ -21,10 +21,7 @@ end
 
 ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.smtp_settings= {
-  :address => "smtp.web.de",
+  :address => "127.0.0.1",
   :port => '25',
-  :domain => 'web.de',
-  :username => 'gmagholder@web.de',
-  :password => 'X25a5250!',
-  :authentication => :login
+  :domain => 'road-timer.com',
 }

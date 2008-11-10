@@ -6,14 +6,14 @@ set :user, "deploy"
 # servers (which is the default), you can specify the actual location
 # via the :deploy_to variable:
 set :deploy_to, "/home/#{user}/apps/#{application}"
-set :deploy_via, :remote_cache
+# set :deploy_via, :remote_cache
 set :scm, :git 
 set :repository,  "git@github.com:gunnarmagholder/constimer.git"
-set :branch, "master"
+# set :branch, "master"
 
-default_run_options[:pty] = true
-ssh_options[:forward_agent] = true
-set :user_sudo, false 
+# default_run_options[:pty] = true
+# ssh_options[:forward_agent] = true
+set :use_sudo, false 
 set :scm_verbose, true
 
 
