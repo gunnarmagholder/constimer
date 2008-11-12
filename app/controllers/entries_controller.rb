@@ -4,7 +4,6 @@ class EntriesController < ApplicationController
   
   def index
     @entries = Entry.find(:all, :conditions => ['user_id = ?', current_user.id ])
-    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @entries }
@@ -50,7 +49,7 @@ class EntriesController < ApplicationController
         format.html { redirect_to entries_path }
         format.xml  { render :xml => @entry, :status => :created, :location => @entry }
       else
-        format.html { render :action => "new" }
+        format.html { render :action => "index" }
         format.xml  { render :xml => @entry.errors, :status => :unprocessable_entity }
       end
     end

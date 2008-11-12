@@ -1,0 +1,11 @@
+
+  <tr>
+	<td><%=h entry.project.name  %></td>
+    <td><%=h entry.edate.strftime("%m/%d/%Y") if entry.edate %></td>
+    <td><%=h entry.starttime.strftime("%H:%M") if entry.starttime %></td>
+    <td><%=h entry.endtime.strftime("%H:%M") if entry.endtime %></td>
+    <td><%=h entry.notes %></td>
+    <td><%= link_to 'Show', entry %></td>
+    <td><%= link_to 'Edit', edit_entry_path(entry) %></td>
+    <td><%= link_to 'Destroy', entry, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>

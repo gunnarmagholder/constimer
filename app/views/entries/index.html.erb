@@ -9,6 +9,7 @@ function fillCurrTime(){
 <h3>Add an Entry</h3>
 
 <% form_for :entry, :url => entries_path, :name => 'fo'  do |f| -%>
+<%= f.error_messages %>
 <%= f.hidden_field :user_id, :value => current_user %>
 <table>
   <tr>
@@ -23,7 +24,7 @@ function fillCurrTime(){
 	<td><input type="button" VALUE="Start" onClick="fillCurrTime()" name="btnStart" ></td>
 	<td><%= f.text_field :edate, :size => 10 %> </td>
   	<td> <%= f.text_field :starttime, :size => 10 %></td>
-	<td><%= text_field_with_auto_complete :entry, :project_name, { :size => 15 }, { :url => formatted_projects_path(:js), :method => :get } %></td>
+	<td><%= text_field_with_auto_complete :entry, :project_name, { :size => 15 }, { :url => formatted_projects_path(:js), :method => :get, :param_name => 'search' } %></td>
   	<td> <%= f.text_field :endtime, :size => 10 %></td>
   	<td><%= f.text_field :notes %></td>
   </tr>
@@ -43,7 +44,9 @@ function fillCurrTime(){
     <th>Endtime</th>
     <th>Notes</th>
   </tr>
-
-<%= render :partial => 'openlist' %>
-
+<% if @entries.nil? %>
+  Nothing available in the moment
+<% else %>
+  <%= render :partial => 'entry', :collection => @entries %>
+<% end %>
 </table>
