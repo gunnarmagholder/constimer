@@ -1,0 +1,9 @@
+<h1>Control Panel</h1>
+
+	<ul>
+    <li><%= link_to "Administer Users (#{@users})", admin_users_path %></li>
+		<% if_in_beta? do -%>
+			<li><%= link_to 'Beta Invitations', admin_invites_path %></li>
+		<% end -%>
+		<li><%= link_to "Logged Exceptions (#{@exceptions})", logged_exceptions_path %></li>
+	</ul>

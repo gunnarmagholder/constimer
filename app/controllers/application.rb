@@ -2,22 +2,40 @@
 # Likewise, all the methods added will be available for all controllers.
 
 class ApplicationController < ActionController::Base
-  helper :all # include all helpers, all the time
+  layout "application"
+  # AuthenticatedSystem must be included for RoleRequirement, and is provided by installing acts_as_authenticates and running 'script/generate authenticated account user'.
   include AuthenticatedSystem
-  before_filter :set_current_user
-  
+  # You can move this into a different controller, if you wish.  This module gives you the require_role helpers, and others.
+  include RoleRequirementSystem
+	include ExceptionLoggable
+	before_filter :set_current_user
+
+  helper :all # include all helpers, all the time
+
   # See ActionController::RequestForgeryProtection for details
   # Uncomment the :secret if you're not using the cookie session store
-  # protect_from_forgery # :secret => 'theanswerisblowinginthewind'
+  protect_from_forgery 
   
   # See ActionController::Base for details 
   # Uncomment this to filter the contents of submitted sensitive data parameters
   # from your application log (in this case, all fields with names like "password"). 
-  # filter_parameter_logging :password
-  
+  filter_parameter_logging :password, :password_confirmation, :old_password
+
+  # Change to the location of your contact form
+	def contact_site
+		root_path
+	end
+
+	def nested_layout
+		"default"
+	end
+
+	def in_beta?
+		APP_CONFIG['settings']['in_beta']
+	end
   protected
-  def set_current_user
-    User.current_user = self.current_user
-  end
+    def set_current_user
+      User.current_user = self.current_user
+    end
   
 end

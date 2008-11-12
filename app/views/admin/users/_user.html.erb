@@ -1,0 +1,24 @@
+<tr class="<%= cycle('odd', 'even') %>">
+  <td><%= link_to h(user.login), member_path(user) %></td>
+  <td><%=h user.email %></td>
+	<td><%= user.activated_at.blank? ? 'no' : 'yes' %>
+		<% if user.activated_at.blank? %>
+			<%= link_to('activate', admin_user_path(user), :method => :put) %>
+		<% end %>
+	</td> 
+  <td><%= user.enabled ? 'yes' : 'no' %>
+    <% unless user == current_user %>
+      <% if user.enabled %>
+        <%= link_to('disable', admin_state_path(user), :method => :delete) %>
+      <% else %>
+        <%= link_to('enable', admin_state_path(user), :method => :put) %>
+      <% end %>
+    <% end %>
+  </td>
+  <td><%= link_to 'edit roles', admin_user_roles_path(user) %></td>
+	<% if_in_beta? do -%>
+		<td><%=h user.invitation_limit %> <%= link_to 'edit', edit_admin_invite_path(user) %></td>
+	<% end -%>
+</tr>
+
+

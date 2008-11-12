@@ -2,7 +2,6 @@ class Entry < ActiveRecord::Base
 	validates_presence_of :starttime, :on => :create, :message => "can't be blank"
 	validates_presence_of :edate, :on => :create, :message => "can't be blank"
 	validates_presence_of :user, :on => :create, :message => "can't be blank"
-	validates_presence_of :project
 	validate :user_must_exist
 	validate :endtime_must_be_after_starttime, :if => :endtime?
 	

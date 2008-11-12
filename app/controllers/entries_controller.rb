@@ -4,6 +4,7 @@ class EntriesController < ApplicationController
   
   def index
     @entries = Entry.find(:all, :conditions => ['user_id = ?', current_user.id ])
+    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @entries }
@@ -47,9 +48,10 @@ class EntriesController < ApplicationController
       if @entry.save
         flash[:notice] = 'Entry was successfully created.'
         format.html { redirect_to entries_path }
+        format.js 
         format.xml  { render :xml => @entry, :status => :created, :location => @entry }
       else
-        format.html { render :action => "index" }
+        format.html { render :action => "new" }
         format.xml  { render :xml => @entry.errors, :status => :unprocessable_entity }
       end
     end

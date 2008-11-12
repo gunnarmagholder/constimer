@@ -2,6 +2,10 @@ ActiveEnv = 'development'
 
 ENV['RAILS_ENV'] ||= ActiveEnv
 
+raw_config = File.read(RAILS_ROOT + "/config/config.yml")
+APP_CONFIG = YAML.load(raw_config)[RAILS_ENV]
+
+
 RAILS_GEM_VERSION = '2.1.2' unless defined? RAILS_GEM_VERSION
 HOST = case ActiveEnv
   when 'development' then '127.0.0.1:3000'
