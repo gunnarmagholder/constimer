@@ -17365,3 +17365,97 @@ Rendering template within layouts/application
 Rendering home/index
   [4;35;1mInvitation Columns (0.002278)[0m   [0mSHOW FIELDS FROM `invitations`[0m
 Completed in 0.24353 (4 reqs/sec) | Rendering: 0.23671 (97%) | DB: 0.00228 (0%) | 200 OK [http://0.0.0.0/]
+  [4;36;1mSQL (0.000204)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000126)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.012436)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000257)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20080805045804)
+Migrating to CreateRoles (20080805045808)
+Migrating to AddOpenIdAuthenticationTables (20080805045812)
+Migrating to SetUpFirstAdminUser (20080806025753)
+Migrating to AddExceptionTable (20080813053928)
+Migrating to CreateFourOhFours (20080910224435)
+Migrating to CreateUserFailures (20080910234648)
+Migrating to CreateInvitations (20080911154835)
+Migrating to CreateEntries (20081021211139)
+Migrating to CreateProjects (20081028171318)
+  [4;36;1mSQL (0.000355)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000129)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000260)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001405)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.001266)[0m   [0;1mdescribe `entries`[0m
+  [4;35;1mSQL (0.000222)[0m   [0mSHOW KEYS FROM `entries`[0m
+  [4;36;1mSQL (0.001101)[0m   [0;1mSHOW FIELDS FROM `four_oh_fours`[0m
+  [4;35;1mSQL (0.002416)[0m   [0mdescribe `four_oh_fours`[0m
+  [4;36;1mSQL (0.000433)[0m   [0;1mSHOW KEYS FROM `four_oh_fours`[0m
+  [4;35;1mSQL (0.001631)[0m   [0mSHOW FIELDS FROM `invitations`[0m
+  [4;36;1mSQL (0.004698)[0m   [0;1mdescribe `invitations`[0m
+  [4;35;1mSQL (0.000687)[0m   [0mSHOW KEYS FROM `invitations`[0m
+  [4;36;1mSQL (0.001199)[0m   [0;1mSHOW FIELDS FROM `logged_exceptions`[0m
+  [4;35;1mSQL (0.001397)[0m   [0mdescribe `logged_exceptions`[0m
+  [4;36;1mSQL (0.001115)[0m   [0;1mSHOW KEYS FROM `logged_exceptions`[0m
+  [4;35;1mSQL (0.001120)[0m   [0mSHOW FIELDS FROM `open_id_authentication_associations`[0m
+  [4;36;1mSQL (0.001387)[0m   [0;1mdescribe `open_id_authentication_associations`[0m
+  [4;35;1mSQL (0.000299)[0m   [0mSHOW KEYS FROM `open_id_authentication_associations`[0m
+  [4;36;1mSQL (0.001060)[0m   [0;1mSHOW FIELDS FROM `open_id_authentication_nonces`[0m
+  [4;35;1mSQL (0.001305)[0m   [0mdescribe `open_id_authentication_nonces`[0m
+  [4;36;1mSQL (0.050485)[0m   [0;1mSHOW KEYS FROM `open_id_authentication_nonces`[0m
+  [4;35;1mSQL (0.001567)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.001880)[0m   [0;1mdescribe `projects`[0m
+  [4;35;1mSQL (0.000562)[0m   [0mSHOW KEYS FROM `projects`[0m
+  [4;36;1mSQL (0.001076)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mSQL (0.001061)[0m   [0mdescribe `roles`[0m
+  [4;36;1mSQL (0.000490)[0m   [0;1mSHOW KEYS FROM `roles`[0m
+  [4;35;1mSQL (0.000801)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mSQL (0.001722)[0m   [0;1mdescribe `roles_users`[0m
+  [4;35;1mSQL (0.000455)[0m   [0mSHOW KEYS FROM `roles_users`[0m
+  [4;36;1mSQL (0.001194)[0m   [0;1mSHOW FIELDS FROM `user_failures`[0m
+  [4;35;1mSQL (0.001208)[0m   [0mdescribe `user_failures`[0m
+  [4;36;1mSQL (0.000259)[0m   [0;1mSHOW KEYS FROM `user_failures`[0m
+  [4;35;1mSQL (0.001618)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.001538)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.000345)[0m   [0mSHOW KEYS FROM `users`[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-11-14 17:10:24) [GET]
+  Session ID: 5fe584643f18eca9cd567cbe12f56f1c
+  Parameters: {"action"=>"index", "controller"=>"home", "index"=>"index"}
+  [4;36;1mSQL (0.000266)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000089)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mInvitation Columns (0.005554)[0m   [0;1mSHOW FIELDS FROM `invitations`[0m
+Completed in 0.05572 (17 reqs/sec) | Rendering: 0.04581 (82%) | DB: 0.00591 (10%) | 200 OK [http://0.0.0.0/]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-11-14 17:10:32) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYWQzMTgwOTkwNWQzNTZjMzkxMWJmMzYzMWEwNzNi
+MDEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--519c119b2ddd19a8c0d2dfb6f099c21720088223
+  Parameters: {"commit"=>"Log in", "action"=>"create", "authenticity_token"=>"6665f4da3cd59fa4c96d142cdefdbd13eb8ad900", "controller"=>"sessions", "login"=>"admin", "password"=>"[FILTERED]"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;35;1mUserFailure Load (0.000428)[0m   [0mSELECT * FROM `user_failures` WHERE (remote_ip = '127.0.0.1' and count > 5 and updated_at >= '2008-11-14 15:10:33') LIMIT 1[0m
+  [4;36;1mSiteUser Columns (0.001861)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSiteUser Load (0.000244)[0m   [0mSELECT * FROM `users` WHERE (login = 'admin') AND ( (`users`.`user_type` = 'SiteUser' ) ) LIMIT 1[0m
+  [4;36;1mRole Load (0.000315)[0m   [0;1mSELECT `roles`.*, t0.user_id as the_parent_record_id FROM `roles` INNER JOIN `roles_users` as t0 ON `roles`.id = t0.role_id WHERE (t0.user_id = 1) [0m
+  [4;35;1mRole Columns (0.001135)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mSQL (0.000085)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000066)[0m   [0mCOMMIT[0m
+Cookie set: auth_token=; path=/
+Redirected to http://0.0.0.0:3000/
+Completed in 0.13528 (7 reqs/sec) | DB: 0.00413 (3%) | 302 Found [http://0.0.0.0/session]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-11-14 17:10:33) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMdXNlcl9pZGkGOhFyZWZlcmVkX2Zyb20wIgpm
+bGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewY6
+C25vdGljZSIcTG9nZ2VkIGluIHN1Y2Nlc3NmdWxseS4GOgpAdXNlZHsGOwlG--ef841f9b123e32e81ded554818aadbc842fba870
+  Parameters: {"action"=>"index", "controller"=>"home", "index"=>"index"}
+  [4;36;1mUser Columns (0.001628)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000228)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSiteUser Columns (0.001710)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mRole Load (0.000303)[0m   [0mSELECT `roles`.*, t0.user_id as the_parent_record_id FROM `roles` INNER JOIN `roles_users` as t0 ON `roles`.id = t0.role_id WHERE (t0.user_id = 1) [0m
+  [4;36;1mRole Columns (0.001117)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 0.02521 (39 reqs/sec) | Rendering: 0.00460 (18%) | DB: 0.00499 (19%) | 200 OK [http://0.0.0.0/]
