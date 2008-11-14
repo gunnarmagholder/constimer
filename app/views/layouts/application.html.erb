@@ -54,6 +54,9 @@
           <li><%= link_to "My Projects", :controller => "/projects", :action => "index" %></li> 
           <li><%= link_to "My Entries", :controller => "/entries", :action => "index" %></li> 
           <li><a href="#">My Reports</a></li>
+		  <% if_invites_available? do -%>
+			<li><%= link_to "Invite Friends (#{current_user.invitation_limit})", new_user_invitation_path %></li>
+		  <% end -%>
 	      <% if_admin? do %>
 	        <li><%= link_to "Members", members_path %></li>
 	        <li><%= link_to "Admin", admin_controls_path %></li>
