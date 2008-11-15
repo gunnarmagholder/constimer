@@ -23,11 +23,11 @@ development:
 production:
   settings:
     name: Road-Timer
-    domain: localhost:3000
+    domain: www.road-timer.com
     session_key: nb58wdo069fk13e103484ja8yuk9ov
     secret: 1138371c71fe2f4f6769090e9fa0d7314b4febcc1c1966f9c83e16a3c880e0ca396cbb37e9ce53bbefc2417cb7363d7127200d51f16b9aeda033dbc3600c63fc
     forgery: b8029fa60066bb90d7fb4e68265a112b
-    admin_email: yourpersonalemail@example.com
+    admin_email: donotreply@road-timer.com
     in_beta: true
     new_user_invite_limit: 5
     max_user_invite_limit: 100
