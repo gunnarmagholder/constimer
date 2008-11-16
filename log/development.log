@@ -17992,3 +17992,253 @@ QHVzZWR7AA==--7c5e0620d2f89e965a0d9696bb9056c61a9944e1
 Rendering projects/index
   [4;35;1mProject Columns (0.001141)[0m   [0mSHOW FIELDS FROM `projects`[0m
 Completed in 0.03378 (29 reqs/sec) | Rendering: 0.00094 (2%) | DB: 0.01033 (30%) | 200 OK [http://0.0.0.0/projects.js?search=te]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-11-16 21:17:42) [GET]
+  Session ID: 45b6aa31e0f3ade2bd7c665b1f3c0d2c
+  Parameters: {"action"=>"index", "controller"=>"home", "index"=>"index"}
+  [4;36;1mSQL (0.042348)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.023123)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mInvitation Columns (0.178415)[0m   [0;1mSHOW FIELDS FROM `invitations`[0m
+Completed in 0.35521 (2 reqs/sec) | Rendering: 0.17384 (48%) | DB: 0.24389 (68%) | 200 OK [http://0.0.0.0/]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-11-16 21:17:55) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYmE0ZWIzNjMwZjNlZWNkYzI5YjQ3YmZmZjJlN2I0
+ODkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--98c7603b19dc65325573bdc4104324996043b2bd
+  Parameters: {"commit"=>"Log in", "action"=>"create", "authenticity_token"=>"085f173dbe4de7d282064ee770dae1604b79bc2d", "controller"=>"sessions", "login"=>"gmagholder", "password"=>"[FILTERED]"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;35;1mUserFailure Load (0.241091)[0m   [0mSELECT * FROM `user_failures` WHERE (remote_ip = '127.0.0.1' and count > 5 and updated_at >= '2008-11-16 19:17:55') LIMIT 1[0m
+  [4;36;1mSiteUser Columns (0.052437)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSiteUser Load (0.000494)[0m   [0mSELECT * FROM `users` WHERE (login = 'gmagholder') AND ( (`users`.`user_type` = 'SiteUser' ) ) LIMIT 1[0m
+  [4;36;1mUserFailure Load (0.006489)[0m   [0;1mSELECT * FROM `user_failures` WHERE (remote_ip = '127.0.0.1') ORDER BY updated_at DESC LIMIT 1[0m
+  [4;35;1mUserFailure Columns (0.004576)[0m   [0mSHOW FIELDS FROM `user_failures`[0m
+  [4;36;1mSQL (0.004464)[0m   [0;1mBEGIN[0m
+  [4;35;1mUserFailure Create (0.040462)[0m   [0mINSERT INTO `user_failures` (`remote_ip`, `http_user_agent`, `updated_at`, `failure_type`, `username`, `count`, `created_at`) VALUES('127.0.0.1', 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_5; de-de) AppleWebKit/525.26.2 (KHTML, like Gecko) Version/3.2 Safari/525.26.12', '2008-11-16 20:17:56', 'login', 'gmagholder', 1, '2008-11-16 20:17:56')[0m
+  [4;36;1mSQL (0.002429)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUserFailure Load (0.000303)[0m   [0mSELECT * FROM `user_failures` WHERE (remote_ip = '127.0.0.1' and count > 5 and updated_at >= '2008-11-16 19:17:56') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0.78982 (1 reqs/sec) | Rendering: 0.03492 (4%) | DB: 0.35275 (44%) | 200 OK [http://0.0.0.0/session]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-11-16 21:18:05) [POST]
+  Session ID: BAh7CDoMdXNlcl9pZDA6DGNzcmZfaWQiJWJhNGViMzYzMGYzZWVjZGMyOWI0
+N2JmZmYyZTdiNDg5IgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewY6CmVycm9yIlJDb3VsZCBub3QgbG9nIHlvdSBpbiBh
+cyAnZ21hZ2hvbGRlcicsIHlvdXIgdXNlcm5hbWUgb3IgcGFzc3dvcmQgaXMg
+aW5jb3JyZWN0LgY6CkB1c2VkewY7CFQ=--c1cb69c6b1b9c15d22be21a77ed9d4f63f3dbe40
+  Parameters: {"commit"=>"Log in", "action"=>"create", "authenticity_token"=>"085f173dbe4de7d282064ee770dae1604b79bc2d", "controller"=>"sessions", "login"=>"admin", "password"=>"[FILTERED]"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mUserFailure Load (0.015051)[0m   [0;1mSELECT * FROM `user_failures` WHERE (remote_ip = '127.0.0.1' and count > 5 and updated_at >= '2008-11-16 19:18:05') LIMIT 1[0m
+  [4;35;1mSiteUser Columns (0.006749)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSiteUser Load (0.005637)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'admin') AND ( (`users`.`user_type` = 'SiteUser' ) ) LIMIT 1[0m
+  [4;35;1mRole Load (0.041018)[0m   [0mSELECT `roles`.*, t0.user_id as the_parent_record_id FROM `roles` INNER JOIN `roles_users` as t0 ON `roles`.id = t0.role_id WHERE (t0.user_id = 1) [0m
+  [4;36;1mRole Columns (0.001294)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mSQL (0.000891)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000078)[0m   [0;1mCOMMIT[0m
+Cookie set: auth_token=; path=/
+Redirected to http://0.0.0.0:3000/
+Completed in 0.23315 (4 reqs/sec) | DB: 0.07072 (30%) | 302 Found [http://0.0.0.0/session]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2008-11-16 21:18:06) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMdXNlcl9pZGkGOhFyZWZlcmVkX2Zyb20wIgpm
+bGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewY6
+C25vdGljZSIcTG9nZ2VkIGluIHN1Y2Nlc3NmdWxseS4GOgpAdXNlZHsGOwlG--ef841f9b123e32e81ded554818aadbc842fba870
+  Parameters: {"action"=>"index", "controller"=>"home", "index"=>"index"}
+  [4;35;1mUser Columns (0.012162)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000377)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSiteUser Columns (0.003490)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mRole Load (0.001503)[0m   [0;1mSELECT `roles`.*, t0.user_id as the_parent_record_id FROM `roles` INNER JOIN `roles_users` as t0 ON `roles`.id = t0.role_id WHERE (t0.user_id = 1) [0m
+  [4;35;1mRole Columns (0.004144)[0m   [0mSHOW FIELDS FROM `roles`[0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 0.04603 (21 reqs/sec) | Rendering: 0.00504 (10%) | DB: 0.02168 (47%) | 200 OK [http://0.0.0.0/]
+
+
+Processing FourOhFoursController#index (for 127.0.0.1 at 2008-11-16 21:18:12) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoRcmVmZXJlZF9mcm9tMDoMdXNlcl9pZGkGIgpm
+bGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewY6
+C25vdGljZSIcTG9nZ2VkIGluIHN1Y2Nlc3NmdWxseS4GOgpAdXNlZHsGOwlU--6d85315c25fd74b60001aeda282a318825793ae4
+  Parameters: {"action"=>"index", "controller"=>"four_oh_fours", "path"=>["report"]}
+  [4;36;1mUser Columns (0.004424)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000281)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSiteUser Columns (0.007647)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mRole Load (0.002036)[0m   [0mSELECT `roles`.*, t0.user_id as the_parent_record_id FROM `roles` INNER JOIN `roles_users` as t0 ON `roles`.id = t0.role_id WHERE (t0.user_id = 1) [0m
+  [4;36;1mRole Columns (0.004621)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mFourOhFour Columns (0.040553)[0m   [0mSHOW FIELDS FROM `four_oh_fours`[0m
+  [4;36;1mFourOhFour Load (0.002700)[0m   [0;1mSELECT * FROM `four_oh_fours` WHERE (`four_oh_fours`.`url` = 'http://0.0.0.0:3000/report' AND `four_oh_fours`.`referer` = '') LIMIT 1[0m
+  [4;35;1mSQL (0.007668)[0m   [0mBEGIN[0m
+  [4;36;1mFourOhFour Create (0.008388)[0m   [0;1mINSERT INTO `four_oh_fours` (`updated_at`, `url`, `referer`, `count`, `created_at`) VALUES('2008-11-16 20:18:12', 'http://0.0.0.0:3000/report', '', 1, '2008-11-16 20:18:12')[0m
+  [4;35;1mSQL (0.001312)[0m   [0mCOMMIT[0m
+Rendering /Users/gunnarmagholder/dev/constimer/public/404.html (404 Not Found)
+Completed in 0.15022 (6 reqs/sec) | Rendering: 0.02317 (15%) | DB: 0.07963 (53%) | 404 Not Found [http://0.0.0.0/report]
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2008-11-16 21:19:35) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMdXNlcl9pZGkGOhFyZWZlcmVkX2Zyb20wIgpm
+bGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAG
+OgpAdXNlZHsA--3475bcb52f9a3dd87ae58acde85c0dfec84a5706
+  Parameters: {"action"=>"show", "controller"=>"reports"}
+
+
+NameError (uninitialized constant ReportsController):
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:279:in `load_missing_constant'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:468:in `const_missing'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:480:in `const_missing'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.2/lib/active_support/inflector.rb:285:in `constantize'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.2/lib/active_support/inflector.rb:284:in `each'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.2/lib/active_support/inflector.rb:284:in `constantize'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.2/lib/active_support/core_ext/string/inflections.rb:143:in `constantize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.2/lib/action_controller/routing/route_set.rb:387:in `recognize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:503:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:503:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:503:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:510:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:510:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.2/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-11-16 21:20:52) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoRcmVmZXJlZF9mcm9tMDoMdXNlcl9pZGkGIgpm
+bGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAG
+OgpAdXNlZHsA--94930359e9a8cc22867d4186f69f47956db11956
+  Parameters: {}
+
+
+ArgumentError (Illegal route: the :controller must be specified!):
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.2/lib/action_controller/routing/builder.rb:196:in `build'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.2/lib/action_controller/routing/route_set.rb:262:in `add_route'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.2/lib/action_controller/routing/route_set.rb:17:in `connect'
+    /config/routes.rb:48
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.2/lib/action_controller/routing/route_set.rb:208:in `draw'
+    /config/routes.rb:1
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:503:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:503:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:503:in `load'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.2/lib/action_controller/routing/route_set.rb:254:in `load_routes!'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.2/lib/action_controller/routing/route_set.rb:234:in `load!'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.2/lib/action_controller/routing/route_set.rb:249:in `reload'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:130:in `reload_application'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.2/lib/active_support/callbacks.rb:173:in `send'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.2/lib/active_support/callbacks.rb:173:in `evaluate_method'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.2/lib/active_support/callbacks.rb:161:in `call'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.2/lib/active_support/callbacks.rb:90:in `run'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.2/lib/active_support/callbacks.rb:90:in `each'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.2/lib/active_support/callbacks.rb:90:in `send'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.2/lib/active_support/callbacks.rb:90:in `run'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.2/lib/active_support/callbacks.rb:272:in `run_callbacks'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:106:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:503:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:503:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:503:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:510:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:510:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.2/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing FourOhFoursController#index (for 127.0.0.1 at 2008-11-16 21:21:19) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMdXNlcl9pZGkGOhFyZWZlcmVkX2Zyb20wIgpm
+bGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAG
+OgpAdXNlZHsA--3475bcb52f9a3dd87ae58acde85c0dfec84a5706
+  Parameters: {"action"=>"index", "controller"=>"four_oh_fours", "path"=>["report"]}
+  [4;36;1mUser Columns (0.003152)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000280)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSiteUser Columns (0.014934)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mRole Load (0.000793)[0m   [0mSELECT `roles`.*, t0.user_id as the_parent_record_id FROM `roles` INNER JOIN `roles_users` as t0 ON `roles`.id = t0.role_id WHERE (t0.user_id = 1) [0m
+  [4;36;1mRole Columns (0.005852)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mFourOhFour Columns (0.010825)[0m   [0mSHOW FIELDS FROM `four_oh_fours`[0m
+  [4;36;1mFourOhFour Load (0.000448)[0m   [0;1mSELECT * FROM `four_oh_fours` WHERE (`four_oh_fours`.`url` = 'http://0.0.0.0:3000/report' AND `four_oh_fours`.`referer` = '') LIMIT 1[0m
+  [4;35;1mSQL (0.000108)[0m   [0mBEGIN[0m
+  [4;36;1mFourOhFour Update (0.002676)[0m   [0;1mUPDATE `four_oh_fours` SET `updated_at` = '2008-11-16 20:21:19', `count` = 2 WHERE `id` = 1[0m
+  [4;35;1mSQL (0.035792)[0m   [0mCOMMIT[0m
+Rendering /Users/gunnarmagholder/dev/constimer/public/404.html (404 Not Found)
+Completed in 0.10057 (9 reqs/sec) | Rendering: 0.00034 (0%) | DB: 0.07486 (74%) | 404 Not Found [http://0.0.0.0/report]
+
+
+Processing ReportController#index (for 127.0.0.1 at 2008-11-16 21:21:50) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoRcmVmZXJlZF9mcm9tMDoMdXNlcl9pZGkGIgpm
+bGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAG
+OgpAdXNlZHsA--94930359e9a8cc22867d4186f69f47956db11956
+  Parameters: {"action"=>"index", "controller"=>"report"}
+  [4;36;1mUser Columns (0.005672)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.004028)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSiteUser Columns (0.002660)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mRole Load (0.000449)[0m   [0mSELECT `roles`.*, t0.user_id as the_parent_record_id FROM `roles` INNER JOIN `roles_users` as t0 ON `roles`.id = t0.role_id WHERE (t0.user_id = 1) [0m
+  [4;36;1mRole Columns (0.005726)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+Rendering template within layouts/application
+Rendering report/index
+Completed in 0.05560 (17 reqs/sec) | Rendering: 0.01200 (21%) | DB: 0.01853 (33%) | 200 OK [http://0.0.0.0/report]

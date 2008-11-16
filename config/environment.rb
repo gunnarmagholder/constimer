@@ -1,3 +1,4 @@
+require 'yaml'
 ActiveEnv = 'development'
 
 ENV['RAILS_ENV'] ||= ActiveEnv

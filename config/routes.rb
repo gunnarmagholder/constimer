@@ -45,7 +45,8 @@ ActionController::Routing::Routes.draw do |map|
 	map.resource  :session
 	map.resource  :openid_session
 	map.resources :members
-
+	
+  map.connect '/report', :controller => 'report', :action => 'index'
 
 	map.logged_exceptions "logged_exceptions/:action/:id", :controller => "logged_exceptions"
 
