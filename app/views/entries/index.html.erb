@@ -45,7 +45,7 @@ function fillCurrTime(){
     <th>Notes</th>
   </tr>
 <% if @entries.nil? %>
-  Nothing available in the moment
+  Nothing available at the moment
 <% else %>
   <%= render :partial => 'entry', :collection => @entries %>
 <% end %>
