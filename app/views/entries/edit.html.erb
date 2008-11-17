@@ -2,17 +2,21 @@
 
 <% form_for(@entry) do |f| %>
   <%= f.error_messages %>
+    <p>
+    <%= f.label :project_name %><br />
+    <%= f.text_field :project_name %>
+  </p>
   <p>
     <%= f.label :edate %><br />
     <%= f.date_select :edate %>
   </p>
   <p>
     <%= f.label :starttime %><br />
-    <%= f.datetime_select :starttime %>
+    <%= f.time_select :starttime %>
   </p>
   <p>
     <%= f.label :endtime %><br />
-    <%= f.datetime_select :endtime %>
+    <%= f.time_select :endtime %>
   </p>
   <p>
     <%= f.label :notes %><br />
