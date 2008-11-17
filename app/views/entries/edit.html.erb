@@ -2,6 +2,10 @@
 
 <% form_for(@entry) do |f| %>
   <%= f.error_messages %>
+    <p>
+    <%= f.label :project_name %><br />
+    <%= f.text_field :project_name %>
+  </p>
   <p>
     <%= f.label :edate %><br />
     <%= f.date_select :edate %>
