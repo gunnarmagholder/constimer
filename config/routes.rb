@@ -3,7 +3,8 @@ ActionController::Routing::Routes.draw do |map|
 
   map.root :controller => 'home', :index => 'index'
   
-  map.resources :entries
+  map.resources :entries, :member => { :stop => :put }
+  
   map.login '/login', :controller => 'sessions', :action => 'new'
   map.login_with_openid '/login_with_openid', :controller => 'openid_sessions', :action => 'new'
   map.signup '/signup', :controller => 'user/profiles', :action => 'new'

@@ -35,7 +35,9 @@ function fillCurrTime(){
 <%= set_focus_to_id 'entry_edate' %>
 <br />
 <h3>Listing entries</h3>
-
+<% form_for :entry do |f| -%>
+  <%= f.check_box :list_all %>List All Entries (not only open ones)
+<% end -%>
 <table>
   <tr>
 	<th>Project</th>

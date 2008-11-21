@@ -85,4 +85,12 @@ class EntriesController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  def stop
+    @entry = Entry.find(params[:id])
+    @entry.update_attribute :endtime, Time.now
+    flash[:notice] = "Endtime entered..."
+    redirect_to entries_path
+  end
+  
 end
