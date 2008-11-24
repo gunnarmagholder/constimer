@@ -4,9 +4,8 @@ class EntriesController < ApplicationController
   
   def index
     @entries = Entry.find(:all, :conditions => ['user_id = ?', current_user.id ])
-    
     respond_to do |format|
-      format.html # index.html.erb
+      format.html
       format.xml  { render :xml => @entries }
     end
   end
@@ -91,6 +90,10 @@ class EntriesController < ApplicationController
     @entry.update_attribute :endtime, Time.now
     flash[:notice] = "Endtime entered..."
     redirect_to entries_path
+  end
+  
+  def incompleted
+     @entries = Entry.find(:all, :conditions => ['user_id = ? and endtime IS NULL', current_user.id ])
   end
   
 end
