@@ -3,7 +3,7 @@ class EntriesController < ApplicationController
   # GET /entries.xml
   
   def index
-    @entries = Entry.find(:all, :conditions => ['user_id = ?', current_user.id ])
+    @entries = Entry.find(:all, :conditions => ['user_id = ?', current_user.id ], :order => "edate DESC", :limit => 10)
     respond_to do |format|
       format.html
       format.xml  { render :xml => @entries }
@@ -13,8 +13,7 @@ class EntriesController < ApplicationController
   # GET /entries/1
   # GET /entries/1.xml
   def show
-    @entry = Entry.find(params[:id])
-
+    @entry = Entry.find(:all, :conditions => ['user_id = ? AND id = ?',current_user.id,params[:id]]).first
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @entry }
