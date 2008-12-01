@@ -1,8 +1,7 @@
 require 'yaml'
 ActiveEnv = 'development'
-
+require File.join(File.dirname(__FILE__), 'boot')
 ENV['RAILS_ENV'] ||= ActiveEnv
-
 raw_config = File.read(RAILS_ROOT + "/config/config.yml")
 APP_CONFIG = YAML.load(raw_config)[RAILS_ENV]
 

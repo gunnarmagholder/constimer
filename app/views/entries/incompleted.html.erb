@@ -35,15 +35,9 @@ function fillCurrTime(){
 <%= set_focus_to_id 'entry_edate' %>
 <br />
 <h3>Listing entries</h3>
-
-<% if @null_entries.size > 0 -%>
-	<p><b>There are <%= @null_entries.size.to_s %> entries, that don't belong to a project!</b></p>	
-<% end  -%>
-
 <% form_for :entry do |f| -%>
   <%= f.check_box :list_all %>List All Entries (not only open ones)
 <% end -%>
-
 <table>
   <tr>
 	<th>Project</th>

@@ -3,10 +3,11 @@ class EntriesController < ApplicationController
   # GET /entries.xml
   
   def index
-    @entries = Entry.find(:all, :conditions => ['user_id = ? and project_ID IS NOT NULL', current_user.id ])
+    @entries = Entry.find(:all, :conditions => ['user_id = ? and project_ID IS NOT NULL', current_user.id ], :order => "edate DESC", :limit => 10)
     @null_entries = Entry.find(:all, :conditions => ['user_id = ? and project_ID IS NULL', current_user.id ])
+
     respond_to do |format|
-      format.html # index.html.erb
+      format.html
       format.xml  { render :xml => @entries }
     end
   end
@@ -14,8 +15,7 @@ class EntriesController < ApplicationController
   # GET /entries/1
   # GET /entries/1.xml
   def show
-    @entry = Entry.find(params[:id])
-
+    @entry = Entry.find(:all, :conditions => ['user_id = ? AND id = ?',current_user.id,params[:id]]).first
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @entry }
@@ -85,4 +85,16 @@ class EntriesController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  def stop
+    @entry = Entry.find(params[:id])
+    @entry.update_attribute :endtime, Time.now
+    flash[:notice] = "Endtime entered..."
+    redirect_to entries_path
+  end
+  
+  def incompleted
+     @entries = Entry.find(:all, :conditions => ['user_id = ? and endtime IS NULL', current_user.id ])
+  end
+  
 end
