@@ -1,0 +1,54 @@
+<script type="text/javascript">
+function fillCurrTime(){
+	var now = new Date();
+	document.forms[0].entry_edate.value = (parseInt(now.getMonth())+1) + "/" + (parseInt(now.getDate())) + "/" + (parseInt(now.getYear())+1900);
+	document.forms[0].entry_starttime.value = parseInt(now.getHours()) + ":" + parseInt(now.getMinutes());
+	document.forms[0].entry_notes.focus();
+}
+</script>
+<h3>Add an Entry</h3>
+
+<% form_for :entry, :url => entries_path, :name => 'fo'  do |f| -%>
+<%= f.error_messages %>
+<%= f.hidden_field :user_id, :value => current_user %>
+<table>
+  <tr>
+	<th>&nbsp;</th> 
+	<th><%= f.label :edate, "Date" %> </th>
+  	<th><%= f.label :starttime %></th>
+    <th><%= f.label :project_name, "Project Name" %></th>
+  	<th><%= f.label :endtime %></th>
+  	<th><%= f.label :notes %></th>
+  </tr>
+  <tr>
+	<td><input type="button" VALUE="Start" onClick="fillCurrTime()" name="btnStart" ></td>
+	<td><%= f.text_field :edate, :size => 10 %> </td>
+  	<td> <%= f.text_field :starttime, :size => 10 %></td>
+	<td><%= text_field_with_auto_complete :entry, :project_name, { :size => 15 }, { :url => formatted_projects_path(:js), :method => :get, :param_name => 'search' } %></td>
+  	<td> <%= f.text_field :endtime, :size => 10 %></td>
+  	<td><%= f.text_field :notes %></td>
+  </tr>
+</table>
+
+<p><%= submit_tag "Add Entry" %></p>
+<% end -%>
+<%= set_focus_to_id 'entry_edate' %>
+<br />
+<h3>Listing entries</h3>
+<% form_for :entry do |f| -%>
+  <%= f.check_box :list_all %>List All Entries (not only open ones)
+<% end -%>
+<table>
+  <tr>
+	<th>Project</th>
+    <th>Date</th>
+    <th>Starttime</th>
+    <th>Endtime</th>
+    <th>Notes</th>
+  </tr>
+<% if @entries.nil? %>
+  Nothing available at the moment
+<% else %>
+  <%= render :partial => 'entry', :collection => @entries %>
+<% end %>
+</table>
