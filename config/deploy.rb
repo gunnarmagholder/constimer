@@ -17,7 +17,7 @@ set :use_sudo, false
 set :scm_verbose, true
 
 
-set :domain, "v30136.1blu.de"
+set :domain, "h1439698.stratoserver.net"
 role :app, domain
 role :web, domain
 role :db,  domain, :primary => true
