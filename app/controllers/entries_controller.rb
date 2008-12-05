@@ -3,7 +3,7 @@ class EntriesController < ApplicationController
   # GET /entries.xml
   
   def index
-    @entries = Entry.find(:all, :conditions => ['user_id = ? and project_ID IS NOT NULL', current_user.id ], :order => "edate DESC", :limit => 10)
+    @entries = Entry.find(:all, :conditions => ['user_id = ? and project_ID IS NOT NULL', current_user.id ], :order => "edate DESC", :limit => 10, :include => :project)
     @null_entries = Entry.find(:all, :conditions => ['user_id = ? and project_ID IS NULL', current_user.id ])
 
     respond_to do |format|
