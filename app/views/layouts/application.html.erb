@@ -5,7 +5,7 @@
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 <!-- add your meta tags here -->
 
-<link href="css/my_layout.css" rel="stylesheet" type="text/css" />
+<link href="/css/my_layout.css" rel="stylesheet" type="text/css" />
 
   <%= javascript_include_tag :defaults %>
 <!--[if lte IE 7]>
@@ -40,10 +40,15 @@
           <ul>
             <li id="current"><a href="#">Home</a>
             </li>
-            <li><%= link_to "My Projects", :controller => "/projects", :action => "index" %></li>
-            <li><%= link_to "My Entries", :controller => "/entries", :action => "index" %></li>
-            <li><%= link_to "My Report", :controller => "/report", :action => "index" %></li>
-            <li><a href="#">My Profile</a></li>
+             <% if_logged_in? do -%> <li><%= link_to "My Projects", :controller => "/projects", :action => "index" %></li><% end -%>
+            <% if_logged_in? do -%><li><%= link_to "My Entries", :controller => "/entries", :action => "index" %></li><% end -%>
+            <% if_logged_in? do -%><li><%= link_to "My Report", :controller => "/report", :action => "index" %></li><% end  %>
+            <% if_logged_in? do -%><li><a href="#">My Profile</a></li><% end -%>
+            <% if_admin? do -%>
+	        <li><%= link_to "Members", members_path %></li>
+	        <li><%= link_to "Admin", admin_controls_path %></li>
+	     
+	        <% end -%>
           </ul>
         </div>
       </div>
@@ -77,25 +82,7 @@
 
       <% end%>
     </div> <!-- end login --> 
-    <div id="sectionLinks"> 
-      <h3>Navigation</h3> 
-      <ul>
-	    <% if_logged_in? do %> 
-	      <li><%= link_to "Homepage", root_path %></li>
-          <li><a href="#">My Profile</a></li> 
-          <li><%= link_to "My Projects", :controller => "/projects", :action => "index" %></li> 
-          <li><%= link_to "My Entries", :controller => "/entries", :action => "index" %></li> 
-          <li><%= link_to "My Report", :controller => "/report", :action => "index" %></li>
-		  <% if_invites_available? do -%>
-			<li><%= link_to "Invite Friends (#{current_user.invitation_limit})", new_user_invitation_path %></li>
-		  <% end -%>
-	      <% if_admin? do %>
-	        <li><%= link_to "Members", members_path %></li>
-	        <li><%= link_to "Admin", admin_controls_path %></li>
-	      <% end %>
-        <% end %> 
-      </ul> 
-    </div> <!-- end sectionLinks -->
+ 
   </div> <!--end navBar div --> 
           </div>
           <!-- IE Column Clearing -->
