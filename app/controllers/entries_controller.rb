@@ -12,6 +12,21 @@ class EntriesController < ApplicationController
     end
   end
 
+  def show_all
+  	@entries = Entry.find(:all, :conditions => ['user_id = ? and project_ID IS NOT NULL', current_user.id ], :order => "edate DESC", :include => :project)
+  	respond_to do |format|
+  		format.js
+  	end
+  end
+
+
+  def incomplete
+  	@entries = Entry.find(:all, :conditions => ['user_id = ? and project_ID IS NOT NULL and endtime is NULL', current_user.id ], :order => "edate DESC", :include => :project)
+  	respond_to do |format|
+  		format.js
+  	end
+  end
+
   # GET /entries/1
   # GET /entries/1.xml
   def show

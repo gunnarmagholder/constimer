@@ -34,15 +34,7 @@
       <% if logged_in? %>
         <%= link_to "Logout", :controller => '/sessions', :action => 'destroy' %>
       <% else%>     
-        <% form_tag session_path do -%>
-          <%= label_tag 'login:' %><br />
-          <%= text_field_tag 'login', @login %><br /><br />
-          <%= label_tag 'password:' %><br />
-          <%= password_field_tag 'password', nil %><br />
-          <%= link_to 'Forgot Password?', forgot_password_path %><br />
-          <%= label_tag 'remember_me', 'Remember me:' %><%= check_box_tag 'remember_me', '1', @remember_me %><br />
-          <%= submit_tag 'Log in', :disable_with => "Signing in&hellip;" %> 
-        <% end -%>
+		<%= render :partial => "shared/user_bar" %>
       <% end%>
     </div> <!-- end login --> 
     <div id="sectionLinks"> 

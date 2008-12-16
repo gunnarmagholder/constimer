@@ -40,21 +40,10 @@ function fillCurrTime(){
 	<p><b>There are <%= @null_entries.size.to_s %> entries, that don't belong to a project!</b></p>	
 <% end  -%>
 
-<% form_for :entry do |f| -%>
-  <%= f.check_box :list_all %>List All Entries (not only open ones)
-<% end -%>
-
-<table>
-  <tr>
-	<th>Project</th>
-    <th>Date</th>
-    <th>Starttime</th>
-    <th>Endtime</th>
-    <th>Notes</th>
-  </tr>
-<% if @entries.nil? %>
-  Nothing available at the moment
-<% else %>
-  <%= render :partial => 'entry', :collection => @entries %>
-<% end %>
-</table>
+<%= link_to_remote "Show all entries",
+    :url => {:action => 'show_all'} %>
+<%= link_to_remote "Show incomplete",
+    :url => {:action => 'incomplete'} %>
+<div id="entrylist">
+<%= render :partial => 'list', :locals => {:entries => @entries} %>
+</div>
