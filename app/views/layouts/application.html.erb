@@ -1,35 +1,72 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-  <title>Road-Timer - Tracking your working time everywhere</title>
-  <%= stylesheet_link_tag 'constimer'%>
+<title>Your Page Title</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<!-- add your meta tags here -->
+
+<link href="css/my_layout.css" rel="stylesheet" type="text/css" />
+
   <%= javascript_include_tag :defaults %>
+<!--[if lte IE 7]>
+<link href="css/patches/patch_my_layout.css" rel="stylesheet" type="text/css" />
+<![endif]-->
 </head>
-
-<body> 
-  <div id="masthead"> 
-    <h1 id="siteName">Site Name</h1> 
-  </div> <!-- end masthead --> 
-
-  <div id="content"> 
-     <% if flash[:error] %>  
-      <div id="errors" >
-        <%= flash[:error] %>
+<body>
+  <div id="page_margins">
+    <div id="border-top">
+      <div id="edge-tl"></div>
+      <div id="edge-tr"></div>
+    </div>
+    <div id="page">
+      <div id="header">
+      	<h1>Welcome to Road-Timer</h1>
+        <div id="topnav">
+          <!-- start: skip link navigation -->
+          <a class="skip" title="skip link" href="#navigation">Skip to the navigation</a>
+          		<span class="hideme">.</span>
+          <a class="skip" title="skip link" href="#content">Skip to the content</a>
+          		<span class="hideme">.</span>
+          <!-- end: skip link navigation --><a href="#">Help</a> | <a href="#">Contact</a> | 
+          									<a href="#">Imprint</a>
+        </div>
+        
       </div>
-    <% end %>    
-    <div class="main"> 
-    	<br />
-
-      <p>
-        <%= yield %>
-      </p> 
-    </div> <!-- end main --> 
-  </div> <!-- end content -->
-
-  <div id="navBar"> 
+      <div id="nav">
+        <!-- skiplink anchor: navigation -->
+        <a id="navigation" name="navigation"></a>
+        <div id="nav_main">
+          <!-- main navigation: #nav_main -->
+          <ul>
+            <li id="current"><a href="#">Home</a>
+            </li>
+            <li><%= link_to "My Projects", :controller => "/projects", :action => "index" %></li>
+            <li><%= link_to "My Entries", :controller => "/entries", :action => "index" %></li>
+            <li><%= link_to "My Report", :controller => "/report", :action => "index" %></li>
+            <li><a href="#">My Profile</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="main">
+        <div id="col1">
+          <div id="col1_content" class="clearfix">
+             <div id="content"> 
+               <% if flash[:error] %>  
+                 <div id="errors" >
+                   <%= flash[:error] %>
+                 </div>
+               <% end %>    
+    	       <br />
+               <p>
+                 <%= yield %>
+               </p> 
+    
+             </div> <!-- end content -->
+          </div>
+        </div>
+        <div id="col3">
+          <div id="col3_content" class="clearfix">
+              <div id="navBar"> 
     <div id="login"> 
       <% if logged_in? %>
         <%= link_to "Logout", :controller => '/sessions', :action => 'destroy' %>
@@ -60,9 +97,19 @@
       </ul> 
     </div> <!-- end sectionLinks -->
   </div> <!--end navBar div --> 
-  <div id="siteInfo">  <a href="home/about">About Us</a> | <a href="#">Site
-    Map</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact Us</a> | &copy;2003
-    Company Name
-  </div> <!-- end site Info -->
+          </div>
+          <!-- IE Column Clearing -->
+          <div id="ie_clearing"> &#160; </div>
+        </div>
+      </div>
+      <!-- begin: #footer -->
+      <div id="footer">Layout based on <a href="http://www.yaml.de/">YAML</a>
+      </div>
+    </div>
+    <div id="border-bottom">
+      <div id="edge-bl"></div>
+      <div id="edge-br"></div>
+    </div>
+  </div>
 </body>
 </html>

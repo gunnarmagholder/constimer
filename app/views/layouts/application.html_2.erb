@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <title>Road-Timer - Tracking your working time everywhere</title>
+  <%= stylesheet_link_tag 'constimer'%>
+  <%= javascript_include_tag :defaults %>
+</head>
+
+<body> 
+  <div id="masthead"> 
+    <h1 id="siteName">Site Name</h1> 
+  </div> <!-- end masthead --> 
+
+  <div id="content"> 
+     <% if flash[:error] %>  
+      <div id="errors" >
+        <%= flash[:error] %>
+      </div>
+    <% end %>    
+    <div class="main"> 
+    	<br />
+
+      <p>
+        <%= yield %>
+      </p> 
+    </div> <!-- end main --> 
+  </div> <!-- end content -->
+
+  <div id="navBar"> 
+    <div id="login"> 
+      <% if logged_in? %>
+        <%= link_to "Logout", :controller => '/sessions', :action => 'destroy' %>
+      <% else%>     
+
+
+		<%= render :partial => "shared/user_bar" %>
+
+      <% end%>
+    </div> <!-- end login --> 
+    <div id="sectionLinks"> 
+      <h3>Navigation</h3> 
+      <ul>
+	    <% if_logged_in? do %> 
+	      <li><%= link_to "Homepage", root_path %></li>
+          <li><a href="#">My Profile</a></li> 
+          <li><%= link_to "My Projects", :controller => "/projects", :action => "index" %></li> 
+          <li><%= link_to "My Entries", :controller => "/entries", :action => "index" %></li> 
+          <li><%= link_to "My Report", :controller => "/report", :action => "index" %></li>
+		  <% if_invites_available? do -%>
+			<li><%= link_to "Invite Friends (#{current_user.invitation_limit})", new_user_invitation_path %></li>
+		  <% end -%>
+	      <% if_admin? do %>
+	        <li><%= link_to "Members", members_path %></li>
+	        <li><%= link_to "Admin", admin_controls_path %></li>
+	      <% end %>
+        <% end %> 
+      </ul> 
+    </div> <!-- end sectionLinks -->
+  </div> <!--end navBar div --> 
+  <div id="siteInfo">  <a href="home/about">About Us</a> | <a href="#">Site
+    Map</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact Us</a> | &copy;2003
+    Company Name
+  </div> <!-- end site Info -->
+</body>
+</html>
