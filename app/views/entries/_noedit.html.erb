@@ -3,6 +3,6 @@
   <td align="right"><%=h noedit.edate.strftime("%m/%d/%Y") if noedit.edate %></td>
   <td align="right"><%=h noedit.starttime.strftime("%H:%M") if noedit.starttime %></td>
   <td align="right"><%=h noedit.endtime.strftime("%H:%M") if noedit.endtime %></td>
-  <td align="right"><%=h (noedit.endtime - noedit.starttime).round / 60 if noedit.endtime and noedit.starttime %></td>
+  <td align="right"><%=h noedit.minutes %></td>
   <td><%=h noedit.notes %></td>
 </tr>

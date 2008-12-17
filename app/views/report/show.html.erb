@@ -1,0 +1,18 @@
+<h1>Reports for <%= @user.login %></h1>
+<p>These are the working entries for <%= @pmonth %>/<%= @pyear %> in project <%= @project.first.name %>.</p>
+
+<table border="1">
+  <tr>
+	<th>Project</th>
+    <th>Date</th>
+    <th>Starttime</th>
+    <th>Endtime</th>
+    <th>Working time (min)</th>
+    <th>Notes</th>
+  </tr>
+<% if @entries.nil? %>
+  Nothing available at the moment
+<% else %>
+  <%= render :partial => 'entries/noedit', :collection => @entries %>
+<% end %>
+</table>

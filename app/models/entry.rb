@@ -8,8 +8,17 @@ class Entry < ActiveRecord::Base
 	
 	belongs_to :user
 	belongs_to :project
+	
 	def user_must_exist
 	 errors.add(:user, 'should exist') if self.user.nil?
+	end
+	
+	def minutes
+	 if endtime? 
+	   ((endtime - starttime) / 60).round
+	 else
+     0
+   end
 	end
 	
   def endtime_must_be_after_starttime

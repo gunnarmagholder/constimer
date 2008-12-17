@@ -11,7 +11,7 @@ class User::ProfilesController < ApplicationController
   def new
     @user = SiteUser.new(:invitation_token => params[:invitation_token])
   end
- 
+  
   def create
     logout_keeping_session!
     @user = SiteUser.new(:login => params[:user][:login],

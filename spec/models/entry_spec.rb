@@ -13,7 +13,7 @@ describe Entry do
   before(:each) do
    @entry = Entry.new
   end
-
+    
   it "should create a new instance given valid attributes" do
     @entry.attributes = valid_entry_attributes
   end
@@ -38,6 +38,17 @@ describe Entry do
     @entry.endtime   = '8:00'
     @entry.should have(1).error_on(:endtime)
   end
-
-
+  
+  it "should return zero if there is no endtime" do
+    @entry.attributes = valid_entry_attributes
+    @entry.minutes.should == 00
+  end
+  
+  it "should return the correct differnce between start and endtime in minutes" do
+    @entry.attributes = valid_entry_attributes
+    @entry.endtime = "11:00"
+    @entry.minutes.should == 60
+  end
+  
 end
+

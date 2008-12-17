@@ -5,7 +5,6 @@ one:
   edate: 2008-10-21
   starttime: 2008-10-21 23:11:39
   endtime: 2008-10-21 23:11:39
-  follow: 1
   notes: MyString
 
 two:
@@ -13,5 +12,12 @@ two:
   edate: 2008-10-21
   starttime: 2008-10-21 23:11:39
   endtime: 2008-10-21 23:11:39
-  follow: 1
   notes: MyString
+  
+three:
+  user: 2
+  edate: 2008-10-21
+  starttime: 2008-10-21 23:11:39
+  endtime: 2008-10-21 23:11:39
+  notes: MyString
+
