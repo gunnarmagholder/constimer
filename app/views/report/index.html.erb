@@ -1,6 +1,15 @@
 <h1>Reports for <%= @user.login %></h1>
 <p>These are the working entries.</p>
 
+
+<form action="report" method="get" accept-charset="utf-8">
+	<p>
+	 <%= select("project", "id", @projects.collect {|p| [ p.name, p.id ] }, {:include_blank => true}) %>	
+    </p>
+	<p><input type="submit" value="Continue &rarr;"></p>
+</form>
+
+
 <table border="1">
   <tr>
 	<th>Project</th>

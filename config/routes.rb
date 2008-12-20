@@ -47,7 +47,6 @@ ActionController::Routing::Routes.draw do |map|
 	map.resource  :session
 	map.resource  :openid_session
 	map.resources :members
-	
   map.connect '/report/:project/:month', :controller => 'report', :action => 'show'
   map.connect '/report', :controller => 'report', :action => 'index'
 

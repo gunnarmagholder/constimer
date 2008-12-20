@@ -1,7 +1,13 @@
 class ReportController < ApplicationController
   def index
     @user = current_user
-    @entries = Entry.find(:all, :conditions => ['user_id = ? ', current_user.id], :order => ['project_id, edate ASC'], :include => :project)
+    if params[:project][:id] != ""
+      @entries = Entry.find(:all, :conditions => ['user_id = ? and project_id = ?', current_user.id, params[:project][:id]], :order => ['edate ASC'], :include => :project)
+      @projects = Project.find(:all, :conditions => ['user_id = ?', current_user.id])
+    else
+      @entries = Entry.find(:all, :conditions => ['user_id = ? ', current_user.id], :order => ['project_id, edate ASC'], :include => :project)
+      @projects = Project.find(:all, :conditions => ['user_id = ?', current_user.id])
+    end
   end
   
   def show
