@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20081028171318) do
+ActiveRecord::Schema.define(:version => 20081221210751) do
 
   create_table "entries", :force => true do |t|
     t.integer  "user_id"
@@ -122,6 +122,7 @@ ActiveRecord::Schema.define(:version => 20081028171318) do
     t.string   "identity_url"
     t.integer  "invitation_id"
     t.integer  "invitation_limit"
+    t.integer  "managed_by"
   end
 
   add_index "users", ["login"], :name => "index_users_on_login", :unique => true

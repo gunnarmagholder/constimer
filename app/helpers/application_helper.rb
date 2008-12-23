@@ -23,6 +23,11 @@ module ApplicationHelper
     end
   end
 
+  def current_tab(tabname)
+    if controller.controller_name == tabname
+      'id="current"'
+    end
+  end
 
 	def if_admin?
     yield if logged_in? && current_user.has_role?('admin')

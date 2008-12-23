@@ -39,12 +39,12 @@
           <!-- main navigation: #nav_main -->
           <ul>
 			
-            <li id="current"> <%= link_to "Home", root_path %>
+            <li <%= current_tab('home') -%>> <%= link_to "Home", root_path %>
             </li>
-             <% if_logged_in? do -%> <li><%= link_to "My Projects", :controller => "/projects", :action => "index" %></li>
-            <li><%= link_to "My Entries", :controller => "/entries", :action => "index" %></li>
-            <li><%= link_to "My Report", :controller => "/report", :action => "index" %></li>
-            <li><a href="#">My Profile</a></li><% end -%>
+             <% if_logged_in? do -%> <li <%= current_tab('projects') -%> ><%= link_to "My Projects", :controller => "/projects", :action => "index" %></li>
+            <li <%= current_tab('entries') -%>><%= link_to "My Entries", :controller => "/entries", :action => "index" %></li>
+            <li <%= current_tab('report') -%>><%= link_to "My Report", :controller => "/report", :action => "index" %></li>
+            <li <%= current_tab('profiles') -%>><%= link_to 'My Account', user_profile_path(current_user) %> </li><% end -%>
             <% if_admin? do -%>
 	        <li><%= link_to "Members", members_path %></li>
 	        <li><%= link_to "Admin", admin_controls_path %></li>
