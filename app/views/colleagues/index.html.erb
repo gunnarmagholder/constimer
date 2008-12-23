@@ -1,0 +1,16 @@
+<h1>List of colleagues</h1>
+
+<table>
+  <tr>
+  	<th>Name</th>
+  	<th>Login</th>
+  	<th>email</th>
+  </tr>
+  <% for colleague in  @colleagues %>
+    <tr>
+      <td><%= colleague.name %></td>    	
+      <td><%= colleague.login %></td>
+      <td><%= colleague.email %></td>
+    </tr>
+  <% end %>  
+</table>

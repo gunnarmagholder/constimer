@@ -1,5 +1,9 @@
 require 'digest/sha1'
 
+class UserException < Exception
+  
+end
+
 class User < ActiveRecord::Base  
 	include Authentication
   include Authentication::ByCookieToken
@@ -25,6 +29,22 @@ class User < ActiveRecord::Base
 						 :per_page => 50, :page => page,
         		 :order => 'login'
 	end
+
+  def isRole(rolename)
+    if self.roles.include?(Role.find_by_name(rolename))
+      true
+    else
+      false
+    end
+  end
+
+  def colleagues
+    if self.isRole('manager')
+      User.find(:all, :conditions => {:managed_by => self.id})
+    else
+      raise UserException.new, "This user is not a manager. It can't manage any other accounts!"
+    end
+  end
 
 	def to_xml(options = {})
 		#Add attributes accessible by xml

@@ -1,6 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :projects
-
   map.root :controller => 'home', :index => 'index'
   map.about '/about', :controller => 'home', :action => 'about'
   map.about '/faq', :controller => 'home', :action => 'faq'
@@ -49,7 +48,7 @@ ActionController::Routing::Routes.draw do |map|
 	map.resources :members
   map.connect '/report/:project/:month', :controller => 'report', :action => 'show'
   map.connect '/report', :controller => 'report', :action => 'index'
-
+  map.connect '/colleagues', :controller => 'colleagues', :action => 'index'
 	map.logged_exceptions "logged_exceptions/:action/:id", :controller => "logged_exceptions"
 
   # Install the default routes as the lowest priority.
