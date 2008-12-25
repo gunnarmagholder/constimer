@@ -1,15 +1,17 @@
 
 <% if not logged_in? %>
   <p>Welcome to constimer. </p>
-	<% unless logged_in? -%><% if_in_beta? do -%>
-		<%= error_messages_for :invitation %>
-		<p>We are currently in private beta. Please enter your email address below and we will let know when an invitation becomes available.</p>
-		<% uberform_for [:user, Invitation.new] do |f| -%>
-		    <%= f.text_field :email, :label => "Your Email:" %>
-		    <%= f.submit 'Submit' %>
-		<% end -%>
-	<% end -%><% end -%>
-<% else %>
+  <% unless logged_in? -%>
+	<% if_in_beta? do -%>
+      <%= error_messages_for :invitation %>
+	  <p>We are currently in private beta. Please enter your email address below and we will let know when an invitation becomes available.</p>
+	  <% uberform_for [:user, Invitation.new] do |f| -%>
+	    <%= f.text_field :email, :label => "Your Email:" %>
+	    <%= f.submit 'Submit' %>
+	  <% end -%>
+    <% end -%>
+  <% end -%>
+<% else -%>
   <p>Welcome <%= current_user.login %>.</p>
   <p>Please find your entries and projects on the navigation tabs. </p>
-<% end %>
+<% end -%>
