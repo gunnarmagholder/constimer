@@ -4,10 +4,25 @@
 
 <form action="report" method="get" accept-charset="utf-8">
 	<p>
-	 <%= select("project", "id", @projects.collect {|p| [ p.name, p.id ] }, {:include_blank => true}) %>	
+	   <%= select("project", "id", @projects.collect {|p| [ p.name, p.id ] }, {:include_blank => true}) %>	
+       <%= select("date", "month", [['january', 1], 
+	                                ['february', 2],
+	                                ['march', 3],
+	                                ['april', 4],
+	                                ['may', 5],
+	                                ['june', 6],
+	                                ['july', 7],
+	                                ['august', 8],
+	                                ['septemper', 9],
+	                                ['october', 10],
+	                                ['november', 11],
+	                                ['december', 12]], {:include_blank => true}) %>
+       <%= select("date", "year", @years.collect {|y| [ y.edate.year, y.edate.year ] }, {:include_blank => true}) %>
     </p>
+    
 	<p><input type="submit" value="Continue &rarr;"></p>
 </form>
+
 
 
 <table border="1">
