@@ -32,7 +32,12 @@ class Entry < ActiveRecord::Base
 	
 	def project_name=(name)
 	  logger.warn  '****Into project setter****'
-	  self.project = Project.find_or_create_by_name_and_user_id(name, User.current_user.id) unless name.blank?
+	  # Geht so nicht. Hier muss die Abfrage rein, ob das Projekt beim User ODER beim manager existiert
+	  if Project.find_by_name_and_user_id(name, User.current_user.managed_by)
+	    self.project = Project.find_by_name_and_user_id(name, User.current_user.managed_by)
+    else
+	    self.project = Project.find_or_create_by_name_and_user_id(name, User.current_user.id) unless name.blank?
+    end
 	end
 	private
 	  def cache_virtual_columns
