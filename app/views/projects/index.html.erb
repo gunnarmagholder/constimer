@@ -6,6 +6,7 @@
     <th>Name</th>
     <th>Custname</th>
     <th>Budget</th>
+    <th>total Minutes</th>
     <th>Duedate</th>
   </tr>
 
@@ -15,6 +16,7 @@
     <td><%=h project.name %></td>
     <td><%=h project.custname %></td>
     <td><%=h project.budget %></td>
+    <td align="right"><%=h project.minutes %> min</td>
     <td><%=h project.duedate %></td>
     <td><%= link_to 'Show', project %></td>
     <td><%= link_to 'Edit', edit_project_path(project) %></td>

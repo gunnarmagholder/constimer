@@ -1,4 +1,5 @@
 class Entry < ActiveRecord::Base
+	before_validation :cache_virtual_columns
 	validates_presence_of :starttime, :on => :create, :message => "can't be blank"
 	validates_presence_of :edate, :on => :create, :message => "can't be blank"
 	validates_presence_of :user, :on => :create, :message => "can't be blank"
@@ -33,4 +34,8 @@ class Entry < ActiveRecord::Base
 	  logger.warn  '****Into project setter****'
 	  self.project = Project.find_or_create_by_name_and_user_id(name, User.current_user.id) unless name.blank?
 	end
+	private
+	  def cache_virtual_columns
+	    self.minutes = ((endtime - starttime) / 60).round
+	  end
 end
