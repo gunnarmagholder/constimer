@@ -14,7 +14,7 @@ class Entry < ActiveRecord::Base
 	 errors.add(:user, 'should exist') if self.user.nil?
 	end
 	
-	def minutes
+	def minutes_calculated
 	 if endtime? 
 	   ((endtime - starttime) / 60).round
 	 else
