@@ -19,20 +19,13 @@ class ReportController < ApplicationController
       end
     end
     @entries = Entry.find(:all, :conditions => conditions)
-    @projects = Project.find(:all, :conditions => ['user_id = ?', current_user.id])
-    @years = Entry.find(:all, :group => 'year(edate)')
-#   if params[:project]
-#     if params[:project][:id] != ""
-#       @entries = Entry.find(:all, :conditions => ['user_id = ? and project_id = ?', current_user.id, params[:project][:id]], :order => ['edate ASC'], :include => :project)
-#       @projects = Project.find(:all, :conditions => ['user_id = ?', current_user.id])
-#     else
-#       @entries = Entry.find(:all, :conditions => ['user_id = ? ', current_user.id], :order => ['project_id, edate ASC'], :include => :project)
-#       @projects = Project.find(:all, :conditions => ['user_id = ?', current_user.id])
-#     end
-#   else
-#     @entries = Entry.find(:all, :conditions => ['user_id = ? ', current_user.id], :order => ['project_id, edate ASC'], :include => :project)
-#     @projects = Project.find(:all, :conditions => ['user_id = ?', current_user.id])
-#   end
+    @overall_min = @entries.sum(&:minutes)
+    if current_user.isRole('manager') 
+	  	
+    else
+      @projects = Project.find(:all, :conditions => ['user_id = ?', current_user.id])
+    end
+    @years = Entry.find(:all, :group => 'year(edate)',:conditions => ['user_id = ?', current_user.id])
   end
   
   def show

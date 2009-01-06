@@ -5,9 +5,9 @@
 <form action="report" method="get" accept-charset="utf-8">
 	<table>
 		<tr>
-		  <th>Projekt</th>
-		  <th>Month</th>
-		  <th>Year</th>
+		  <td>Projekt</td>
+		  <td>Month</td>
+		  <td>Year</td>
 		</tr>
 		<tr>
 	     
@@ -25,6 +25,7 @@
 	                                ['november', 11],
 	                                ['december', 12]], {:include_blank => true}) %></td>
          <td><%= select("date", "year", @years.collect {|y| [ y.edate.year, y.edate.year ] }, {:include_blank => true}) %></td>
+       
        </tr>
     </table>
     
@@ -46,5 +47,13 @@
   Nothing available at the moment
 <% else %>
   <%= render :partial => 'entries/noedit', :collection => @entries %>
+<% end %>
+<% if @overall_min %>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td align="right"><b><%= @overall_min %></b></td>
+	<td><b>minutes in selection</b></td>
 <% end %>
 </table>
