@@ -1,12 +1,8 @@
 set :application, "www.road-timer.com"
 set :user, "deploy"
 
-
-# If you aren't deploying to /u/apps/#{application} on the target
-# servers (which is the default), you can specify the actual location
-# via the :deploy_to variable:
 set :deploy_to, "/home/#{user}/apps/#{application}"
-# set :deploy_via, :remote_cache
+set :deploy_via, :remote_cache
 set :scm, :git 
 set :repository,  "git@github.com:gunnarmagholder/constimer.git"
 # set :branch, "master"
