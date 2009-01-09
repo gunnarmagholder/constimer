@@ -21,7 +21,7 @@ class ReportController < ApplicationController
     @entries = Entry.find(:all, :conditions => conditions)
     @overall_min = @entries.sum(&:minutes)
     if current_user.isRole('manager') 
-	  	
+	  	@projects = Project.find(:all, :conditions => ['user_id = ?', current_user.id])
     else
       @projects = Project.find(:all, :conditions => ['user_id = ?', current_user.id])
     end
