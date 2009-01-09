@@ -2,7 +2,11 @@ class ProjectsController < ApplicationController
   # GET /projects
   # GET /projects.xml
   def index
-    @projects = Project.find(:all, :conditions => ['(user_id = ? and name LIKE ?) or (user_id = ? and name LIKE ?) ', current_user.id, "%#{params[:search]}%", current_user.managed_by, "%#{params[:search]}%" ])
+    if current_user.managed_by
+      @projects = Project.find(:all, :conditions => ['(user_id = ? and name LIKE ?) or (user_id = ? and name LIKE ?) ', current_user.id, "%#{params[:search]}%", current_user.managed_by, "%#{params[:search]}%" ])
+    else
+      @projects = Project.find(:all, :conditions => ['(user_id = ? and name LIKE ?) ', current_user.id, "%#{params[:search]}%" ])
+    end
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @projects }
