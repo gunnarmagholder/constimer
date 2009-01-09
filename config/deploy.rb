@@ -5,10 +5,7 @@ set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
 set :scm, :git 
 set :repository,  "git@github.com:gunnarmagholder/constimer.git"
-# set :branch, "master"
 
-# default_run_options[:pty] = true
-# ssh_options[:forward_agent] = true
 set :use_sudo, false 
 set :scm_verbose, true
 
@@ -23,3 +20,10 @@ set :runner, user
 set :mongrel_servers, 3
 set :mongrel_port, 8000
 set :rails_env, 'production'
+
+namespace :deploy do
+  desc "Anwendung neu starten"
+  task :restart, :roles => :app do
+    run "touch #{current_path}/tmp/restart.txt"
+  end
+end
