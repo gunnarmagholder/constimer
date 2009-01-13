@@ -1,24 +1,20 @@
 class ReportController < ApplicationController
   def index
     @user = current_user
-    conditions = ['user_id = ?', current_user.id]
+    conditions = {:user_id => current_user.id}
     if params[:project]
       if params[:project][:id] != ""
-        conditions[0] = conditions[0] + " and project_id = ? "
-        conditions = conditions + [params[:project][:id]]
+        conditions.update({:project_id => params[:project][:id]})
       end
     end
     if params[:date]
       if params[:date][:month] != ""
-        conditions[0] = conditions[0] + " and MONTH(edate) = ? "
-        conditions = conditions + [params[:date][:month]]      
+        conditions.update({:edate.month => [params[:date][:month]]})
       end
       if params[:date][:year] != ""
-        conditions[0] = conditions[0] + " and YEAR(edate) = ? "
-        conditions = conditions + [params[:date][:year]]      
+        conditions.update({:edate.year => [params[:date][:year]]})
       end
     end
-    
     @entries = Entry.find(:all, :conditions => conditions)
     @overall_min = @entries.sum(&:minutes)
     if current_user.isRole('manager') 
