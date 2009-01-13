@@ -18,6 +18,7 @@ class ReportController < ApplicationController
         conditions = conditions + [params[:date][:year]]      
       end
     end
+    
     @entries = Entry.find(:all, :conditions => conditions)
     @overall_min = @entries.sum(&:minutes)
     if current_user.isRole('manager') 

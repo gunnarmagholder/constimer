@@ -41,14 +41,15 @@ describe Entry do
   
   it "should return zero if there is no endtime" do
     @entry.attributes = valid_entry_attributes
-    @entry.minutes.should == 00
+    @entry.minutes.should be_nil
   end
   
   it "should return the correct differnce between start and endtime in minutes" do
     @entry.attributes = valid_entry_attributes
     @entry.endtime = "11:00"
-    @entry.minutes.should == 60
+    @entry.minutes_calculated.should == 60
   end
+
   
 end
 

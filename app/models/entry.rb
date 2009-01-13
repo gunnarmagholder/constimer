@@ -14,6 +14,13 @@ class Entry < ActiveRecord::Base
 	 errors.add(:user, 'should exist') if self.user.nil?
 	end
 	
+	def self.colleagues_time
+	 if current_user.isRole('manager')
+	   @colleagues = User.find(:all, :conditions => {:managed_by => current_user.id})
+     Entry.find(:all, :conditions => {:user_id => @colleagues})
+   end
+	end
+	
 	def minutes_calculated
 	 if endtime? 
 	   ((endtime - starttime) / 60).round
