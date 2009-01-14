@@ -1,4 +1,7 @@
 <tr>
+  <% if current_user.isRole('manager') %>
+  <td><%=h noedit.user.login %></td>
+  <% end %>	
   <td><%=h noedit.project.name  %></td>
   <td align="right"><%=h noedit.edate.strftime("%m/%d/%Y") if noedit.edate %></td>
   <td align="right"><%=h noedit.starttime.strftime("%H:%M") if noedit.starttime %></td>

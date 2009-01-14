@@ -36,6 +36,9 @@
 
 <table border="1">
   <tr>
+	<% if current_user.isRole('manager') %>
+	<th>Colleague</th>
+	<% end %>
 	<th>Project</th>
     <th>Date</th>
     <th>Starttime</th>

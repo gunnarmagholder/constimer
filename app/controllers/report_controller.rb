@@ -1,7 +1,12 @@
 class ReportController < ApplicationController
   def index
     @user = current_user
-    conditions = ['user_id = ?', current_user.id]
+    if current_user.isRole('manager')
+      @colleagues = User.find(:all, :conditions => {:managed_by => current_user.id})
+      conditions = ['user_id in (?)', @colleagues]
+    else
+      conditions = ['user_id = ?', current_user.id]
+    end
     if params[:project]
       if params[:project][:id] != ""
         conditions[0] = conditions[0] + " and project_id = ? "
