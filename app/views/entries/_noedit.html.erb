@@ -1,4 +1,5 @@
 <tr>
+
   <% if current_user.isRole('manager') %>
   <td><%=h noedit.user.login %></td>
   <% end %>	
@@ -8,4 +9,5 @@
   <td align="right"><%=h noedit.endtime.strftime("%H:%M") if noedit.endtime %></td>
   <td align="right"><%=h noedit.minutes %></td>
   <td><%=h noedit.notes %></td>
+
 </tr>

@@ -19,6 +19,11 @@
   <b>Duedate:</b>
   <%=h @project.duedate %>
 </p>
+<% if @project.private %>
+<p>
+	Project is marked private!
+</p>
+<% end %>
 
 
 <%= link_to 'Edit', edit_project_path(@project) %> |
