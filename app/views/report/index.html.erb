@@ -52,6 +52,9 @@
   <%= render :partial => 'entries/noedit', :collection => @entries %>
 <% end %>
 <% if @overall_min %>
+   <% if current_user.isRole('manager') %>
+     <td></td>
+    <% end %>
 	<td></td>
 	<td></td>
 	<td></td>
