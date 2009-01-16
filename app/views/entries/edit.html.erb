@@ -4,7 +4,7 @@
   <%= f.error_messages %>
     <p>
     <%= f.label :project_name %><br />
-    <%= f.text_field :project_name %>
+    <%= text_field_with_auto_complete :entry, :project_name, { :size => 15 }, { :url => formatted_projects_path(:js), :method => :get, :param_name => 'search' } %>
   </p>
   <p>
     <%= f.label :edate %><br />
