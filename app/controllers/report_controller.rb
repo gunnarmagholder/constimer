@@ -31,7 +31,7 @@ class ReportController < ApplicationController
     else
       @projects = Project.find(:all, :conditions => ['user_id = ?', current_user.id])
     end
-    @years = Entry.find(:all, :group => 'year(edate)',:conditions => ['`entries`.`user_id` = ?', current_user.id])
+    @years = Entry.find(:all, :group => 'year(edate)',:conditions => ['`entries`.`user_id` = ? or `entries`.`user_id` in (?)', current_user.id, @colleagues])
   end
   
   def show
