@@ -1,9 +1,13 @@
 <script type="text/javascript">
 function fillCurrTime(){
 	var now = new Date();
-	document.forms[0].entry_edate.value = (parseInt(now.getMonth())+1) + "/" + (parseInt(now.getDate())) + "/" + (parseInt(now.getYear())+1900);
+	if (now.getYear() < 1900) {
+	  document.forms[0].entry_edate.value = (parseInt(now.getMonth())+1) + "/" + (parseInt(now.getDate())) + "/" + (parseInt(now.getYear())+1900); }
+	else {
+	  document.forms[0].entry_edate.value = (parseInt(now.getMonth())+1) + "/" + (parseInt(now.getDate())) + "/" + (parseInt(now.getYear())+1900); }
+
 	document.forms[0].entry_starttime.value = parseInt(now.getHours()) + ":" + parseInt(now.getMinutes());
-	document.forms[0].entry_notes.focus();
+	document.forms[0].entry_project_name.focus();
 }
 </script>
 <h3>Add an Entry</h3>
