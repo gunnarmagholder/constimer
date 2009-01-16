@@ -3,9 +3,9 @@ class ReportController < ApplicationController
     @user = current_user
     if current_user.isRole('manager')
       @colleagues = User.find(:all, :conditions => {:managed_by => current_user.id})
-      conditions = ['user_id in (?) ', @colleagues]
+      conditions = ['`projects`.`private` <> true AND `entries`.`user_id` in (?) ', @colleagues]
     else
-      conditions = ['user_id = ?', current_user.id]
+      conditions = ['`entries`.`user_id` = ?', current_user.id]
     end
     if params[:project]
       if params[:project][:id] != ""
@@ -24,14 +24,14 @@ class ReportController < ApplicationController
       end
     end
     
-    @entries = Entry.find(:all, :conditions => conditions)
+    @entries = Entry.find(:all, :include => :project, :conditions => conditions)
     @overall_min = @entries.sum(&:minutes)
     if current_user.isRole('manager') 
-	  	@projects = Project.find(:all, :conditions => ['user_id = ? OR user_id in (?)', current_user.id, @colleagues])
+	  	@projects = Project.find(:all, :conditions => ['(user_id = ? OR user_id in (?)) AND private = 0', current_user.id, @colleagues])
     else
       @projects = Project.find(:all, :conditions => ['user_id = ?', current_user.id])
     end
-    @years = Entry.find(:all, :group => 'year(edate)',:conditions => ['user_id = ?', current_user.id])
+    @years = Entry.find(:all, :group => 'year(edate)',:conditions => ['`entries`.`user_id` = ?', current_user.id])
   end
   
   def show
