@@ -102,7 +102,7 @@ class EntriesController < ApplicationController
   
   def stop
     @entry = Entry.find(params[:id])
-    @entry.update_attribute :endtime, Time.now
+    @entry.update_attribute :endtime, Time.now.hour.to_s + ":" + Time.now.min.to_s
     @entry.minutes = @entry.minutes_calculated
     flash[:notice] = "Endtime entered..."
     redirect_to entries_path
