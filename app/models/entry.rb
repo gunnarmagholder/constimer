@@ -50,6 +50,8 @@ class Entry < ActiveRecord::Base
 	  def cache_virtual_columns
 	    if endtime
 	  	  self.minutes = ((endtime - starttime) / 60).round	    	
+  	  else
+  	    self.minutes = 0
 	    end
 	  end
 end
