@@ -1,5 +1,6 @@
 class Entry < ActiveRecord::Base
 	before_validation :cache_virtual_columns
+	before_update :cache_virtual_columns
 	validates_presence_of :starttime, :on => :create, :message => "can't be blank"
 	validates_presence_of :edate, :on => :create, :message => "can't be blank"
 	validates_presence_of :user, :on => :create, :message => "can't be blank"
