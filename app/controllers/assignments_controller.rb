@@ -9,6 +9,8 @@ class AssignmentsController < ApplicationController
   
   def new
     @assignment = Assignment.new
+    @assignment.manager = current_user.id
+    @managername = User.find_by_id(current_user.id).name
   end
   
   def create

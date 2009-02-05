@@ -1,5 +1,5 @@
 <% title "New Assignment" %>
 
-<%= render :partial => 'form' %>
+<%= render :partial => 'form', :locals => {:assignment => @assignment, :managername => @managername}%>
 
 <p><%= link_to "Back to List", assignments_path %></p>

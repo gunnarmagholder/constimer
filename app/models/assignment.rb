@@ -1,17 +1,18 @@
 class Assignment < ActiveRecord::Base
-	
+
 	def status_name
 	case self.status
-	when 0
-		"undefined"
-	when 1
-		"open"
-	when 2
-		"message"
-	when 3
-		"denied"
-	when 4
-		"assigned"
+	  when 0
+		  "undefined"
+	  when 1
+		  "open"
+	  when 2
+		  "message"
+	  when 3
+		  "denied"
+	  when 4
+		  "assigned"
+	  end
 	end
 	
 	def status_name=(name)
