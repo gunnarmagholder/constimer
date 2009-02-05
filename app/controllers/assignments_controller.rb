@@ -1,24 +1,39 @@
 class AssignmentsController < ApplicationController
+  before_filter :login_required 
+  
   def index
-    @assignments = Assignment.all
+    @assignments = Assignment.find(:all, :conditions => {:manager => current_user.id})
   end
   
   def show
     @assignment = Assignment.find(params[:id])
+    @managername = User.find_by_id(current_user.id).name
+    @status_name = @assignment.status_name
   end
   
   def new
     @assignment = Assignment.new
     @assignment.manager = current_user.id
+    @assignment.status = 1 
     @managername = User.find_by_id(current_user.id).name
+    @status_name = @assignment.status_name
   end
   
   def create
     @assignment = Assignment.new(params[:assignment])
-    if @assignment.save
-      flash[:notice] = "Successfully created assignment."
-      redirect_to @assignment
+    @user = User.find_by_name(params[:assignment][:user])
+    if @user and @user.id != current_user.id
+      @assignment.user = @user.id  
+      @assignment.manager = current_user.id
+      @assignment.status = 1
+      if @assignment.save
+        flash[:notice] = "Successfully created assignment."
+        redirect_to @assignment
+      else
+        render :action => 'new'
+      end
     else
+      flash[:error] = "User not found"
       render :action => 'new'
     end
   end
