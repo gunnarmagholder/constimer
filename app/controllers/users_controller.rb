@@ -29,5 +29,7 @@ class UsersController < ApplicationController
     end
     redirect_back_or_default('/')
   end
+  
+  
 
 end

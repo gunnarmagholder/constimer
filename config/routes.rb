@@ -1,5 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :assignments
+  map.resources :assignments, :member => {:assign => :put}
   map.resources :projects
   map.root :controller => 'home', :index => 'index'
   map.about '/about', :controller => 'home', :action => 'about'

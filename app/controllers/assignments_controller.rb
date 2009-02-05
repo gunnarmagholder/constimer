@@ -58,4 +58,12 @@ class AssignmentsController < ApplicationController
     flash[:notice] = "Successfully destroyed assignment."
     redirect_to assignments_url
   end
+  
+  def assign
+    @asignment = Assignment.find(params[:id])
+    @assignment.update_attribute :status, 4
+    @user = User.find_by_id(@assignment.user)
+    @user.update_attribute :managed_by, @assignment.manager
+  end
+  
 end
