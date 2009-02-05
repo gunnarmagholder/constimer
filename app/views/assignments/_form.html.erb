@@ -1,0 +1,16 @@
+<% form_for @assignment do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :manager %><br />
+    <%= f.text_field :manager %>
+  </p>
+  <p>
+    <%= f.label :user %><br />
+    <%= f.text_field :user %>
+  </p>
+  <p>
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </p>
+  <p><%= f.submit "Submit" %></p>
+<% end %>
