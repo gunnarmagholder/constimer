@@ -22,6 +22,7 @@
     </p>
 
   <% end %>
+    <% if logged_in? %>
       <% if @entries.size > 0  %>
         <p>
         	You have open entries in your database!
@@ -29,4 +30,5 @@
         <h3>Listing open entries</h3>
           <%= render :partial => 'entries/list', :collection => @entries %>
       <% end %>
+    <% end %>
 <% end -%>
