@@ -1,6 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
 
-  map.resources :assignments, :member => {:assign => :put}
+  map.connect  'assignments/:id/assign', :controller => 'assignments', :action => 'assign'
+  map.resources :assignments
 
   map.resources :projects
   map.root :controller => 'home', :index => 'index'

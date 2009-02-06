@@ -9,6 +9,7 @@ class AssignmentsController < ApplicationController
   def show
     @assignment = Assignment.find(params[:id])
     @managername = User.find_by_id(current_user.id).name
+    @username = User.find_by_id(@assignment.user).name
     @status_name = @assignment.status_name
   end
   
@@ -56,16 +57,19 @@ class AssignmentsController < ApplicationController
   
   def destroy
     @assignment = Assignment.find(params[:id])
+    @user = User.find_by_id(@assignment.user)
+    @user.update_attribute :managed_by, nil
     @assignment.destroy
     flash[:notice] = "Successfully destroyed assignment."
     redirect_to assignments_url
   end
   
   def assign
-    @asignment = Assignment.find(params[:id])
+    @assignment = Assignment.find(params[:id])
     @assignment.update_attribute :status, 4
     @user = User.find_by_id(@assignment.user)
     @user.update_attribute :managed_by, @assignment.manager
+    redirect_to root_path
   end
   
 end

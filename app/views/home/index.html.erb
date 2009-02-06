@@ -18,7 +18,7 @@
     <p>
     	You have an assignment request from user <%= User.find_by_id(@assignment_request.manager).name %>.<br />
 
-        If you want to assign your account to this manager account please <%= link_to "this link", :controller => "assignments", :action => "assign", :id => @assignment_request.id, :method => :put %>.
+        If you want to assign your account to this manager account please <%= link_to 'use this link', :controller => 'assignments', :action => 'assign', :id => @assignment_request.id %>.
     </p>
 
   <% end %>
