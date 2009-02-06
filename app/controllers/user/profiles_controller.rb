@@ -20,6 +20,8 @@ class User::ProfilesController < ApplicationController
 										 		 :password => params[:user][:password],
 										 		 :password_confirmation => params[:user][:password_confirmation],
 												 :invitation_token => params[:user][:invitation_token])
+		@role = Role.find_by_name("user")
+		@user.roles << @role
     success = @user && @user.save
     if success && @user.errors.empty?
       redirect_back_or_default('/')

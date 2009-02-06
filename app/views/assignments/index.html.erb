@@ -8,9 +8,9 @@
   </tr>
   <% for assignment in @assignments %>
     <tr>
-      <td><%=h assignment.manager %></td>
-      <td><%=h assignment.user %></td>
-      <td><%=h assignment.status %></td>
+      <td><%=h User.find_by_id(assignment.manager).name %></td>
+      <td><%=h User.find_by_id(assignment.user).name %></td>
+      <td><%=h assignment.status_name %></td>
       <td><%= link_to "Show", assignment %></td>
       <td><%= link_to "Edit", edit_assignment_path(assignment) %></td>
       <td><%= link_to "Destroy", assignment, :confirm => 'Are you sure?', :method => :delete %></td>

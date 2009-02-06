@@ -2,14 +2,16 @@
   <%= f.error_messages %>
   <p>
 	<%= f.hidden_field :manager %>
-   <strong><%= f.label :manager, "Manager" %></strong><br />
-   <%= text_field_tag 'Manager-Name', @managername, :disabled => true %>	
   </p>
-  
+  <p>
+    Please enter the name of the person, you want to assign to your account below.	
+  </p>  
   <p>
     <%= f.label :user %><br />
     <%= f.text_field :user %>
   </p>
-  	<%= f.hidden_field :status %>
+
+  <%= text_field_tag 'Status', @status_name, :disabled => true %>
+	<%= f.hidden_field :status %>
   <p><%= f.submit "Submit" %></p>
 <% end %>

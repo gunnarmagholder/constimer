@@ -14,4 +14,12 @@
 <% else -%>
   <p>Welcome <%= current_user.login %>.</p>
   <p>Please find your entries and projects on the navigation tabs. </p>
+  <% if @assignment_request %>
+    <p>
+    	You have an assignment request from user <%= User.find_by_id(@assignment_request.manager).name %>.<br />
+
+        If you want to assign your account to this manager account please <%= link_to "this link", :controller => "assignments", :action => "assign", :id => @assignment_request.id, :method => :put %>.
+    </p>
+
+  <% end %>
 <% end -%>

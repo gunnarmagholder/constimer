@@ -1,4 +1,6 @@
 class EntriesController < ApplicationController
+  before_filter :login_required
+  
   # GET /entries
   # GET /entries.xml
   
