@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   def index
+    @entries = []
     if logged_in?
       if current_user.isRole('user')
         @assignment_request = Assignment.find_by_user_and_status(current_user.id, 1)
