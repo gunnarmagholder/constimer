@@ -1,6 +1,6 @@
 class AssignmentsController < ApplicationController
   def index
-    @assignments = Assignment.all
+    @assignments = Assignment.find_by_manager(current_user.id)
   end
   
   def show
@@ -9,6 +9,7 @@ class AssignmentsController < ApplicationController
   
   def new
     @assignment = Assignment.new
+	@assignment.status = 1
     @assignment.manager = current_user.id
     @managername = User.find_by_id(current_user.id).name
   end
