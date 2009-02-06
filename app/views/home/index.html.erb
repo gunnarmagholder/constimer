@@ -22,5 +22,14 @@
     </p>
 
   <% end %>
-
+   
+      <% if @entries.size > 0  %>
+        <p>
+        	You have <%= @entries.size %> open entries in your database!
+        </p>
+        <% if @entries.size > 0 %>
+          <h3>Listing open entries</h3>
+          <%= render :partial => 'entries/list', :collection => @entries %>
+        <% end %>
+      <% end %>
 <% end -%>
