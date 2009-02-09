@@ -7,6 +7,8 @@ ActionController::Routing::Routes.draw do |map|
   map.root :controller => 'home', :index => 'index'
   map.about '/about', :controller => 'home', :action => 'about'
   map.about '/faq', :controller => 'home', :action => 'faq'
+  map.about '/germanfaq', :controller => 'home', :action => 'germanfaq'
+  
   map.resources :entries, :collection => { :show_all => :post, :incomplete => :post, :last_ten => :post },:member => { :stop => :put }
   
   map.login '/login', :controller => 'sessions', :action => 'new'

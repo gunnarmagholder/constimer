@@ -10,6 +10,9 @@ class HomeController < ApplicationController
 
   def faq
   end
+  
+  def germanfaq
+  end
 
   def about
   end
