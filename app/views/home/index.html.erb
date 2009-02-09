@@ -1,7 +1,7 @@
 
 <% if not logged_in? %>
   <p>Welcome to constimer. </p>
-  <p><a href="/FAQ-ger.htm" id="" title="FAQ-ger">You can find a german FAQ right here. </a></p>
+  <p><a href="/germanfaq">You can find a german FAQ right here. </a></p>
   <% unless logged_in? -%>
 	<% if_in_beta? do -%>
       <%= error_messages_for :invitation %>
