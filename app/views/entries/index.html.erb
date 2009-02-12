@@ -12,7 +12,7 @@ function fillCurrTime(){
 </script>
 <h3>Add an Entry</h3>
 
-<% form_for :entry, :url => entries_path, :name => 'fo'  do |f| -%>
+<% form_for :entry, :url => entries_path, :name => 'fo', :html => {:id => "new_entry"} do |f| -%>
 <%= f.error_messages %>
 <%= f.hidden_field :user_id, :value => current_user %>
 <table>
@@ -44,9 +44,9 @@ function fillCurrTime(){
 	<p><b>There are <%= @null_entries.size.to_s %> entries, that don't belong to a project!</b></p>	
 <% end  -%>
 
-<%= link_to_remote "Show all entries",
+<%= link_to "Show all entries",
     :url => {:action => 'show_all'} %>
-<%= link_to_remote "Show incomplete",
+<%= link_to "Show incomplete",
     :url => {:action => 'incomplete'} %>
 <div id="entrylist">
 <%= render :partial => 'list', :locals => {:entries => @entries} %>
