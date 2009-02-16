@@ -1,8 +1,9 @@
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
+require 'factory_girl'
 
 def valid_entry_attributes
   {
-    :user => User.find(:first),
+    :user => User.find_by_login("aaron"),
     :edate => '05/08/2008',
     :starttime => '10:00',
     :notes => "value for notes"
@@ -50,6 +51,6 @@ describe Entry do
     @entry.minutes_calculated.should == 60
   end
 
-  
 end
+
 

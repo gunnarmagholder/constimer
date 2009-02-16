@@ -1,0 +1,167 @@
+--- !ruby/object:Gem::Specification 
+name: jscruggs-metric_fu
+version: !ruby/object:Gem::Version 
+  version: 0.9.0
+platform: ruby
+authors: 
+- Jake Scruggs
+- Sean Soper
+- Andre Arko
+- Petrik de Heus
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2009-01-11 00:00:00 +01:00
+default_executable: 
+dependencies: 
+- !ruby/object:Gem::Dependency 
+  name: flay
+  type: :runtime
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">"
+      - !ruby/object:Gem::Version 
+        version: 0.0.0
+    version: 
+- !ruby/object:Gem::Dependency 
+  name: flog
+  type: :runtime
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        version: 1.2.0
+    version: 
+- !ruby/object:Gem::Dependency 
+  name: rcov
+  type: :runtime
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">"
+      - !ruby/object:Gem::Version 
+        version: 0.8.1
+    version: 
+- !ruby/object:Gem::Dependency 
+  name: railroad
+  type: :runtime
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        version: 0.5.0
+    version: 
+- !ruby/object:Gem::Dependency 
+  name: reek
+  type: :runtime
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">"
+      - !ruby/object:Gem::Version 
+        version: 0.0.0
+    version: 
+- !ruby/object:Gem::Dependency 
+  name: roodi
+  type: :runtime
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">"
+      - !ruby/object:Gem::Version 
+        version: 0.0.0
+    version: 
+description: Code metrics from Flog, Flay, RCov, Saikuro, Churn, Reek, Roodi and Rails' stats task
+email: jake.scruggs@gmail.com
+executables: []
+
+extensions: []
+
+extra_rdoc_files: 
+- HISTORY
+- Manifest.txt
+- README
+files: 
+- README
+- HISTORY
+- TODO
+- MIT-LICENSE
+- Rakefile
+- lib/metric_fu/base.rb
+- lib/metric_fu/churn.rb
+- lib/metric_fu/flay.rb
+- lib/metric_fu/flog.rb
+- lib/metric_fu/reek.rb
+- lib/metric_fu/roodi.rb
+- lib/metric_fu/md5_tracker.rb
+- lib/metric_fu/saikuro/saikuro.rb
+- lib/metric_fu.rb
+- lib/tasks/metric_fu.rb
+- lib/tasks/churn.rake
+- lib/tasks/coverage.rake
+- lib/tasks/flay.rake
+- lib/tasks/flog.rake
+- lib/tasks/metric_fu.rake
+- lib/tasks/railroad.rake
+- lib/tasks/reek.rake
+- lib/tasks/roodi.rake
+- lib/tasks/saikuro.rake
+- lib/tasks/stats.rake
+- lib/templates/churn.html.erb
+- lib/templates/default.css
+- lib/templates/flay.html.erb
+- lib/templates/flog.html.erb
+- lib/templates/flog_page.html.erb
+- lib/templates/reek.html.erb
+- lib/templates/roodi.html.erb
+- Manifest.txt
+- spec/base_spec.rb
+- spec/churn_spec.rb
+- spec/config_spec.rb
+- spec/flay_spec.rb
+- spec/flog_spec.rb
+- spec/md5_tracker_spec.rb
+- spec/reek_spec.rb
+- spec/roodi_spec.rb
+- spec/spec_helper.rb
+has_rdoc: true
+homepage: http://metric-fu.rubyforge.org/
+post_install_message: 
+rdoc_options: 
+- --main
+- README
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+requirements: []
+
+rubyforge_project: 
+rubygems_version: 1.3.1
+signing_key: 
+specification_version: 2
+summary: A fistful of code metrics
+test_files: 
+- spec/base_spec.rb
+- spec/churn_spec.rb
+- spec/config_spec.rb
+- spec/flay_spec.rb
+- spec/flog_spec.rb
+- spec/md5_tracker_spec.rb
+- spec/reek_spec.rb
+- spec/roodi_spec.rb
+- spec/spec_helper.rb

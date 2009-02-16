@@ -6,7 +6,6 @@ class CreateProjects < ActiveRecord::Migration
       t.string :custname
       t.float :budget
       t.timestamp :duedate
-
       t.timestamps
     end
   end

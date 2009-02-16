@@ -41,9 +41,19 @@ class User < ActiveRecord::Base
   def colleagues
     if self.isRole('manager')
       User.find(:all, :conditions => {:managed_by => self.id})
-    else
-      raise UserException.new, "This user is not a manager. It can't manage any other accounts!"
     end
+  end
+
+  def myProjects
+    @projects = []
+    @projects = @projects + Array(Project.find(:all, :conditions => {:user_id => self.id}))
+    if self.isRole("user")
+      @projects = @projects + Array(Project.find(:all, :conditions => {:user_id => self.managed_by}))
+    end
+    if self.isRole("manager")
+      @projects = @projects + Array(Project.find(:all, :conditions => ['user_id IN (?) AND private <> true',Array(self.colleagues)]))
+    end
+    @projects
   end
 
 	def to_xml(options = {})

@@ -1,0 +1,563 @@
+<html>
+<head>
+	<title>Reek Results</title>
+	<style>
+	body {
+	background-color: #efefef;
+	margin: 20px;
+	padding: 0;
+	font: 12px verdana, arial, helvetica;
+}
+
+table {
+	border-collapse: collapse;
+	border: 1px solid #666;
+	background: #fff;
+	margin-bottom: 20px;	
+}
+
+	table tr.light {
+	 	background: #fff;
+	}
+
+	table tr.dark {
+		background: #f9f9f9;
+	}
+
+	table td, table th {
+		padding: 4px 10px;
+		font-size: 13px;
+	}
+	table th {
+		text-align: center;
+		color: #fc0;
+		background: #336;		
+		font-weight: bold;
+		border: #d0d0d0 1px solid;
+	}
+
+	table td {
+		border: #d0d0d0 1px solid;
+	}
+	
+		table td.score {
+			text-align: right;
+		}	
+
+.warning {
+	background: yellow;
+}	
+	</style>
+</head>
+
+<body>
+	<h1>Reek Results</h1>
+	<p><a href="http://reek.rubyforge.org/">Reek</a> detects common code smells in ruby code.</p>
+	<table>
+		<tr>
+		  <th>File Path</th>
+		  <th>Code Smell</th>
+		</tr>
+		
+  		<tr class='light'>
+  		  <td>"app/controllers/admin/invite_actions_controller.rb" -- 2 warnings:</td>
+  		  <td>
+  			  
+  			  [Duplication] colon2constAdminInviteActionsController#create calls params[add_invites] more than once<br>
+  			  
+  			  [Long Method] colon2constAdminInviteActionsController#create has approx 6 statements<br>
+  			  
+  		  </td>
+  		</tr>
+		
+  		<tr class='dark'>
+  		  <td>"app/controllers/admin/invites_controller.rb" -- 3 warnings:</td>
+  		  <td>
+  			  
+  			  [Long Method] colon2constAdminInvitesController#create has approx 6 statements<br>
+  			  
+  			  [Duplication] colon2constAdminInvitesController#update calls params[id] more than once<br>
+  			  
+  			  [Long Method] colon2constAdminInvitesController#update has approx 7 statements<br>
+  			  
+  		  </td>
+  		</tr>
+		
+  		<tr class='light'>
+  		  <td>"app/controllers/admin/roles_controller.rb" -- 3 warnings:</td>
+  		  <td>
+  			  
+  			  [Duplication] colon2constAdminRolesController#update calls params[user] more than once<br>
+  			  
+  			  [Duplication] colon2constAdminRolesController#update calls params[user][role_ids] more than once<br>
+  			  
+  			  [Long Method] colon2constAdminRolesController#update has approx 8 statements<br>
+  			  
+  		  </td>
+  		</tr>
+		
+  		<tr class='dark'>
+  		  <td>"app/controllers/application.rb" -- 2 warnings:</td>
+  		  <td>
+  			  
+  			  [Utility Function] ApplicationController#in_beta? doesn't depend on instance state<br>
+  			  
+  			  [Utility Function] ApplicationController#nested_layout doesn't depend on instance state<br>
+  			  
+  		  </td>
+  		</tr>
+		
+  		<tr class='light'>
+  		  <td>"app/controllers/assignments_controller.rb" -- 7 warnings:</td>
+  		  <td>
+  			  
+  			  [Duplication] AssignmentsController#create calls @user.id more than once<br>
+  			  
+  			  [Duplication] AssignmentsController#create calls current_user.id more than once<br>
+  			  
+  			  [Duplication] AssignmentsController#create calls params[assignment] more than once<br>
+  			  
+  			  [Long Method] AssignmentsController#create has approx 11 statements<br>
+  			  
+  			  [Long Method] AssignmentsController#destroy has approx 6 statements<br>
+  			  
+  			  [Duplication] AssignmentsController#new calls current_user.id more than once<br>
+  			  
+  			  [Long Method] AssignmentsController#new has approx 6 statements<br>
+  			  
+  		  </td>
+  		</tr>
+		
+  		<tr class='dark'>
+  		  <td>"app/controllers/entries_controller.rb" -- 16 warnings:</td>
+  		  <td>
+  			  
+  			  [Duplication] EntriesController#create calls format.html more than once<br>
+  			  
+  			  [Duplication] EntriesController#create calls format.xml more than once<br>
+  			  
+  			  [Long Method] EntriesController#create has approx 9 statements<br>
+  			  
+  			  [Nested Iterators] EntriesController#create has nested iterators<br>
+  			  
+  			  [Nested Iterators] EntriesController#destroy has nested iterators<br>
+  			  
+  			  [Duplication] EntriesController#index calls current_user.id more than once<br>
+  			  
+  			  [Nested Iterators] EntriesController#index has nested iterators<br>
+  			  
+  			  [Duplication] EntriesController#new calls Date.today more than once<br>
+  			  
+  			  [Long Method] EntriesController#new has approx 6 statements<br>
+  			  
+  			  [Nested Iterators] EntriesController#new has nested iterators<br>
+  			  
+  			  [Nested Iterators] EntriesController#show has nested iterators<br>
+  			  
+  			  [Duplication] EntriesController#stop calls Time.now more than once<br>
+  			  
+  			  [Duplication] EntriesController#update calls format.html more than once<br>
+  			  
+  			  [Duplication] EntriesController#update calls format.xml more than once<br>
+  			  
+  			  [Long Method] EntriesController#update has approx 8 statements<br>
+  			  
+  			  [Nested Iterators] EntriesController#update has nested iterators<br>
+  			  
+  		  </td>
+  		</tr>
+		
+  		<tr class='light'>
+  		  <td>"app/controllers/four_oh_fours_controller.rb" -- 1 warnings:</td>
+  		  <td>
+  			  
+  			  [Nested Iterators] FourOhFoursController#index has nested iterators<br>
+  			  
+  		  </td>
+  		</tr>
+		
+  		<tr class='dark'>
+  		  <td>"app/controllers/home_controller.rb" -- 1 warnings:</td>
+  		  <td>
+  			  
+  			  [Duplication] HomeController#index calls current_user.id more than once<br>
+  			  
+  		  </td>
+  		</tr>
+		
+  		<tr class='light'>
+  		  <td>"app/controllers/projects_controller.rb" -- 13 warnings:</td>
+  		  <td>
+  			  
+  			  [Duplication] ProjectsController#create calls format.html more than once<br>
+  			  
+  			  [Duplication] ProjectsController#create calls format.xml more than once<br>
+  			  
+  			  [Long Method] ProjectsController#create has approx 8 statements<br>
+  			  
+  			  [Nested Iterators] ProjectsController#create has nested iterators<br>
+  			  
+  			  [Nested Iterators] ProjectsController#destroy has nested iterators<br>
+  			  
+  			  [Duplication] ProjectsController#index calls params[search] more than once<br>
+  			  
+  			  [Nested Iterators] ProjectsController#index has nested iterators<br>
+  			  
+  			  [Nested Iterators] ProjectsController#new has nested iterators<br>
+  			  
+  			  [Nested Iterators] ProjectsController#show has nested iterators<br>
+  			  
+  			  [Duplication] ProjectsController#update calls format.html more than once<br>
+  			  
+  			  [Duplication] ProjectsController#update calls format.xml more than once<br>
+  			  
+  			  [Long Method] ProjectsController#update has approx 7 statements<br>
+  			  
+  			  [Nested Iterators] ProjectsController#update has nested iterators<br>
+  			  
+  		  </td>
+  		</tr>
+		
+  		<tr class='dark'>
+  		  <td>"app/controllers/report_controller.rb" -- 10 warnings:</td>
+  		  <td>
+  			  
+  			  [Duplication] ReportController#index calls conditions[0] more than once<br>
+  			  
+  			  [Duplication] ReportController#index calls current_user.id more than once<br>
+  			  
+  			  [Duplication] ReportController#index calls current_user.isRole(manager) more than once<br>
+  			  
+  			  [Duplication] ReportController#index calls params[date] more than once<br>
+  			  
+  			  [Duplication] ReportController#index calls params[date][month] more than once<br>
+  			  
+  			  [Duplication] ReportController#index calls params[date][year] more than once<br>
+  			  
+  			  [Duplication] ReportController#index calls params[project] more than once<br>
+  			  
+  			  [Duplication] ReportController#index calls params[project][id] more than once<br>
+  			  
+  			  [Long Method] ReportController#index has approx 18 statements<br>
+  			  
+  			  [Feature Envy] ReportController#index refers to conditions more than self<br>
+  			  
+  		  </td>
+  		</tr>
+		
+  		<tr class='light'>
+  		  <td>"app/controllers/sessions_controller.rb" -- 11 warnings:</td>
+  		  <td>
+  			  
+  			  [Duplication] SessionsController#assign_registration_attributes! calls registration[registration_attribute] more than once<br>
+  			  
+  			  [Feature Envy] SessionsController#assign_registration_attributes! refers to registration more than self<br>
+  			  
+  			  [Duplication] SessionsController#create calls params[login] more than once<br>
+  			  
+  			  [Duplication] SessionsController#create calls params[openid_identifier] more than once<br>
+  			  
+  			  [Long Method] SessionsController#create has approx 6 statements<br>
+  			  
+  			  [Long Method] SessionsController#failed_login has approx 6 statements<br>
+  			  
+  			  [Utility Function] SessionsController#model_to_registration_mapping doesn't depend on instance state<br>
+  			  
+  			  [Duplication] SessionsController#open_id_authentication calls params[invitation_token] more than once<br>
+  			  
+  			  [Long Method] SessionsController#open_id_authentication has approx 15 statements<br>
+  			  
+  			  [Nested Iterators] SessionsController#open_id_authentication has nested iterators<br>
+  			  
+  			  [Long Method] SessionsController#successful_login has approx 10 statements<br>
+  			  
+  		  </td>
+  		</tr>
+		
+  		<tr class='dark'>
+  		  <td>"app/controllers/user/invitations_controller.rb" -- 1 warnings:</td>
+  		  <td>
+  			  
+  			  [Long Method] colon2constUserInvitationsController#create has approx 8 statements<br>
+  			  
+  		  </td>
+  		</tr>
+		
+  		<tr class='light'>
+  		  <td>"app/controllers/user/openid_accounts_controller.rb" -- 4 warnings:</td>
+  		  <td>
+  			  
+  			  [Duplication] colon2constUserOpenidAccountsController#create calls params[user] more than once<br>
+  			  
+  			  [Long Method] colon2constUserOpenidAccountsController#create has approx 12 statements<br>
+  			  
+  			  [Duplication] colon2constUserOpenidAccountsController#update calls params[user] more than once<br>
+  			  
+  			  [Long Method] colon2constUserOpenidAccountsController#update has approx 6 statements<br>
+  			  
+  		  </td>
+  		</tr>
+		
+  		<tr class='dark'>
+  		  <td>"app/controllers/user/password_settings_controller.rb" -- 1 warnings:</td>
+  		  <td>
+  			  
+  			  [Long Method] colon2constUserPasswordSettingsController#create has approx 6 statements<br>
+  			  
+  		  </td>
+  		</tr>
+		
+  		<tr class='light'>
+  		  <td>"app/controllers/user/passwords_controller.rb" -- 2 warnings:</td>
+  		  <td>
+  			  
+  			  [Duplication] colon2constUserPasswordsController#update calls request.remote_ip more than once<br>
+  			  
+  			  [Long Method] colon2constUserPasswordsController#update has approx 11 statements<br>
+  			  
+  		  </td>
+  		</tr>
+		
+  		<tr class='dark'>
+  		  <td>"app/controllers/user/profiles_controller.rb" -- 4 warnings:</td>
+  		  <td>
+  			  
+  			  [Duplication] colon2constUserProfilesController#create calls params[user] more than once<br>
+  			  
+  			  [Long Method] colon2constUserProfilesController#create has approx 12 statements<br>
+  			  
+  			  [Duplication] colon2constUserProfilesController#update calls params[user] more than once<br>
+  			  
+  			  [Long Method] colon2constUserProfilesController#update has approx 6 statements<br>
+  			  
+  		  </td>
+  		</tr>
+		
+  		<tr class='light'>
+  		  <td>"app/controllers/users_controller.rb" -- 2 warnings:</td>
+  		  <td>
+  			  
+  			  [Duplication] UsersController#activate calls params[activation_code] more than once<br>
+  			  
+  			  [Long Method] UsersController#create has approx 7 statements<br>
+  			  
+  		  </td>
+  		</tr>
+		
+  		<tr class='dark'>
+  		  <td>"app/helpers/application_helper.rb" -- 2 warnings:</td>
+  		  <td>
+  			  
+  			  [Nested Iterators] #flash_messages has nested iterators<br>
+  			  
+  			  [Utility Function] #in_beta? doesn't depend on instance state<br>
+  			  
+  		  </td>
+  		</tr>
+		
+  		<tr class='light'>
+  		  <td>"app/models/entry.rb" -- 3 warnings:</td>
+  		  <td>
+  			  
+  			  [Duplication] Entry#project_name= calls Project.find_by_name_and_user_id(name, User.current_user.managed_by) more than once<br>
+  			  
+  			  [Duplication] Entry#project_name= calls User.current_user more than once<br>
+  			  
+  			  [Duplication] Entry#project_name= calls User.current_user.managed_by more than once<br>
+  			  
+  		  </td>
+  		</tr>
+		
+  		<tr class='dark'>
+  		  <td>"app/models/role.rb" -- 1 warnings:</td>
+  		  <td>
+  			  
+  			  [Utility Function] Role#to_xml doesn't depend on instance state<br>
+  			  
+  		  </td>
+  		</tr>
+		
+  		<tr class='light'>
+  		  <td>"app/models/user.rb" -- 1 warnings:</td>
+  		  <td>
+  			  
+  			  [Utility Function] User#to_xml doesn't depend on instance state<br>
+  			  
+  		  </td>
+  		</tr>
+		
+  		<tr class='dark'>
+  		  <td>"app/models/user_observer.rb" -- 2 warnings:</td>
+  		  <td>
+  			  
+  			  [Utility Function] UserObserver#after_save doesn't depend on instance state<br>
+  			  
+  			  [Feature Envy] UserObserver#after_save refers to user more than self<br>
+  			  
+  		  </td>
+  		</tr>
+		
+  		<tr class='light'>
+  		  <td>"lib/authenticated_system.rb" -- 5 warnings:</td>
+  		  <td>
+  			  
+  			  [Long Method] #access_denied has approx 6 statements<br>
+  			  
+  			  [Nested Iterators] #access_denied has nested iterators<br>
+  			  
+  			  [Control Couple] #current_user= is controlled by argument new_user<br>
+  			  
+  			  [Duplication] #login_from_cookie calls cookies[auth_token] more than once<br>
+  			  
+  			  [Duplication] #login_from_session calls session[user_id] more than once<br>
+  			  
+  		  </td>
+  		</tr>
+		
+  		<tr class='dark'>
+  		  <td>"lib/authenticated_test_helper.rb" -- 2 warnings:</td>
+  		  <td>
+  			  
+  			  [Control Couple] #authorize_as is controlled by argument user<br>
+  			  
+  			  [Control Couple] #login_as is controlled by argument user<br>
+  			  
+  		  </td>
+  		</tr>
+		
+  		<tr class='light'>
+  		  <td>"lib/authentication/user_abstraction.rb" -- 15 warnings:</td>
+  		  <td>
+  			  
+  			  [Duplication] #add_invites calls APP_CONFIG[settings] more than once<br>
+  			  
+  			  [Duplication] #add_invites calls APP_CONFIG[settings][max_user_invite_limit] more than once<br>
+  			  
+  			  [Duplication] #add_invites calls [:self].invitation_limit more than once<br>
+  			  
+  			  [Long Method] #change_password! has approx 6 statements<br>
+  			  
+  			  [Feature Envy] #change_password! refers to new_password more than self<br>
+  			  
+  			  [Control Couple] #email= is controlled by argument value<br>
+  			  
+  			  [Long Method] #find_with_activation_code has approx 6 statements<br>
+  			  
+  			  [Feature Envy] #find_with_activation_code refers to u more than self<br>
+  			  
+  			  [Uncommunicative Name] #find_with_activation_code uses the local variable name 'u'<br>
+  			  
+  			  [Long Yield List] #find_with_activation_code yields 4 parameters<br>
+  			  
+  			  [Control Couple] #login= is controlled by argument value<br>
+  			  
+  			  [Feature Envy] #send_new_activation_code refers to u more than self<br>
+  			  
+  			  [Uncommunicative Name] #send_new_activation_code uses the local variable name 'u'<br>
+  			  
+  			  [Long Yield List] #send_new_activation_code yields 4 parameters<br>
+  			  
+  			  [Utility Function] #site_in_beta? doesn't depend on instance state<br>
+  			  
+  		  </td>
+  		</tr>
+		
+  		<tr class='dark'>
+  		  <td>"lib/hijacker.rb" -- 5 warnings:</td>
+  		  <td>
+  			  
+  			  [Long Parameter List] Hijacker#hijack_method has 4 parameters<br>
+  			  
+  			  [Long Method] Hijacker#hijack_method has approx 7 statements<br>
+  			  
+  			  [Feature Envy] Hijacker#hijack_method refers to klass more than self<br>
+  			  
+  			  [Long Method] Hijacker#restore has approx 6 statements<br>
+  			  
+  			  [Nested Iterators] Hijacker#restore has nested iterators<br>
+  			  
+  		  </td>
+  		</tr>
+		
+  		<tr class='light'>
+  		  <td>"lib/role_requirement_system.rb" -- 25 warnings:</td>
+  		  <td>
+  			  
+  			  [Duplication] #access_denied calls APP_CONFIG[settings] more than once<br>
+  			  
+  			  [Duplication] #access_denied calls APP_CONFIG[settings][domain] more than once<br>
+  			  
+  			  [Duplication] #access_denied calls domain.length more than once<br>
+  			  
+  			  [Duplication] #access_denied calls referer.length more than once<br>
+  			  
+  			  [Duplication] #access_denied calls request.env more than once<br>
+  			  
+  			  [Duplication] #access_denied calls request.env[HTTP_REFERER] more than once<br>
+  			  
+  			  [Duplication] #access_denied calls route[controller] more than once<br>
+  			  
+  			  [Duplication] #access_denied calls session[refered_from] more than once<br>
+  			  
+  			  [Duplication] #access_denied calls wwwdomain.length more than once<br>
+  			  
+  			  [Long Method] #access_denied has approx 16 statements<br>
+  			  
+  			  [Nested Iterators] #access_denied has nested iterators<br>
+  			  
+  			  [Duplication] #require_role calls options[for] more than once<br>
+  			  
+  			  [Duplication] #require_role calls options[for_all_except] more than once<br>
+  			  
+  			  [Duplication] #require_role calls options[key] more than once<br>
+  			  
+  			  [Long Method] #require_role has approx 12 statements<br>
+  			  
+  			  [Feature Envy] #require_role refers to options more than self<br>
+  			  
+  			  [Duplication] #url_options_authenticate? calls params[controller] more than once<br>
+  			  
+  			  [Feature Envy] #url_options_authenticate? refers to params more than self<br>
+  			  
+  			  [Duplication] #user_authorized_for? calls [:or, [:call, [:lvar, :params], :[], [:array, [:lit, :action]]], [:str, "index"]].to_sym more than once<br>
+  			  
+  			  [Duplication] #user_authorized_for? calls [:self].role_requirements more than once<br>
+  			  
+  			  [Duplication] #user_authorized_for? calls options[if] more than once<br>
+  			  
+  			  [Duplication] #user_authorized_for? calls options[unless] more than once<br>
+  			  
+  			  [Duplication] #user_authorized_for? calls params[action] more than once<br>
+  			  
+  			  [Long Method] #user_authorized_for? has approx 12 statements<br>
+  			  
+  			  [Nested Iterators] #user_authorized_for? has nested iterators<br>
+  			  
+  		  </td>
+  		</tr>
+		
+  		<tr class='dark'>
+  		  <td>"lib/role_requirement_test_helper.rb" -- 7 warnings:</td>
+  		  <td>
+  			  
+  			  [Duplication] #assert_user_access_check calls @controller.class more than once<br>
+  			  
+  			  [Duplication] #assert_user_access_check calls params.inspect more than once<br>
+  			  
+  			  [Long Parameter List] #assert_user_access_check has 4 parameters<br>
+  			  
+  			  [Long Method] #assert_user_access_check has approx 7 statements<br>
+  			  
+  			  [Control Couple] #assert_user_access_check is controlled by argument should_access<br>
+  			  
+  			  [Duplication] #request_passes_role_security_system? calls action.to_s more than once<br>
+  			  
+  			  [Long Method] #request_passes_role_security_system? has approx 7 statements<br>
+  			  
+  		  </td>
+  		</tr>
+		
+	</table>
+	<p>Generated on Sat Feb 14 21:41:06 +0100 2009</p>
+</body>
+</html>

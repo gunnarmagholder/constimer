@@ -1,15 +1,24 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  user: 1
-  name: MyString
-  custname: MyString
+  user_id: 50001
+  name: Quentins First Project   
+  custname: First Cust
   budget: 1.5
   duedate: 2008-10-28 18:13:18
 
 two:
-  user: 1
-  name: MyString
-  custname: MyString
+  user_id: 50002
+  name: Aarons Second Project
+  custname: Second Cust
   budget: 1.5
   duedate: 2008-10-28 18:13:18
+  private: false
+  
+three:
+  user_id: 50002
+  name: Aarons First Project
+  custname: Second Cust
+  budget: 1.5
+  duedate: 2008-10-28 18:13:18
+  private: true 

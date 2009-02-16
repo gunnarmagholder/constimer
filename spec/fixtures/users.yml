@@ -1,7 +1,21 @@
-
+admin:
+  id:                        1
+  login:                     admin
+  name:                      admin
+  email:                     yourpersonalemail@example.com
+  salt:                      9c002c1f1d70936cabf3117dd7b78b8b75132ad2 # SHA1('0')
+  crypted_password:          30af3a68db221dabd0cb30508a39ae006d7ce3dc # 'monkey'
+  user_type:                 SiteUser
+  created_at:                2008-11-14 19:40:25
+  remember_token_expires_at: 
+  remember_token:            
+  activation_code:           
+  activated_at:              2008-11-14 19:40:26
+  
 quentin:
   id:                        50001
   login:                     quentin
+  name:                      quentin
   email:                     quentin@example.com
   salt:                      356a192b7913b04c54574d18c28d46e6395428ab # SHA1('0')
   crypted_password:          df42adbd0b4f7d31af495bcd170d4496686aecb1 # 'monkey'
@@ -15,6 +29,7 @@ quentin:
 aaron:
   id:                        50002
   login:                     aaron
+  name:                      aaron
   email:                     aaron@example.com
   salt:                      da4b9237bacccdf19c0760cab7aec4a8359010b0 # SHA1('1')
   crypted_password:          5326a08cf4f5618c9e9fb059f949e58671f74b29 # 'monkey'
@@ -22,9 +37,10 @@ aaron:
   created_at:                <%= 1.days.ago.to_s :db %>
   remember_token_expires_at: 
   remember_token:            
-  activation_code:           1b6453892473a467d07372d45eb05abc2031647a
-  activated_at:              
+  activation_code:          
+  activated_at:              2008-11-14 19:40:26
   managed_by:                50001
+
 
 
 old_password_holder:
