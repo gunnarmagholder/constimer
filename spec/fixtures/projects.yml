@@ -6,6 +6,7 @@ one:
   custname: First Cust
   budget: 1.5
   duedate: 2008-10-28 18:13:18
+  private: false
 
 two:
   user_id: 50002
