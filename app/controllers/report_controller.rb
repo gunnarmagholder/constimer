@@ -26,11 +26,7 @@ class ReportController < ApplicationController
     
     @entries = Entry.find(:all, :include => :project, :conditions => conditions, :order => 'edate ASC')
     @overall_min = @entries.sum(&:minutes)
-    if current_user.isRole('manager') 
-	  	@projects = Project.find(:all, :conditions => ['(user_id = ? OR user_id in (?)) AND private = 0', current_user.id, @colleagues])
-    else
-      @projects = Project.find(:all, :conditions => ['user_id = ?', current_user.id])
-    end
+    @projects = current_user.myProjects
     @years = Entry.find(:all, :group => 'year(edate)',:conditions => ['`entries`.`user_id` = ? or `entries`.`user_id` in (?)', current_user.id, @colleagues])
   end
   
