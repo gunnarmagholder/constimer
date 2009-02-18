@@ -9,6 +9,7 @@ set :repository,  "git@github.com:gunnarmagholder/constimer.git"
 set :use_sudo, false 
 set :scm_verbose, true
 
+after "deploy:update", "newrelic:notice_deployment"
 
 set :domain, "h1439698.stratoserver.net"
 role :app, domain
