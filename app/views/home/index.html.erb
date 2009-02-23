@@ -2,16 +2,23 @@
 <% if not logged_in? %>
   <p>Welcome to constimer. </p>
   <p><a href="/germanfaq">You can find a german FAQ right here. </a></p>
-  <% unless logged_in? -%>
-	<% if_in_beta? do -%>
-      <%= error_messages_for :invitation %>
-	  <p>We are currently in private beta. Please enter your email address below and we will let know when an invitation becomes available.</p>
-	  <% uberform_for [:user, Invitation.new] do |f| -%>
-	    <%= f.text_field :email, :label => "Your Email:" %>
-	    <%= f.submit 'Submit' %>
-	  <% end -%>
-    <% end -%>
-  <% end -%>
+<table border=0>
+	<tr>
+		<td valign="top">
+		  <p>Road Timer ist eine Anwendung, die Ihre Arbeitszeit erfasst und Ihnen Möglichkeiten zur Auswertung gibt.</p>
+		  <p>Road Timer steht Ihnen hierbei so wenig wie möglich im Weg. Projekte werden während der Zeiteingabe erstellt und können später definiert werden. Offene Einträge werden Ihnen beim Start der Anwendung mitgeteilt und die Eingabe selber ist so einfach wie möglich gehalten.</p>
+		  <p>Für Teams gibt es noch das Modell der Manager-Accounts. Dieser spezielle Accounttyp kann für das Team Projekte festlegen und die Daten aus dem Team auswerten; private Projekte der einzelnen User-Accounts sind dabei für den Manager unsichtbar.</p>
+		  <p><a href="/signup"><img src="images/SignUpUser.gif" width="150" height="150" /></a></p>
+		</td>
+		<td>
+		  <p><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Entry','','images/EntryScreen-full.gif',1)"><img src="images/EntryScreen-half.gif" alt="Entry Screen" name="Entry" width="425" height="206" border="0" id="Entry" /></a></p>
+		  <p><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Project','','images/ProjektListe-full.gif',1)"><img src="images/ProjektListe-half.gif" alt="Project List" name="Project" width="425" height="119" border="0" id="Project" /></a></p>
+		  <p><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Report','','images/ReportScreen-full.gif',1)"><img src="images/ReportScreen-half.gif" alt="Report Screen" name="Report" width="425" height="202" border="0" id="Report" /></a></p>
+		</td>
+	</tr>
+</table>
+
+
 <% else -%>
   <p>Welcome <%= current_user.login %>.</p>
   <p>Please find your entries and projects on the navigation tabs. </p>

@@ -18,3 +18,28 @@
 
 /* import print layout | Druck-Layout einbinden */
 /* @import url(../yaml/print/print_003_draft.css); */
+
+#apDiv1 {
+	position:absolute;
+	left:463px;
+	top:12px;
+	width:350px;
+	height:351px;
+	z-index:2;
+}
+#apDiv2 {
+	position:absolute;
+	left:24px;
+	top:12px;
+	width:435px;
+	height:638px;
+	z-index:3;
+}
+#apDiv3 {
+	position:absolute;
+	left:463px;
+	top:367px;
+	width:156px;
+	height:283px;
+	z-index:4;
+}
