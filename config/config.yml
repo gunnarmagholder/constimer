@@ -18,8 +18,8 @@ development:
     domain: road-timer.com
     sender: donotreply@road-timer.com
   recaptcha:
-    publickey:
-    privatekey:
+    publickey: 6LdmjAMAAAAAAAEBDFp5nNUngEcqREiRgnFJZloy
+    privatekey: 6LdmjAMAAAAAAMJluUzVdNHcFsN_aNitiRSCG8S1
         
 test:
   settings:
@@ -65,5 +65,5 @@ production:
     domain: road-timer.com
     sender: donotreply@road-timer.com
   recaptcha:
-    publickey:
-    privatekey:
+    publickey: 6LdvRAUAAAAAANW-4utwaQX3vRoDJm_ZSnnHjZpc
+    privatekey: 6LdvRAUAAAAAALyk4Wt0jbSV7bV6OVE6I0I8Iki5
