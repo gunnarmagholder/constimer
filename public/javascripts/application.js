@@ -1,16 +1,6 @@
 // Place your application-specific JavaScript functions and classes here
 // This file is automatically included by javascript_include_tag :defaults
 
-jQuery.ajaxSetup({
-	'beforeSend': function(xhr) {xhr.setRequestHeader("Accept", "text/javascript")}
-})
-
-$(document).ready(function() {
-	$("#new_entry").submit(function() {
-		$.post($(this).attr("action"), $(this).serialize(), null, "script");
-		return false;
-	})
-})
 
 function MM_preloadImages() { //v3.0
   var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
