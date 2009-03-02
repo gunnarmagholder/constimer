@@ -128,7 +128,8 @@ class SessionsController < ApplicationController
     self.current_user = user
     new_cookie_flag = (params[:remember_me] == "1")
     handle_remember_cookie! new_cookie_flag
-    redirect_back_or_default('/')
+    # redirect_back_or_default('/')
+    redirect_to entries_path
     flash[:notice] = "Logged in successfully."
   end
 
