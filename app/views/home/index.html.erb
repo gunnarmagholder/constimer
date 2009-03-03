@@ -28,23 +28,23 @@
 
 
 <% else -%>
-  <p>Welcome <%= current_user.login %>.</p>
-  <p>Please find your entries and projects on the navigation tabs. </p>
+  <p>Willkommen <%= current_user.login %>.</p>
+  <p>Projekte und Eintr&auml;ge finden Sie unter den jeweiligen Tabs. </p>
   <% if @assignment_request %>
     <p>
-    	You have an assignment request from user <%= User.find_by_id(@assignment_request.manager).name %>.<br />
+    	Der Benutzer <%= User.find_by_id(@assignment_request.manager).name %> möchte ihr Manager werden.<br />
 
-        If you want to assign your account to this manager account please <%= link_to 'use this link', :controller => 'assignments', :action => 'assign', :id => @assignment_request.id %>.
+        Wenn Sie diesem zustimmen wollen <%= link_to 'benutzen Sie bitte diesen Link', :controller => 'assignments', :action => 'assign', :id => @assignment_request.id %>.
     </p>
 
   <% end %>
    
       <% if @entries.size > 0  %>
         <p>
-        	You have <%= @entries.size %> open entries in your database!
+        	Sie haben <%= @entries.size %> offene Einträge in Ihrer Datenbank!
         </p>
         <% if @entries.size > 0 %>
-          <h3>Listing open entries</h3>
+          <h3>Liste der offenen Einträge</h3>
           <%= render :partial => 'entries/list', :collection => @entries %>
         <% end %>
       <% end %>

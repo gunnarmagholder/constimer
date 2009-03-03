@@ -1,13 +1,12 @@
-<h1>Listing projects</h1>
+<h1>Projektliste</h1>
 
 <table>
   <tr>
     
     <th>Name</th>
-    <th>Custname</th>
-    <th>Budget</th>
-    <th>total Minutes</th>
-    <th>Duedate</th>
+    <th>Kunde</th>
+    <th>bisherige Minuten</th>
+    <th>Enddatum</th>
   </tr>
 
 <% for project in @projects %>
@@ -19,11 +18,11 @@
     <td align="right"><%=h project.minutes %> min</td>
     <td><%=h project.duedate %></td>
     <% if project.user_id == current_user.id %>
-      <td><%= link_to 'Show', project %></td>
-      <td><%= link_to 'Edit', edit_project_path(project) %></td>
-      <td><%= link_to 'Destroy', project, :confirm => 'Are you sure?', :method => :delete %></td>
+      <td><%= link_to 'Anzeigen', project %></td>
+      <td><%= link_to 'Bearbeiten', edit_project_path(project) %></td>
+      <td><%= link_to 'L&ouml;schen', project, :confirm => 'Sind Sie sicher?', :method => :delete %></td>
     <% else %>
-      <td></td><td></td><td>Manager project</td>
+      <td></td><td></td><td>Manager Projekt</td>
     <% end %>
   </tr>
 <% end %>
@@ -31,4 +30,4 @@
 
 <br />
 
-<%= link_to 'New project', new_project_path %>
+<%= link_to 'Neues Projekt', new_project_path %>

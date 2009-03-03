@@ -1,13 +1,13 @@
 <table>
   <tr>
-	<th>Project</th>
-    <th>Date</th>
-    <th>Starttime</th>
-    <th>Endtime</th>
-    <th>Notes</th>
+	<th>Projekt</th>
+    <th>Datum</th>
+    <th>Beginn</th>
+    <th>Ende</th>
+    <th>Bemerkungen</th>
   </tr>
 <% if @entries.nil? %>
-  Nothing available at the moment
+  Keine Eintr&auml;ge vorhanden.
 <% else %>
   <% for entry in @entries %>
   <tr>
@@ -16,12 +16,12 @@
     <td><%=h entry.starttime.strftime("%H:%M") if entry.starttime %></td>
     <td><%=h entry.endtime.strftime("%H:%M") if entry.endtime %></td>
     <td><%=h entry.notes %></td>
-    <td><%= link_to 'Show', entry %></td>
-    <td><%= link_to 'Edit', edit_entry_path(entry) %></td>
-    <td><%= link_to 'Destroy', entry, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Anzeigen', entry %></td>
+    <td><%= link_to 'Bearbeiten', edit_entry_path(entry) %></td>
+    <td><%= link_to 'L&ouml;schen', entry, :confirm => 'Sind Sie sicher?', :method => :delete %></td>
     <td>
 	  <% if not entry.endtime %>
-        <%= link_to "Mark ended", stop_entry_path(entry), :method => :put %>
+        <%= link_to "Beenden", stop_entry_path(entry), :method => :put %>
       <% end %>
     </td>
   </tr>

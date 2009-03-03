@@ -22,7 +22,7 @@
     <div id="page">
       <div id="header">
 		
-      	<h1><img src="/images/logo.gif" height="90px" width="90px"/>Welcome to Road Timer</h1>
+      	<h1><img src="/images/logo.gif" height="90px" width="90px"/>Willkommen beim Road Timer</h1>
         <div id="topnav">
           <!-- start: skip link navigation -->
           <a class="skip" title="skip link" href="#navigation">Skip to the navigation</a>
@@ -43,12 +43,12 @@
 			
             <li <%= current_tab('home') -%>> <%= link_to "Home", root_path %>
             </li>
-             <% if_logged_in? do -%> <li <%= current_tab('projects') -%> ><%= link_to "My Projects", :controller => "/projects", :action => "index" %></li>
-               <li <%= current_tab('entries') -%>><%= link_to "My Entries", :controller => "/entries", :action => "index" %></li>
-               <li <%= current_tab('report') -%>><%= link_to "My Report", :controller => "/report", :action => "index" %></li>
-               <li <%= current_tab('profiles') -%>><%= link_to 'My Account', user_profile_path(current_user) %> </li>
+             <% if_logged_in? do -%> <li <%= current_tab('projects') -%> ><%= link_to "Projekte", :controller => "/projects", :action => "index" %></li>
+               <li <%= current_tab('entries') -%>><%= link_to "Zeiten", :controller => "/entries", :action => "index" %></li>
+               <li <%= current_tab('report') -%>><%= link_to "Bericht", :controller => "/report", :action => "index" %></li>
+               <li <%= current_tab('profiles') -%>><%= link_to 'Konto', user_profile_path(current_user) %> </li>
                <% if current_user.isRole('manager') %>
-                <li <%= current_tab('colleagues') -%>><%= link_to "My Colleagues", :controller => "/colleagues", :action => "index" %></li> 
+                <li <%= current_tab('colleagues') -%>><%= link_to "Mitarbeiter", :controller => "/colleagues", :action => "index" %></li> 
                <% end -%>
              <% end -%>
             <% if_admin? do -%>

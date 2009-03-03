@@ -1,31 +1,18 @@
-<script type="text/javascript">
-function fillCurrTime(){
-	var now = new Date();
-	if (now.getYear() < 1900) {
-	  document.forms[0].entry_edate.value = (parseInt(now.getMonth())+1) + "/" + (parseInt(now.getDate())) + "/" + (parseInt(now.getYear())+1900); }
-	else {
-	  document.forms[0].entry_edate.value = (parseInt(now.getMonth())+1) + "/" + (parseInt(now.getDate())) + "/" + (parseInt(now.getYear())); }
 
-	document.forms[0].entry_starttime.value = parseInt(now.getHours()) + ":" + parseInt(now.getMinutes());
-	document.forms[0].entry_project_name.focus();
-}
-</script>
-<h3>Add an Entry</h3>
+<h3>Eintrag erfassen</h3>
 
 <% form_for :entry, :url => entries_path, :name => 'fo', :html => {:id => "new_entry"} do |f| -%>
 <%= f.error_messages %>
 <%= f.hidden_field :user_id, :value => current_user %>
 <table>
   <tr>
-	<th>&nbsp;</th> 
-	<th><%= f.label :edate, "Date" %> </th>
-  	<th><%= f.label :starttime %></th>
-    <th><%= f.label :project_name, "Project Name" %></th>
-  	<th><%= f.label :endtime %></th>
-  	<th><%= f.label :notes %></th>
+	<th><%= f.label :edate, "Datum" %> </th>
+  	<th><%= f.label :starttime, "Beginn" %></th>
+    <th><%= f.label :project_name, "Projektname" %></th>
+  	<th><%= f.label :endtime, "Ende" %></th>
+  	<th><%= f.label :notes, "Bemerkungen" %></th>
   </tr>
   <tr>
-	<td><input type="button" VALUE="Start" onClick="fillCurrTime()" name="btnStart" ></td>
 	<td><%= f.text_field :edate, :size => 10 %> </td>
   	<td> <%= f.text_field :starttime, :size => 10 %></td>
 	<td><%= text_field_with_auto_complete :entry, :project_name, { :size => 15 }, { :url => formatted_projects_path(:js), :method => :get, :param_name => 'search' } %></td>
@@ -34,19 +21,19 @@ function fillCurrTime(){
   </tr>
 </table>
 
-<p><%= submit_tag "Add Entry" %></p>
+<p><%= submit_tag "Erfassen" %></p>
 <% end -%>
 <%= set_focus_to_id 'entry_edate' %>
 <br />
-<h3>Listing entries</h3>
+<h3>Zeiteintragsliste</h3>
 
 <% if @null_entries.size > 0 -%>
 	<p><b>There are <%= @null_entries.size.to_s %> entries, that don't belong to a project!</b></p>	
 <% end  -%>
 
-<%= link_to "Show all entries",
+<%= link_to "Alle anzeigen",
     :url => {:action => 'show_all'} %>
-<%= link_to "Show incomplete",
+<%= link_to "offene anzeigen",
     :url => {:action => 'incomplete'} %>
 <div id="entrylist">
 <%= render :partial => 'list', :locals => {:entries => @entries} %>

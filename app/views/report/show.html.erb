@@ -1,17 +1,17 @@
-<h1>Reports for <%= @user.login %></h1>
+<h1>Bericht für <%= @user.login %></h1>
 
-<p>These are the working entries for <%= @pmonth %>/<%= @pyear %> in project <%= @project.first.name %>.</p>
+<p>Dies sind die Zeiteintr&auml;ge f&uuml; <%= @pmonth %>/<%= @pyear %> in Projekt <%= @project.first.name %>.</p>
 <table border="1">
   <tr>
-	<th>Project</th>
-    <th>Date</th>
-    <th>Starttime</th>
-    <th>Endtime</th>
-    <th>Working time (min)</th>
-    <th>Notes</th>
+	<th>Projekt</th>
+    <th>Datum</th>
+    <th>Beginn</th>
+    <th>Ende</th>
+    <th>Arbeitszeit(min)</th>
+    <th>Bemerkungen</th>
   </tr>
 <% if @entries.nil? %>
-  Nothing available at the moment
+  Keine Eintr&auml;ge vorhanden
 <% else %>
   <%= render :partial => 'entries/noedit', :collection => @entries %>
 <% end %>
