@@ -76,11 +76,18 @@ class ProjectsController < ApplicationController
   # DELETE /projects/1.xml
   def destroy
     @project = Project.find(params[:id])
-    @project.destroy
-
-    respond_to do |format|
-      format.html { redirect_to(projects_url) }
-      format.xml  { head :ok }
+    if Entry.find_by_project_id(params[:id]) == nil
+      @project.destroy
+      respond_to do |format|
+        format.html { redirect_to(projects_url) }
+        format.xml  { head :ok }
+      end
+    else
+      flash[:error] = 'This project has active entries!'
+      respond_to do |format|
+        format.html { redirect_to(projects_url) }
+        format.xml  { render :xml => @project.errors, :status => :unprocessable_entity }
+      end
     end
   end
 end
