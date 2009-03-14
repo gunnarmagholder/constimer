@@ -1,1 +1,3 @@
-<%= auto_complete_result @projects, :name %>
+<% for project in @projects %>
+  <%=h project.name -%>
+<% end %>

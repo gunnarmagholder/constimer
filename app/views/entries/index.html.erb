@@ -14,16 +14,15 @@
   </tr>
   <tr>
 	<td><%= f.text_field :edate, :size => 10 %> </td>
-  	<td> <%= f.text_field :starttime, :size => 10 %></td>
-	<td><%= text_field_with_auto_complete :entry, :project_name, { :size => 15 }, { :url => formatted_projects_path(:js), :method => :get, :param_name => 'search' } %></td>
-  	<td> <%= f.text_field :endtime, :size => 10 %></td>
+  	<td><%= f.text_field :starttime, :size => 10 %></td>
+	<td><%= f.text_field :project_name,  :size => 15  %></td>
+  	<td><%= f.text_field :endtime, :size => 10 %></td>
   	<td><%= f.text_field :notes %></td>
   </tr>
 </table>
 
 <p><%= submit_tag "Erfassen" %></p>
 <% end -%>
-<%= set_focus_to_id 'entry_edate' %>
 <br />
 <h3>Zeiteintragsliste</h3>
 
@@ -38,3 +37,38 @@
 <div id="entrylist">
 <%= render :partial => 'list', :locals => {:entries => @entries} %>
 </div>
+
+<script type="text/javascript">
+$(function() {
+	$.ajaxSetup({
+		'beforeSend': function(xhr) {xhr.setRequestHeader("Accept", "text/javascript")}
+	});
+	
+	jQuery(function($){
+		$.datepicker.regional['de'] = {clearText: 'löschen', clearStatus: 'aktuelles Datum löschen',
+			closeText: 'schließen', closeStatus: 'ohne Änderungen schließen',
+			prevText: '&#x3c;zurück', prevStatus: 'letzten Monat zeigen',
+			nextText: 'Vor&#x3e;', nextStatus: 'nächsten Monat zeigen',
+			currentText: 'heute', currentStatus: '',
+			monthNames: ['Januar','Februar','März','April','Mai','Juni',
+			'Juli','August','September','Oktober','November','Dezember'],
+			monthNamesShort: ['Jan','Feb','Mär','Apr','Mai','Jun',
+			'Jul','Aug','Sep','Okt','Nov','Dez'],
+			monthStatus: 'anderen Monat anzeigen', yearStatus: 'anderes Jahr anzeigen',
+			weekHeader: 'Wo', weekStatus: 'Woche des Monats',
+			dayNames: ['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag'],
+			dayNamesShort: ['So','Mo','Di','Mi','Do','Fr','Sa'],
+			dayNamesMin: ['So','Mo','Di','Mi','Do','Fr','Sa'],
+			dayStatus: 'Setze DD als ersten Wochentag', dateStatus: 'Wähle D, M d',
+			dateFormat: 'dd.mm.yy', firstDay: 1, 
+			initStatus: 'Wähle ein Datum', isRTL: false};
+		$.datepicker.setDefaults($.datepicker.regional['de']);
+	});
+	$("#entry_edate").datepicker({
+		showButtonPanel: true
+	});
+
+	
+});
+
+</script>

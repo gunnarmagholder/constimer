@@ -8,6 +8,7 @@ class ProjectsController < ApplicationController
       format.html # index.html.erb
       format.xml  { render :xml => @projects }
       format.js { render :layout => false }
+      format.json {render :layout => false, :json => @projects}
     end
   end
 

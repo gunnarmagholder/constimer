@@ -4,10 +4,13 @@
 <title>Road Timer - <%= yield(:title) || "Track your time everywhere" %></title>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 <!-- add your meta tags here -->
+<%= javascript_include_tag 'application', 'jquery-1.3.2.min', 'jquery-ui-1.7.custom.min', :cache => true %>
 
-<link href="/css/my_layout.css" rel="stylesheet" type="text/css" />
+<%= stylesheet_link_tag "/css/my_layout.css", "/css/ui-lightness/jquery-ui-1.7.custom.css", :cache => true  %>
 
-  <%= javascript_include_tag :defaults, 'application' %>
+
+
+
 
 <!--[if lte IE 7]>
 <link href="css/patches/patch_my_layout.css" rel="stylesheet" type="text/css" />
