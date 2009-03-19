@@ -50,6 +50,32 @@ describe Entry do
     @entry.endtime = "11:00"
     @entry.minutes_calculated.should == 60
   end
+  
+  it "should return only the time-difference" do
+    @entry.attributes = valid_entry_attributes
+    @entry.starttime = '2009-03-01 10:00'
+    @entry.endtime = '2010-03-01 10:30'
+    @entry.minutes_calculated.should == 30
+  end
+
+  it "should return the right date" do
+    @entry.attributes = valid_entry_attributes
+    @entry.edate = '1.3.2009'
+    @entry.edate.month.should == 3
+    @entry.edate.day.should == 1
+    @entry.edate.year.should == 2009
+    @entry.edate = '03/01/2009'
+    @entry.edate.month.should == 3
+    @entry.edate.day.should == 1
+    @entry.edate.year.should == 2009
+  end
+  
+  it "should throw an error if year is only two digits" do
+    @entry.attributes = valid_entry_attributes.except(:edate)
+    @entry.edate = '1.3.09'
+    @entry.edate.year.to_i.should == 2009
+    @entry.should have(1).error_on(:edate)
+  end
 
 end
 

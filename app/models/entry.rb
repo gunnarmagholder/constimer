@@ -1,4 +1,5 @@
 class Entry < ActiveRecord::Base
+	TRY_FORMATS = ['%m/%d/%Y', '%d.%m.%Y']
 	before_validation :cache_virtual_columns
 	before_update :cache_virtual_columns
 	validates_presence_of :starttime, :on => :create, :message => "can't be blank"
@@ -33,7 +34,19 @@ class Entry < ActiveRecord::Base
   def endtime_must_be_after_starttime
     errors.add(:endtime, 'must not be before starttime') if starttime > endtime
   end
-	
+  
+
+  def edate
+    self[:edate]
+  end
+  
+  def edate=(date_entry)
+    self[:edate] = try_to_parse(date_entry)
+    if self[:edate].year.to_i < 1900
+      errors.add(:edate, 'must be a legal date (mm/dd/yyyy or tt.mm.jjjj)')
+    end
+  end
+
 	def project_name
 	  project.name if project
 	end
@@ -50,9 +63,23 @@ class Entry < ActiveRecord::Base
 	private
 	  def cache_virtual_columns
 	    if endtime
-	  	  self.minutes = ((endtime - starttime) / 60).round	    	
+	  	  self.minutes = minutes_calculated	
   	  else
   	    self.minutes = 0
 	    end
 	  end
+	  
+	  
+  	def try_to_parse(s)
+  	  parsed = nil
+  	  TRY_FORMATS.each do |format|
+  	    begin
+  	      parsed = Date.strptime(s, format)
+  	      break
+  	    rescue ArgumentError
+  	    end
+  	  end
+  	  return parsed
+  	end
+	  
 end

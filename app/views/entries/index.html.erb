@@ -68,6 +68,11 @@ $(function() {
 		showButtonPanel: true
 	});
 
+	$("#entry_project_name").autocomplete("projects.js", {
+		selectFirst: false,
+		mustMatch: false,
+		minChars: 1
+	});
 	
 });
 
