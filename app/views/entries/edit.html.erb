@@ -4,19 +4,19 @@
   <%= f.error_messages %>
     <p>
     <%= f.label :project_name %><br />
-    <%= text_field_with_auto_complete :entry, :project_name, { :size => 15 }, { :url => formatted_projects_path(:js), :method => :get, :param_name => 'search' } %>
+    <%= f.text_field :project_name,  :size => 15  %>
   </p>
   <p>
     <%= f.label :edate %><br />
-    <%= f.date_select :edate %>
+    <%= f.text_field :edate %>
   </p>
   <p>
     <%= f.label :starttime %><br />
-    <%= f.time_select :starttime %>
+    <%= f.text_field :starttime %>
   </p>
   <p>
     <%= f.label :endtime %><br />
-    <%= f.time_select :endtime %>
+    <%= f.text_field :endtime %>
   </p>
   <p>
     <%= f.label :notes %><br />
@@ -29,3 +29,43 @@
 
 <%= link_to 'Show', @entry %> |
 <%= link_to 'Back', entries_path %>
+
+<script type="text/javascript">
+$(function() {
+	$.ajaxSetup({
+		'beforeSend': function(xhr) {xhr.setRequestHeader("Accept", "text/javascript")}
+	});
+	
+	jQuery(function($){
+		$.datepicker.regional['de'] = {clearText: 'löschen', clearStatus: 'aktuelles Datum löschen',
+			closeText: 'schließen', closeStatus: 'ohne Änderungen schließen',
+			prevText: '&#x3c;zurück', prevStatus: 'letzten Monat zeigen',
+			nextText: 'Vor&#x3e;', nextStatus: 'nächsten Monat zeigen',
+			currentText: 'heute', currentStatus: '',
+			monthNames: ['Januar','Februar','März','April','Mai','Juni',
+			'Juli','August','September','Oktober','November','Dezember'],
+			monthNamesShort: ['Jan','Feb','Mär','Apr','Mai','Jun',
+			'Jul','Aug','Sep','Okt','Nov','Dez'],
+			monthStatus: 'anderen Monat anzeigen', yearStatus: 'anderes Jahr anzeigen',
+			weekHeader: 'Wo', weekStatus: 'Woche des Monats',
+			dayNames: ['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag'],
+			dayNamesShort: ['So','Mo','Di','Mi','Do','Fr','Sa'],
+			dayNamesMin: ['So','Mo','Di','Mi','Do','Fr','Sa'],
+			dayStatus: 'Setze DD als ersten Wochentag', dateStatus: 'Wähle D, M d',
+			dateFormat: 'dd.mm.yy', firstDay: 1, 
+			initStatus: 'Wähle ein Datum', isRTL: false};
+		$.datepicker.setDefaults($.datepicker.regional['de']);
+	});
+	$("#entry_edate").datepicker({
+		showButtonPanel: true
+	});
+
+	$("#entry_project_name").autocomplete("projects.js", {
+		selectFirst: false,
+		mustMatch: false,
+		minChars: 0
+	});
+	
+});
+
+</script>

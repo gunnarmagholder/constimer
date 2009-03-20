@@ -5,8 +5,9 @@ class EntriesController < ApplicationController
   # GET /entries.xml
   
   def index
-    @entries = Entry.find(:all, :conditions => ['user_id = ? and project_ID IS NOT NULL', current_user.id ], :order => "edate DESC", :limit => 10, :include => :project)
-    @null_entries = Entry.find(:all, :conditions => ['user_id = ? and project_ID IS NULL', current_user.id ])
+    # @entries = Entry.find(:all, :conditions => ['user_id = ? and project_ID IS NOT NULL', current_user.id ], :order => "edate DESC", :limit => 10, :include => :project)
+    @entries = Entry.paginate :per_page => 10, :page => params[:page],
+                              :conditions => ['user_id = ? and project_ID IS NOT NULL', current_user.id ]
     respond_to do |format|
       format.html
       format.xml  { render :xml => @entries }
@@ -52,7 +53,7 @@ class EntriesController < ApplicationController
 
   # GET /entries/1/edit
   def edit
-    @entry = Entry.find(params[:id])
+    @entry = Entry.find(params[:id]) 
   end
 
   # POST /entries

@@ -1,5 +1,5 @@
 class Entry < ActiveRecord::Base
-	TRY_FORMATS = ['%m/%d/%Y', '%d.%m.%Y']
+	TRY_FORMATS = ['%m/%d/%Y', '%d.%m.%Y','%Y-%m-%d']
 	before_validation :cache_virtual_columns
 	before_update :cache_virtual_columns
 	validates_presence_of :starttime, :on => :create, :message => "can't be blank"
@@ -42,9 +42,6 @@ class Entry < ActiveRecord::Base
   
   def edate=(date_entry)
     self[:edate] = try_to_parse(date_entry)
-    if self[:edate].year.to_i < 1900
-      errors.add(:edate, 'must be a legal date (mm/dd/yyyy or tt.mm.jjjj)')
-    end
   end
 
 	def project_name

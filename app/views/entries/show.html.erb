@@ -1,21 +1,26 @@
 
 <p>
-  <b>Edate:</b>
+  <b>Eintragsdatum:</b>
   <%=h @entry.edate %>
 </p>
 
 <p>
-  <b>Starttime:</b>
-  <%=h @entry.starttime %>
+  <b>Startzeit:</b>
+  <%=h @entry.starttime.strftime("%H:%M") %>
 </p>
 
 <p>
-  <b>Endtime:</b>
-  <%=h @entry.endtime %>
+  <b>Endzeit:</b>
+  <%=h @entry.endtime.strftime("%H:%M") %>
 </p>
 
 <p>
-  <b>Notes:</b>
+  <b>Projekt:</b>
+  <%=h @entry.project_name %>
+</p>
+
+<p>
+  <b>Notizen:</b>
   <%=h @entry.notes %>
 </p>
 

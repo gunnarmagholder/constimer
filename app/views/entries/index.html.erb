@@ -26,9 +26,6 @@
 <br />
 <h3>Zeiteintragsliste</h3>
 
-<% if @null_entries.size > 0 -%>
-	<p><b>There are <%= @null_entries.size.to_s %> entries, that don't belong to a project!</b></p>	
-<% end  -%>
 
 <%= link_to "Alle anzeigen",
     :url => {:action => 'show_all'} %>
@@ -37,7 +34,7 @@
 <div id="entrylist">
 <%= render :partial => 'list', :locals => {:entries => @entries} %>
 </div>
-
+<%= will_paginate @entries %>
 <script type="text/javascript">
 $(function() {
 	$.ajaxSetup({
@@ -71,7 +68,7 @@ $(function() {
 	$("#entry_project_name").autocomplete("projects.js", {
 		selectFirst: false,
 		mustMatch: false,
-		minChars: 1
+		minChars: 0
 	});
 	
 });
