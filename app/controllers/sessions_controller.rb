@@ -1,7 +1,7 @@
 # This controller handles the login/logout function of the site.  
 class SessionsController < ApplicationController
 	before_filter :login_prohibited, :only => [:new, :create]
-
+  skip_before_filter :iphone_login_required
   # render new.html.erb
   def new
 		#	Display recaptcha only if the number of failed logins have 
@@ -10,6 +10,9 @@ class SessionsController < ApplicationController
 		respond_to do |format|
       format.html 
 			format.js
+			format.iphone do
+		    render :layout => false
+		  end
     end
   end
 

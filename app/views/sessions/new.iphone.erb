@@ -1,0 +1,14 @@
+<div class="panel" title="Example" selected="true">
+  <% form_tag session_path do -%>
+  <fieldset>
+    <legend><h1>Login Informationen</h1></legend>
+      <p><label for="login">Login Name</label><br/>
+      <%= text_field_tag 'login' %></p>
+      
+      <p><label for="password">Password</label><br/>
+      <%= password_field_tag 'password' %></p>
+  
+     <p><%= submit_tag 'Log in' %></p>
+    </fieldset>
+  <% end -%>
+</div>
