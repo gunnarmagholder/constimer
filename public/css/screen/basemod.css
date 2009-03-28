@@ -14,20 +14,25 @@
 
   /* (en) Marginal areas & page background */
   /* (de) Randbereiche & Seitenhintergrund */
-  body { background: #3b69ad none; padding: 10px 0; }
+  body { background: #ffffff none; padding: 10px 0; }
+  th,td { padding: 0.5em; }
+  thead th { background: #93DB2A; color: #fff }
+  tbody th { background: #93DB2A; color: #333 }
+  tbody th.sub { background: #93DB2A; color: #333 }
 
+  #header h1 {align: center;}
   /* Layout Alignment | Layout-Ausrichtung */
   #page_margins { margin: 0 auto; }
 
   /* Layout Properties | Layout-Eigenschaften */
   #page_margins { width: auto;  min-width: 740px; max-width: 90em; background: #fff; }
   #page { padding: 10px 15px 10px 10px; }
-  #header { padding: 45px 2em 1em 20px; color: #000; background:#edf2f8;}
+  #header { padding: 45px 2em 1em 20px; color: #000; background-image: url('/images/verlauf.jpg');}
   #topnav { color: #aaa; background: transparent; }
   #nav { overflow:hidden; }
-  #nav_main { background-color: #c8ddf3 }
+  #nav_main { background-color: #92DB2B }
   #main { margin: 10px 0; background: #fff; }
-  #footer { padding: 10px 20px; color:#666; background: #f9f9f9; border-top: 5px #efefef solid; }
+  #footer { padding: 10px 20px; color:#666; background: #ffffff; border-top: 5px #ffffff solid; }
 
   /* (en) navigation: horizontal adjustment | (de) horizontale Ausrichtung  */
   #nav ul { margin-left: 20px; }
@@ -50,17 +55,13 @@
 
   #page_margins {
     border: 0 none;
-    background-image:  url(images/gfxborder/border_left.gif);
-    background-repeat:repeat-y;
-    background-position:left;
+    background: #78B423;
   }
 
   #page {
     border: 0 none;
     margin: 0 0 0 5px; padding: 10px 15px 10px 10px;
-    background-image:  url(images/gfxborder/border_right.gif);
-    background-repeat:repeat-y;
-    background-position:right;
+  	 background: #78B423;
   }
 
 
@@ -70,9 +71,7 @@
     height: 20px;
     font-size:0;
     margin-bottom: -15px;
-    background-image:  url(images/gfxborder/border_top.gif);
-    background-repeat:repeat-x;
-    background-position:top left;
+   background: #78B423;  
   }
 
   #border-bottom {
@@ -81,9 +80,7 @@
     height: 20px;
     margin-top: -15px;
     font-size:0;
-    background-image:  url(images/gfxborder/border_bottom.gif);
-    background-repeat:repeat-x;
-    background-position:bottom left;
+   background: #78B423;  
   }
 
   #edge-tl {
@@ -91,8 +88,7 @@
     width: 20px;
     height: 20px;
     font-size:0;
-    background-image:  url(images/gfxborder/corner_tl.gif);
-    background-position: top left;
+   background: #78B423; 
   }
 
   #edge-tr {
@@ -101,16 +97,14 @@
     width: 20px;
     height: 20px;
     font-size:0;
-    background-image:  url(images/gfxborder/corner_tr.gif);
-    background-position: top right;
+ background: #78B423;
   }
 
   #edge-bl {
     float:left;
     width: 20px;
     height: 20px;
-    background-image:  url(images/gfxborder/corner_bl.gif);
-    background-position: bottom left;
+ background: #78B423;
   }
 
   #edge-br {
@@ -118,8 +112,7 @@
     float:right;
     width: 20px;
     height: 20px;
-    background-image:  url(images/gfxborder/corner_br.gif);
-    background-position: bottom right;
+    background: #78B423;
   }
 
 }

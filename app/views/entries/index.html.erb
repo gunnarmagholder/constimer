@@ -27,10 +27,7 @@
 <h3>Zeiteintragsliste</h3>
 
 
-<%= link_to "Alle anzeigen",
-    :url => {:action => 'show_all'} %>
-<%= link_to "offene anzeigen",
-    :url => {:action => 'incomplete'} %>
+
 <div id="entrylist">
 <%= render :partial => 'list', :locals => {:entries => @entries} %>
 </div>
