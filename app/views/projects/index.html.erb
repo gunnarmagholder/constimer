@@ -5,14 +5,16 @@
     
     <th>Name</th>
     <th>Kunde</th>
+    <th>Budget</th>
     <th>bisherige Minuten</th>
     <th>Enddatum</th>
   </tr>
 
 <% for project in @projects %>
+  
   <tr>
     
-    <td><%=h project.name %></td>
+    <%= "<td style='background:"+  +"'>" + project.name + "</td>" %>
     <td><%=h project.custname %></td>
     <td><%=h project.budget %></td>
     <td align="right"><%=h project.minutes %> min</td>
