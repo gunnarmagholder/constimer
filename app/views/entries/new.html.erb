@@ -9,6 +9,7 @@
     <tr>
 	    <th><%= f.label :edate, "Date" %> </th>
     	<th><%= f.label :starttime %></th>
+        <th><%= f.label :project_name %></th>
     	<th><%= f.label :endtime %></th>
     	<th><%= f.label :notes %></th>
     </tr>
@@ -16,6 +17,7 @@
     <tr>
 	    <td><%= f.text_field :edate, :size => 10 %> </td>
     	<td> <%= f.text_field :starttime, :size => 10 %></td>
+        <td> <%= f.text_field :project_name, :size => 15 %>
     	<td> <%= f.text_field :endtime, :size => 10 %></td>
     	<td><%= f.text_field :notes %></td>
     </tr>
