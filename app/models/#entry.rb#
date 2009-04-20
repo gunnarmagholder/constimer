@@ -22,14 +22,14 @@ class Entry < ActiveRecord::Base
 	   @colleagues = User.find(:all, :conditions => {:managed_by => current_user.id})
      Entry.find(:all, :conditions => {:user_id => @colleagues})
    end
-	end
+end
 	
 	def minutes_calculated
-	 if endtime? 
-	   ((endtime - starttime) / 60).round
-	 else
-     0
-   end
+	  if endtime? 
+	    ((endtime - starttime) / 60).round
+	  else
+            0
+          end
 	end
 	
   def endtime_must_be_after_starttime
