@@ -11,7 +11,7 @@
 
 <p>
   <b>Endzeit:</b>
-  <%=h @entry.endtime.strftime("%H:%M") %>
+  <%=h @entry.endtime.strftime("%H:%M")  if @entry.endtime %>
 </p>
 
 <p>
