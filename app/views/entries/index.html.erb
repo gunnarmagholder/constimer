@@ -13,11 +13,11 @@
   	<th><%= f.label :notes, "Bemerkungen" %></th>
   </tr>
   <tr>
-	<td><%= f.text_field :edate, :size => 10 %> </td>
-  	<td><%= f.text_field :starttime, :size => 10 %></td>
-	<td><%= f.text_field :project_name,  :size => 15  %></td>
-  	<td><%= f.text_field :endtime, :size => 10 %></td>
-  	<td><%= f.text_field :notes %></td>
+	<td><%= f.text_field :edate, :size => 10, :title => "Bitte geben Sie hier das Datum des Eintrages ein." %> </td>
+  	<td><%= f.text_field :starttime, :size => 10, :title => "Bitte erfassen Sie hier die Startzeit des Eintrages im Format HH:MM (Stunde:Minute)" %></td>
+	<td><%= f.text_field :project_name,  :size => 15, :title => "Hier erfassen Sie bitte den Namen des Projektes für den Eintrag. Sollte das Projekt noch nicht existieren wird der Name, den Sie hier angeben als Projekt neu angelegt."  %></td>
+  	<td><%= f.text_field :endtime, :size => 10, :title => "Hier wird die Endzeit des Eintrages erfasst. Sie können aus der Liste der Einträge auch durch Klick auf <Beenden> einen Eintrag abschliessen." %></td>
+  	<td><%= f.text_field :notes, :title => "Hier können Sie optional Notizen und Bemerkungen zu dem Eintrag erfassen." %></td>
   </tr>
 </table>
 
