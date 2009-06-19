@@ -46,7 +46,7 @@ class User < ActiveRecord::Base
 
   def myProjects
     @projects = []
-    @projects = @projects + Array(Project.find(:all, :conditions => {:user_id => self.id}))
+    @projects = @projects + Array(Project.find(:all, :conditions => {:user_id => self.id, :active => true}))
     if self.isRole("user")
       @projects = @projects + Array(Project.find(:all, :conditions => {:user_id => self.managed_by}))
     end

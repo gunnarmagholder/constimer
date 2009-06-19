@@ -58,6 +58,10 @@ class Entry < ActiveRecord::Base
 	    self.project = Project.find_or_create_by_name_and_user_id(name, User.current_user.id) unless name.blank?
     end
 	end
+	
+	def active_project
+	  project.active
+	end
 	private
 	  def cache_virtual_columns
 	    if endtime

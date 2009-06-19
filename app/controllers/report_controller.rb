@@ -3,9 +3,9 @@ class ReportController < ApplicationController
     @user = current_user
     if current_user.isRole('manager')
       @colleagues = User.find(:all, :conditions => {:managed_by => current_user.id})
-      conditions = ['`projects`.`private` <> true AND `entries`.`user_id` in (?) ', @colleagues]
+      conditions = ['`projects`.`private` <> true AND `projects`.`active` = true AND `entries`.`user_id` in (?) ', @colleagues]
     else
-      conditions = ['`entries`.`user_id` = ?', current_user.id]
+      conditions = ['`entries`.`user_id` = ? AND `projects`.`active` = true', current_user.id]
     end
     if params[:project]
       if params[:project][:id] != ""

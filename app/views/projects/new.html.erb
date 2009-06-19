@@ -20,6 +20,14 @@
     <%= f.datetime_select :duedate %>
   </p>
   <p>
+	<%= f.label :private, "Privat" %><br />
+    <%= f.check_box :private %>	
+  </p>
+  <p>
+	<%= f.label :active, "Aktiv" %>
+	<%= f.check_box :active %>
+  </p>
+  <p>
     <%= f.submit "Create" %>
   </p>
 <% end %>
