@@ -1,15 +1,16 @@
 class Project < ActiveRecord::Base
   belongs_to :user
   has_many :entries
-  before_create :set_private
+  before_create :set_defaults
   
   def minutes
     Entry.sum(:minutes, :conditions => ['project_id = ?', self.id])
   end
   
   private
-    def set_private
+    def set_defaults
       self.private = 0 unless self.private == 1
+      self.active = 1 unless self.private == 0
     end
   
 end

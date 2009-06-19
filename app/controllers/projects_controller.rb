@@ -3,11 +3,11 @@ class ProjectsController < ApplicationController
   # GET /projects
   # GET /projects.xml
   def index
-    @projects = Project.find(:all, :conditions => ['(user_id = ? and name LIKE ?) or (user_id = ? and name LIKE ?) ', current_user.id, "%#{params[:q]}%", current_user.managed_by, "%#{params[:q]}%" ])
+    # @projects = Project.find(:all, :conditions => ['(user_id = ? and name LIKE ?) or (user_id = ? and name LIKE ?) ', current_user.id, "%#{params[:q]}%", current_user.managed_by, "%#{params[:q]}%" ])
     respond_to do |format|
-      format.html # index.html.erb
+      format.html { @projects = Project.find(:all, :conditions => ['(user_id = ? and name LIKE ?) or (user_id = ? and name LIKE ?) ', current_user.id, "%#{params[:q]}%", current_user.managed_by, "%#{params[:q]}%" ]) }
       format.xml  { render :xml => @projects }
-      format.js { render :layout => false }
+      format.js { @projects = Project.find(:all, :conditions => ['((user_id = ? and name LIKE ?) or (user_id = ? and name LIKE ? )) and active = true ', current_user.id, "%#{params[:q]}%", current_user.managed_by, "%#{params[:q]}%" ]);render :layout => false }
       format.json {render :layout => false, :json => @projects}
     end
   end
@@ -27,7 +27,7 @@ class ProjectsController < ApplicationController
   # GET /projects/new.xml
   def new
     @project = Project.new
-
+    @project.active = true
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @project }
@@ -43,6 +43,7 @@ class ProjectsController < ApplicationController
   # POST /projects.xml
   def create
     @project = Project.new(params[:project])
+    @project.active = true
     @project.user = current_user
     respond_to do |format|
       if @project.save
