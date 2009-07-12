@@ -26,6 +26,8 @@ class ReportController < ApplicationController
     
     @entries = Entry.find(:all, :include => :project, :conditions => conditions, :order => 'edate ASC')
     @overall_min = @entries.sum(&:minutes)
+    @overall_hours = @overall_min / 60
+    @overall_hours_rest_min = @overall_min % 60
     @projects = current_user.myProjects
     @years = Entry.find(:all, :group => 'year(edate)',:conditions => ['`entries`.`user_id` = ? or `entries`.`user_id` in (?)', current_user.id, @colleagues])
   end

@@ -62,4 +62,17 @@
 	<td align="right"><b><%= @overall_min %></b></td>
 	<td><b>gesamte Minuten in Anzeige</b></td>
 <% end %>
+<% if @overall_min %>
+  <tr>
+    <% if current_user.isRole('manager') %>
+     <td></td>
+    <% end %>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td align="right"><b><%= @overall_hours %>:<%= @overall_hours_rest_min %></b></td>
+	<td><b>Stunden und Minuten in der Anzeige</b></td>
+  </tr>
+<% end %>
 </table>
