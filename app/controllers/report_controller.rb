@@ -1,4 +1,5 @@
 class ReportController < ApplicationController
+   before_filter :login_required
   def index
     @user = current_user
     if current_user.isRole('manager')
