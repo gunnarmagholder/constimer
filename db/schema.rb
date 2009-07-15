@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090619201930) do
+ActiveRecord::Schema.define(:version => 20090715200318) do
 
   create_table "assignments", :force => true do |t|
     t.integer  "manager"
@@ -149,6 +149,7 @@ ActiveRecord::Schema.define(:version => 20090619201930) do
     t.integer  "invitation_id"
     t.integer  "invitation_limit"
     t.integer  "managed_by"
+    t.datetime "last_logon"
   end
 
   add_index "users", ["login"], :name => "index_users_on_login", :unique => true
