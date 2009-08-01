@@ -2,7 +2,6 @@ set :application, "www.road-timer.com"
 set :user, "deploy"
 
 set :deploy_to, "/home/#{user}/apps/#{application}"
-set :deploy_via, :remote_cache
 set :scm, :git 
 set :repository,  "git@github.com:gunnarmagholder/constimer.git"
 
