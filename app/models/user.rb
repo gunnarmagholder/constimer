@@ -44,6 +44,10 @@ class User < ActiveRecord::Base
     end
   end
 
+  def my_entries
+    return Entry.find(:all, :conditions => {:user_id => self.id}).size
+  end
+
   def myProjects
     @projects = []
     @projects = @projects + Array(Project.find(:all, :conditions => {:user_id => self.id, :active => true}))

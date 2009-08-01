@@ -17,6 +17,7 @@
   </td>
   <td><%= link_to 'edit roles', admin_user_roles_path(user) %></td>
   <td><%= user.last_logon || "none" %></td>
+  <td><%= user.my_entries || "none" %></td>
 	<% if_in_beta? do -%>
 		<td><%=h user.invitation_limit %> <%= link_to 'edit', edit_admin_invite_path(user) %></td>
 	<% end -%>
