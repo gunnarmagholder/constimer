@@ -21,7 +21,7 @@ Rails::Initializer.run do |config|
     :secret      => 'ac2cb86285a5659d56c766bfa3be115b5a993ae4b22fd084ffd9d8dc96f84e12b9602df36dbf6ba9569344c218f613d9d5d9ff99db7d9ff88283db71159808f3'
   }
   config.active_record.observers = :user_observer
-  config.gem 'jscruggs-metric_fu', :version => '0.9.0', :lib => 'metric_fu', :source => 'http://gems.github.com'
+  # config.gem 'jscruggs-metric_fu', :version => '0.9.0', :lib => 'metric_fu', :source => 'http://gems.github.com'
 end
 
 ActionMailer::Base.delivery_method = :smtp

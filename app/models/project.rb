@@ -6,6 +6,10 @@ class Project < ActiveRecord::Base
   def minutes
     Entry.sum(:minutes, :conditions => ['project_id = ?', self.id])
   end
+
+  def guest_url
+    return "http://" + HOST + "/projects/" + self.id.to_s + "/guest/" + self.uuid.to_s
+  end
   
   private
     def set_defaults

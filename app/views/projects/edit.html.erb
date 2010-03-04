@@ -19,6 +19,10 @@
     <%= f.datetime_select :duedate %>
   </p>
   <p>
+    <b>Gastzugriffs-URL</b>
+    <%= @project.guest_url %>
+  </p>
+  <p>
 	<%= f.label :private, "Privat" %><br />
     <%= f.check_box :private %>	
   </p>

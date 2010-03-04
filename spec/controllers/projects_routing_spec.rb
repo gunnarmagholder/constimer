@@ -11,19 +11,15 @@ describe ProjectsController do
     end
   
     it "should map #show" do
-      route_for(:controller => "projects", :action => "show", :id => 1).should == "/projects/1"
+      route_for(:controller => "projects", :action => "show", :id => "1").should == "/projects/1"
     end
   
     it "should map #edit" do
-      route_for(:controller => "projects", :action => "edit", :id => 1).should == "/projects/1/edit"
+      route_for(:controller => "projects", :action => "edit", :id => "1").should == "/projects/1/edit"
     end
-  
-    it "should map #update" do
-      route_for(:controller => "projects", :action => "update", :id => 1).should == "/projects/1"
-    end
-  
-    it "should map #destroy" do
-      route_for(:controller => "projects", :action => "destroy", :id => 1).should == "/projects/1"
+    
+    it "should map #guest" do
+      route_for(:controller => "projects", :action => "showguest", :pnum => "1", :pgid => "1234").should == "/projects/1/guest/1234"
     end
   end
 
@@ -54,6 +50,18 @@ describe ProjectsController do
   
     it "should generate params for #destroy" do
       params_from(:delete, "/projects/1").should == {:controller => "projects", :action => "destroy", :id => "1"}
+    end
+    
+    it "should generate params for #guest" do
+      params_from(:post, "/projects/1/guest/1234").should == {:controller => "projects", :action => "showguest", :pnum =>"1", :pgid => "1234"}
+    end
+  end
+  describe "project guests" do
+    it "should react to guest access in given projects" do
+      pending
+    end
+    it "should throw an error, if project uid does not exist" do
+      pending
     end
   end
 end

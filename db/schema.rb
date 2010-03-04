@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090715200318) do
+ActiveRecord::Schema.define(:version => 20100228203649) do
 
   create_table "assignments", :force => true do |t|
     t.integer  "manager"
@@ -95,6 +95,7 @@ ActiveRecord::Schema.define(:version => 20090715200318) do
     t.datetime "updated_at"
     t.boolean  "private"
     t.boolean  "active"
+    t.string   "uuid"
   end
 
   create_table "roles", :force => true do |t|
@@ -120,15 +121,6 @@ ActiveRecord::Schema.define(:version => 20090715200318) do
   end
 
   add_index "user_failures", ["remote_ip"], :name => "index_user_failures_on_remote_ip"
-
-  create_table "userintros", :force => true do |t|
-    t.integer  "user_id"
-    t.boolean  "project_intro"
-    t.boolean  "entry_intro"
-    t.boolean  "general_intro"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
 
   create_table "users", :force => true do |t|
     t.string   "user_type"

@@ -7,7 +7,8 @@ describe Project do
       :name => "value for name",
       :custname => "value for custname",
       :budget => "1.5",
-      :duedate => Time.now
+      :duedate => Time.now,
+      :uuid => "11111111-2222-3333-4444-555555555555"
     }
   end
 
@@ -18,5 +19,8 @@ describe Project do
   it "should return the my projects and manager projects for an user-account" do
     @user = User.find_by_id(50002)
     @user.myProjects.size.should equal(2)
+  end
+  it "should have a url for guest account" do
+    
   end
 end

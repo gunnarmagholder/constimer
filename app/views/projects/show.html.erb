@@ -19,6 +19,11 @@
   <b>Duedate:</b>
   <%=h @project.duedate %>
 </p>
+<p>
+  <b>Gastzugriffs-URL</b>
+  <%= @project.guest_url %>
+</p>
+
 <% if @project.private %>
 <p>
 	Project is marked private!

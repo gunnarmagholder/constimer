@@ -3,6 +3,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect  'assignments/:id/assign', :controller => 'assignments', :action => 'assign'
   map.resources :assignments
 
+  map.connect 'projects/:pnum/guest/:pgid', :controller => 'projects', :action => 'showguest'
   map.resources :projects
   map.root :controller => 'home', :index => 'index'
   map.about '/about', :controller => 'home', :action => 'about'

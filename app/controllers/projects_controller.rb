@@ -1,5 +1,5 @@
 class ProjectsController < ApplicationController
-  before_filter :login_required
+  before_filter :login_required, :except => :showguest
   # GET /projects
   # GET /projects.xml
   def index
@@ -28,6 +28,7 @@ class ProjectsController < ApplicationController
   def new
     @project = Project.new
     @project.active = true
+    @project.uuid
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @project }
@@ -90,6 +91,15 @@ class ProjectsController < ApplicationController
         format.html { redirect_to(projects_url) }
         format.xml  { render :xml => @project.errors, :status => :unprocessable_entity }
       end
+    end
+  end
+  def showguest
+    @project = Project.find(params[:pnum])
+    if @project.uuid == params[:pgid] 
+      @entries = @project.entries
+    else
+      flash[:notice] = 'Dieses Projekt wurde nicht für Sie freigegeben.'
+      redirect_to(root_path)
     end
   end
 end
