@@ -1,0 +1,18 @@
+<h1>Bericht für <%= @project.name %> </h1>
+
+<p>Dies sind die Zeiteintr&auml;ge f&uuml; in Projekt <%= @project.name %>.</p>
+<table border="1">
+  <tr>
+	<th>Projekt</th>
+    <th>Datum</th>
+    <th>Beginn</th>
+    <th>Ende</th>
+    <th>Arbeitszeit(min)</th>
+    <th>Bemerkungen</th>
+  </tr>
+<% if @entries.nil? %>
+  Keine Eintr&auml;ge vorhanden
+<% else %>
+  <%= render :partial => 'entries/noedit', :collection => @entries %>
+<% end %>
+</table>
